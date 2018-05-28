@@ -1,0 +1,117 @@
+---
+layout: post
+title: 생활코딩 git 01 - add, commit, log, diff, reset, revert
+category: git
+tags: [git]
+comments: true
+---
+> [생활코딩-git](https://opentutorials.org/module/2676) 수업을 듣고 중요 내용을 정리합니다.   
+
+
+# 버전 만들기 (config, add, commit)
+
+- 버전에 포함될 버전을 만든 사람에 대한 정보를 설정합니다. 이 설정은 ~/.gitconfig 파일에 저장되고 1번만 해주면 됩니다.
+
+```shell
+git config --global user.name "자신의 닉네임"
+git config --global user.email "자신의 이메일"
+```
+
+```shell
+git add f1.txt # 선택적으로 커밋하기 위해서 commit 전에 add를 꼭해야한다.
+git commit # add한 파일을 stage에 올린다.
+git commit -am "commit msg" #과거 add 한 적이 있는 자동으로 add, commit 메시지 작성 후 commit
+git log # 버전에 대한 정보 확인
+```
+
+---
+
+# 변경사항 확인하기 (log, diff)
+> 버전관리를 하는 가장 중요한 효용은 수정된 내용을 추적해서 문제해결을 하는데 이용하기 위해서라고 할 수 있습니다. 이 수업에서는 버전간의 차이점을 확인하는 방법에 대해서 알아봅니다.
+
+```shell
+git log -p #로그에서 출력되는 버전 간의 차이점을 출력하고 싶을 때
+git diff '버전 id'..'버전 id2' # 버전 간의 차이점을 비교할 때
+git diff # git add하기 전과 add한 후의 파일 내용을 비교할 때 (마지막 확인!)
+
+```
+
+---
+
+# 과거의 버전으로 돌아가기 (reset, revert)
+> 버전관리의 중요한 효용은 과거의 상태로 돌아갈 수 있다는 점입니다. 여기서는 이 방법에 대해서 알아봅니다. 한가지 주의하실 점은 과거로 돌아가는 작업은 위험한 작업입니다. 여기서는 과거로 돌아가는 방법이 있다는 점만 우선 확인하시고, 실제로 사용할 때는 좀 더 깊게 공부하고 사용하시는 것이 좋습니다.
+
+- `git add` 를 취소하는 방법
+
+```shell
+$ gs
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   f1.txt
+	new file:   f2.txt
+	new file:   f3.txt
+	new file:   test.txt
+
+# test.txt 에 대한 add 명령을 취소한다.
+$ git reset test.txt
+
+$ gs
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   f1.txt
+	new file:   f2.txt
+	new file:   f3.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.txt
+```
+
+- `commit 을 취소`하는 명령을 배운다.
+- 주의가 필요한 명령이기 때문에 git의 원리를 배운 후에 다시 공부하는게 좋다.
+- git에서는 웬만하면 어떠한 정보도 삭제하지 않는다. git reset 후에도 정보가 남아있다.
+- 원격저장소에 올린 버전은 절대로 리셋을 하면 안된다. reset은 로컬에 있는 버전에 대해서만 진핸행한다.
+- [개발바보들 Git “Back to the Future”](http://www.popit.kr/%EA%B0%9C%EB%B0%9C%EB%B0%94%EB%B3%B4%EB%93%A4-git-back-to-the-future/)
+```shell
+git log # 버전 id 확인
+git reset --hard `버전id` # 버전 id로 돌아가는 명령
+git revert `버전id` # 버전 id의 커밋을 취소한 내용을 새로운 버전으로 만드는 명령
+```
+---
+
+# 마지막 커밋 메시지를 수정하기
+- 자동으로 텍스트 편집기를 실행시켜서 마지막 커밋 메시지를 열어준다.
+- 여기에 메시지를 수정하고 편집기를 닫으면 편집기는 수정한 메시지로 마지막 커밋을 수정한다.
+- amend : 조금 수정하다.
+
+```shell
+$ git commit --amend
+```
+
+## 커밋에 파일 추가하기
+- 커밋하고 나서 새로 만들었거나 다시 수정한 파일을 마지막 커밋에 포함할 수 있다.
+- 파일을 수정하고 git add 명령으로 Staging Area에 넣거나 git rm 명령으로 파일 삭제한다.
+- 그리고 git commit --amend 명령으로 커밋하면 된다.
+
+```shell
+# edited file-that-i-remember.txt
+git add file-that-i-remember.txt
+git commit
+
+# realize you forgot a file
+git add file-that-i-forgot.txt
+git commit --amend --no-edit
+
+# Where --no-edit will keep the same commit message.
+```

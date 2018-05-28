@@ -1,0 +1,30 @@
+.page {
+  margin-bottom: 4em;
+  font-size: 0.9rem;
+  .page-title {
+    color: $theme-color;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+}
+
+.page h2,
+.tags-expo-section h2
+{
+  font-size:1.2rem;
+  color : #ec4c6a;
+}
+
+.tags-expo-section ul{
+  font-size: 0.9rem;
+}
+
+
+#results-container{
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+#results-container > li{
+  margin-bottom: 0.5rem;
+}

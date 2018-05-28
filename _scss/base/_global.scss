@@ -1,0 +1,40 @@
+@include selection {
+  background: $theme-color;
+  color: $white;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: 'NanumSquare', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+  // font-family: "PT Sans",Helvetica,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  text-rendering:optimizelegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  font-weight: 500;
+  color: $title-color;
+  letter-spacing: -.025rem;
+}
+
+code {
+  color: #666;
+}
+
+.sidebar-item.template{
+  padding-top: 120px;
+}
+
+figcaption{
+  font-weight: bold !important;
+  font-size: 0.7rem;
+}
