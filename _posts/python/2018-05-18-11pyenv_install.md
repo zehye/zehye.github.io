@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  pyenv, virtualenv, iPython 설치 및 설정하기
-categories: [python]
----
-이 포스팅에서는 `pyrhon`에 대해 공부해본다.
+title: pyenv, virtualenv, iPython 설치 및 설정하기
+category: python
+tags: [python, pyenv, virtualenv, iPython]
+comments: true
 
-<hr>
+---
+
+> 패스트캠퍼스 컴퓨터공학 입문 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.   
+
 
 ## Python?
 
