@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  python class 문제풀이
-categories: [python]
+title: python class 연습문제 풀이
+category: python
+tags: [python, class]
+comments: true
 ---
-이 포스팅에서는 `python`의 `class`실습 문제 풀이를 하겠다.
+
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 `python` 클래스 실습문제를 다시 정리해봅니다.
+
 <hr>
 
 1.일상생활에서 접할 수 있는 서로 연관되는 어떠한 것들에 대하여 3개의 클래스를 만들고, 각각에게 영향을 줄 수 있는 메서드를 만들고 사용해서 다른 인스턴스의 속성에 영향을 주는 코드를 작성해본다.

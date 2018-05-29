@@ -1,5 +1,20 @@
 ---
 layout: post
+title: python 시퀀스(list, tuple)
+category: python
+tags: [python, list, tuple]
+comments: true
+---
+
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 `python` 시퀀스에 대해 설명합니다.
+
+주요 용어 :  `index` `slice` `append` `extend` `insert` `del` `remove` `pop` `count`
+
+<hr>
+---
+layout: post
 title:  python 시퀀스
 categories: [python]
 ---

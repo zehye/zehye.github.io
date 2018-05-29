@@ -1,11 +1,14 @@
 ---
 layout: post
-title:  python 함수 시작
-categories: [python]
+title: python 함수 - args, kwargs, docstring
+category: python
+tags: [python, parameter, argument, docstring]
+comments: true
 ---
-이 포스팅에서는 `pyrhon`의 함수에 대해 공부해본다.
 
-`function` `parameter` `arguments`
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 `python` 함수에 대해 설명합니다.
 
 <hr>
 

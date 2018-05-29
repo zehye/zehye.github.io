@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  python 모르는 부분 따로 정리
-categories: [python]
+title: python 모르는 부분 따로 정리
+category: python
+tags: [python, enumerate, index, arguments]
+comments: true
 ---
-`pyrhon` 정리
 
-`enumerate` `index함수` `arguments`
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
 
 <hr>
 

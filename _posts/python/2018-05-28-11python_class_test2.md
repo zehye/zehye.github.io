@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  python class문제 풀어보기
-categories: [python]
+title: python class 연습문제 풀이2
+category: python
+tags: [python, class]
+comments: true
 ---
-강사님 과제를 풀어본다. `python` `class`
+
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 `python` 클래스 실습문제를 다시 정리해봅니다.
+
 <hr>
 ```
 도서 관리 프로그램
@@ -108,7 +114,7 @@ class Library:
     self.book_list = book_list
 
   def add_book(self):
-    
+
 
   def remove_book(self):
     pass

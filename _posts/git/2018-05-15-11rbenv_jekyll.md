@@ -1,11 +1,14 @@
 ---
 layout: post
-title:  rbenv환경에서 Jekyll 블로그 생성하고 GitHub Pages에 배포하기
-categories: [jekyll]
+title: rbenv환경에서 Jekyll 블로그 생성하고 GitHub Pages에 배포하기
+category: git
+tags: [git ,jekyll]
+comments: true
 ---
 
-이 포스팅에서는 `macOS`환경에서 `rbnv`를 사용해 `Jekyll`블로그를 생성하고,<br>
-이를 `GitHub Pages`에 배포하는 방법을 다룬다.
+> 개인적인 연습 내용을 정리한 글입니다.      
+> 이 포스팅에서는 `macOS`환경에서 `rbnv`를 사용해 `Jekyll`블로그를 생성하고,이를 `GitHub Pages`에 배포하는 방법을 다룹니다.
+
 <hr>
 
 ## Jekyll?

@@ -1,9 +1,15 @@
 ---
 layout: post
-title:  python 함수 알고리즘 - 순차검색, 선택정렬
-categories: [python]
+title: python 함수 - scope, lambda, closure, decorator, generator
+category: algorithm
+tags: [algorithm]
+comments: true
 ---
-함수 알고리즘 순차검색, 선택정렬 문제 정리
+
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 순차검색, 선택정렬에 대해 설명합니다.
+---
 
 <hr>
 

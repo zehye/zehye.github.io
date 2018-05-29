@@ -1,11 +1,16 @@
 ---
 layout: post
-title:  python 변수
-categories: [python]
+title: python 변수
+category: python
+tags: [python, type]
+comments: true
 ---
-이 포스팅에서는 `python`의 변수에 대해서 공부한다.
-<hr>
 
+> 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
+개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
+> 이 포스팅에서는 `python` 변수에 대해 설명합니다.
+
+<hr>
 ## 변수
 
 파이썬의 모든것 (정수, 문자열, 함수 등)은 객체(object)로 이루어져 있다.
