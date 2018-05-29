@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  git-branch의 workflow 이해하기 - push, fetch, remote repository
-categories: [git, branch]
+categories: [branch]
 ---
 이 포스팅에서는 `branch` `Workflow`에 대해 공부해본다.
 

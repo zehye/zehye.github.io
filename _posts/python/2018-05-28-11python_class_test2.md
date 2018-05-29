@@ -99,3 +99,42 @@ class User:
         else:
             print('아직 내게는 {}책이 있습니다.'.format(self.title))
 ```
+
+
+```Python
+class Library:
+  def __init__(self, name, book_list):
+    self.name = name
+    self.book_list = book_list
+
+  def add_book(self):
+    
+
+  def remove_book(self):
+    pass
+
+  @property
+  def info(self):
+    return ''
+
+
+class Book:
+  def __init__(self, title, location):
+    self.title = title
+    self.location = location
+
+  @property
+  def is_borrowed(self):
+    return ''
+
+
+class User:
+  def __init__(self, name, book_list):
+    self.name = name
+    self.book_list = book_list
+
+  def borrow_book(library, book_name):
+    pass
+
+  def return_book(library, book_name):
+    pass

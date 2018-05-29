@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  git-branch 이해하기
-categories: [git, branch]
+categories: [branch]
 ---
 이 포스팅에서는 `branch`에 대해 공부해본다
 <hr>
