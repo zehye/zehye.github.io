@@ -13,14 +13,15 @@ comments: true
 
 ## pip list출력 포맷 변경
 
-pip-list 시 --format=(legacy|columns)과 같 경고가 나오는 경우 (아래와 같은)
-> DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+pip-list 시 --format=(legacy/columns)과 같 경고가 나오는 경우 (아래와 같은)
+
+> DEPRECATION: The default format will switch to columns in the future. You can use >--format=(legacy/columns) (or define a format=(legacy/columns) in your pip.conf under >the [list] section) to disable this warning.
 
 그런데 찾아보니
 > You are using pip version 9.0.3, however version 10.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 
-단순 업그레이드의 문제였다.
+단순 **업그레이드의 문제** 였다.
 
 zsh에
 
