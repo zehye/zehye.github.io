@@ -108,9 +108,11 @@ def episode_crawler(webtoon_id):
         # print(no)
 
         new_episode = Episode(
-            # 크롤링한 결과를 에피소드 클래스의 뉴 에피소드 인스턴스로 생성
-            # 에피소드 클래스에 인스턴스들을 만든것 (이 부분 이해가 안간다)
-            webtoon_id=webtoon_id,
+            # 크롤링한 결과를 class Episode의 new_episode 인스턴스로 생성
+            # class Episode의 인스턴스들을 만든것 (이 부분 이해가 잘 안가는데, 용어가 헷갈려서 그런듯)
+            # 클래스에 인스턴스 생성 부분 공부가 필요하다.
+
+            webtoon_id= webtoon_id,
             no=no,
             url_thumbnail =url_thumbnail,
             title=title,
@@ -118,9 +120,9 @@ def episode_crawler(webtoon_id):
             created_date = created_date,
         )
 
-        # episode_lists에 Episode인스턴스를 추가
         episode_lists.append(new_episode)
-        #print(episode_lists)
+        # episode_lists에 Episode인스턴스를 추가
+        # print(episode_lists)
         # 이 정보들을 넣고 새로운 인스턴스들을 만든다.
 
     return episode_lists
@@ -145,11 +147,13 @@ class Episode:
         url = 'https://comic.naver.com/webtoon/detail.nhn?'
         params = {
             'titleId': self.webtoon_id,
+            # 내가 원하는 webtoon의 id
             'no': self.no,
+            # 내가 원하는 webtoon의 no
         }
 
         episode_url = url + urlencode(params)
-        # urllib 보고 urlencode봤는데도 잘 이해가 안간다ㅠㅠㅠㅠㅠㅠㅠ
+        # urllib, parse, urlencode 다시 읽어보기
         return episode_url
 
 
@@ -174,18 +178,24 @@ class Webtoon:
 
         result = episode_crawler(self.webtoon_id)
         # self.webtoon_id를 하는 이유는 해당 웹툰의 id(즉 내가 얻고 싶은 웹툰의 id)를 가져와야 하니까 -> self
-        #print(result)
+        # print(result)
         self.episode_list = result
-        # 그렇게 받아온 result / 여기도 이해가 안간다....
+        # 내가 원하는 episode의 list = result
+        # print(self.episode_list) 역시 위의 print(result)와 같은 결과를 가져오는 것을 볼 수 있었다.
+        # 그러면 왜 이렇게 표시한걸까..?
+        # episode_crawler함수와 self.episode_list가 같음을 보여주려고? 다른건데 왜 같은 결과값을 가질까?
+        # 이해가 잘 안간다
 
 if __name__ == '__main__':
-# 여기도 이해가 안가욤.....흑흑.....
+# __name__ =='__main__'이 무엇인지는 알겠는데, 이걸 왜 여기서 써야하는 지 모르겠다.
     webtoon2 = Webtoon(651673)
     print(webtoon2.title)
     webtoon2.update()
 # print(webtoon2.title)
 
     for episode in webtoon2.episode_list:
+      # webtoon2의 episode_list를 쭉 돌아서
         print(episode.url)
+        # 결국 우리가 출력하고자 하는 것은 각 episode들의 url
 
 ```
