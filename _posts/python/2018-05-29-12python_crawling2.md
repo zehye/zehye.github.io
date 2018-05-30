@@ -23,7 +23,7 @@ html변수를 사용해 soup변수에 BeautifulSoup객체를 생성하고 soup�
 
 - 제목: 죽음에 관하여 (재)
 - 작가: 시니/혀노
-- 설명: 삶과 죽음의 경계선, 그 곳엔 누가 있을까의 내용을 가져와 title, author, description변수에 할당gksek.
+- 설명: 삶과 죽음의 경계선, 그 곳엔 누가 있을까의 내용을 가져와 title, author, description변수에 할당.
 
 
 ```python
@@ -32,6 +32,10 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(html, 'lxml')
 
 big_title = soup.select_one('div.detail > h2')
+# select: list로 반환하여, 전체를 다 찾는 방법
+# select_one: 내가 원하는 태그, 클래스만 찾는 방법
+
+# html파일 내 div 클래스 이름이 detail인 것 중 자식태그가 h2
 print(big_title)
 ```
 
@@ -45,7 +49,9 @@ print(big_title)
 ```
 ```python
 title = big_title.contents[0].strip()
+# big_title의 1번째 요소, h2의 머리와 꼬리를 제거(strip())
 author = big_title.contents[1].get_text(strip=True)
+# big_title의 두번째 요소, span태그의 text만 가져올 때(.get_text(strip=True))
 ```
 
 ```

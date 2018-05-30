@@ -60,11 +60,8 @@ import requests
 import os
 
 file_path = 'data/episode_list.html'
-# HTML 파일을 저장하거나 불러올 경로
 url_episode_path = 'http://comic.naver.com/webtoon/list.nhn?titleId=703845&weekday=wed'
-# HTTP 요청을 보낼 주소
 params = {'titleID':'703845', 'weekday':'wed'}
-# HTTP요청시 전달할 GET parameters
 
 if os.path.exists(file_path):
   html = open(file_path, 'rt').read()
