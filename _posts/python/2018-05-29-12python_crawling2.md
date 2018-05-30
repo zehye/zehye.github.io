@@ -52,6 +52,7 @@ title = big_title.contents[0].strip()
 # big_title의 1번째 요소, h2의 머리와 꼬리를 제거(strip())
 author = big_title.contents[1].get_text(strip=True)
 # big_title의 두번째 요소, span태그의 text만 가져올 때(.get_text(strip=True))
+# tag로부터 문자열을 가져올때는 get_text를 사용한다. (작가정보가 span tag)
 ```
 
 ```

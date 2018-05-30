@@ -33,10 +33,10 @@ else:
 soup = BeautifulSoup(html, 'lxml')
 title = soup.select_one('div.detail > h2')
 print(title)
-real_title = title.contents[0].strip() # 지정된 문자열의 머리와 꼬리를 제거하는 데 사용됩니다.
+real_title = title.contents[0].strip()
 
 print(real_title)
-author = title.contents[1].get_text(strip=True) # tag로부터 문자열을 가져올때는 get_text를 사용한다. (작가정보가 span tag)
+author = title.contents[1].get_text(strip=True) 
 
 print(type(title))
 print(author)
