@@ -15,13 +15,16 @@ comments: true
 ## 3단계 문제
 에피소드 정보 목록을 가져오기
 
+
 모든 에피소드의 목록들을 다 가져와 아래의 순서대로 나열한 뒤
-url_thumnail: 썸네일 URL
-title: 제목
-rating: 별점
-create_date: 등록일
-no: 에피소드 상세페이지의 고유번호
-각 에피소드들은 하나의 dict데이터로 만들어 모든 에피소드들을 list에 넣는다.
+
+- url_thumnail: 썸네일 URL
+- title: 제목
+- rating: 별점
+- create_date: 등록일
+- no: 에피소드 상세페이지의 고유번호
+- 각 에피소드들은 하나의 dict데이터로 만들어 모든 에피소드들을 list에 넣는다.
+
 
 ```python
 # 각 정보들이 table속성 내 존재함으로

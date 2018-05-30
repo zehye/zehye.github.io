@@ -13,13 +13,18 @@ comments: true
 <hr>
 
 ## 2단계 문제
+
 제목, 저자, 웹툰정보 탐색하기
 
+
 ### BeautifulSoup 활용하기
+
 html변수를 사용해 soup변수에 BeautifulSoup객체를 생성하고 soup객체에서
+
 - 제목: 죽음에 관하여 (재)
 - 작가: 시니/혀노
 - 설명: 삶과 죽음의 경계선, 그 곳엔 누가 있을까의 내용을 가져와 title, author, description변수에 할당gksek.
+
 
 ```python
 from bs4 import BeautifulSoup

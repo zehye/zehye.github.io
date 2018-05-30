@@ -16,17 +16,18 @@ comments: true
 HTML 받아와서 html변수에 문자열을 할당한다.
 
 ### os.path.exists 활용하기
-만약 data/episode_list.html이 없다면 내장모듈 os의 'exists' 함수를 사용해본다.
-(파이썬 공식 문서 확인 url: https://docs.python.org/3/library/os.path.html)
+- (파이썬 공식 문서 확인 url: https://docs.python.org/3/library/os.path.html)
 
 ### requests get parameters
-그리고 죽음에 관하여 (재) 페이지를 requests를 사용해서 pycharm내 data/episode_list.html에 저장한다.
-네이버 웬툰 url: http://comic.naver.com/webtoon/list.nhn?titleId=703845&weekday=wed
-list.nhn뒤 ? 부터는 url에 넣지 말고 get parameters로 처리한다.
-(requests문서의 'Passing Parameters In URLs' 확인 url: http://docs.python-requests.org/en/master/user/quickstart/#passing-parameters-in-urls)
-저장 후에는 파일을 불러와 html 변수에 할당한다.
+- data/episode_list.html파일이 없다면
+- 죽음에 관하여 (재) 페이지를 requests를 사용해서 pycharm내 data/episode_list.html에 저장한다.
+- 네이버 웬툰 url: http://comic.naver.com/webtoon/list.nhn?titleId=703845&weekday=wed
+- list.nhn뒤 ? 부터는 url에 넣지 말고 get parameters로 처리한다.
+- (requests문서의 'Passing Parameters In URLs' 확인 url: http://docs.python-requests.org/en/master/user/quickstart/#passing-parameters-in-urls)
+- 저장 후에는 파일을 불러와 html 변수에 할당한다.
 
-그리고 이미 data/episode_list.html이 있다면 html 변수에 파일을 불러와 할당한다.
+- 그리고 이미 data/episode_list.html이 있다면 html 변수에 파일을 불러와 할당한다.
+
 
 ```python
 import requests
@@ -43,7 +44,10 @@ else:
     f.write(html)
 ```
 
+
 **강사님 코드**
+
+
 ```python
 import requests
 import os
