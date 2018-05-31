@@ -182,9 +182,7 @@ class Webtoon:
         self.episode_list = result
         # 내가 원하는 episode의 list = result
         # print(self.episode_list) 역시 위의 print(result)와 같은 결과를 가져오는 것을 볼 수 있었다.
-        # 그러면 왜 이렇게 표시한걸까..?
-        # episode_crawler함수와 self.episode_list가 같음을 보여주려고? 다른건데 왜 같은 결과값을 가질까?
-        # 이해가 잘 안간다
+
 
 if __name__ == '__main__':
 # __name__ =='__main__'이 무엇인지는 알겠는데, 이걸 왜 여기서 써야하는 지 모르겠다.
