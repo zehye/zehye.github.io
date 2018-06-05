@@ -13,14 +13,6 @@ comments: true
 주요 용어 :  `index` `slice` `append` `extend` `insert` `del` `remove` `pop` `count`
 
 <hr>
----
-layout: post
-title:  python 시퀀스
-categories: [python]
----
-이 포스팅에서는 `pyrhon`의 시퀀스에 대해 공부해본다.
-
-<hr>
 
 ## 시퀀스타입
 
@@ -31,7 +23,7 @@ categories: [python]
 
 ### 리스트
 
-```
+```python
 >>> empty_list1 = []
 >>> empty_list2 = list()
 >>> sample_list = ['a', 'b', 'c', 'd']
@@ -42,7 +34,7 @@ categories: [python]
 
 * sample_list2를 이용해서 실습. 5월, 7월을 인덱스연산을 통해 추출해보자.
 
-```
+```python
 sample_list2[4]
 sample_list2[6]
 ```
@@ -51,7 +43,7 @@ sample_list2[6]
 **내부항목 변경**
 * sample_list를 이용, 3번째 요소인 'c'를 대문자 'C'로 바꿔본다.
 
-```
+```python
 sample_list[2] = C
 
 ```
@@ -59,25 +51,25 @@ sample_list[2] = C
 **슬라이스 연산**
 * sample_list2를 이용, 1월부터 3월씩 건너뛴 결과를 quarters에 할당
 
-```
+```python
 qurters = sample_list2[::3]
 ```
 
 * sample_list2를 이용, 끝에서부터 3번째 요소까지를 last_three에 할당
 
-```
+```python
 last_three = sample_list2[:-4:-1]
 ```
 
 * sample_list2를 이용, 끝에서부터 처음까지(거꾸로) 2월씩 건너뛴 결과를 reverse_two_steps에 할당
 
-```
+```python
 reverse_two_steps = sample_list2[::-2]
 ```
 
 ### 리스트 항목 추가 (append)
 
-```
+```python
 >>> sample_list.append('e')
 >>> sample_list
 ['a', 'b', 'c', 'd', 'e']
@@ -85,7 +77,7 @@ reverse_two_steps = sample_list2[::-2]
 
 ### 리스트 병합 (extend, +=)
 
-```
+```python
 >>> fruits = ['apple', 'banana', 'melon']
 >>> colors = ['red', 'green', 'blue']
 >>> fruits.extend(colors)
@@ -93,17 +85,17 @@ reverse_two_steps = sample_list2[::-2]
 ['apple', 'banana', 'melon', 'red', 'green', 'blue']
 ```
 
-```
+```python
 >>> fruits = ['apple', 'banana', 'melon']
 >>> colors = ['red', 'green', 'blue']
->>> fruits.extend(colors)
+>>> fruits += colors
 >>> fruits
 ['apple', 'banana', 'melon', 'red', 'green', 'blue']
 ```
 
 > extend대신 append를 사용하면?
-fruits.append(color)
-리스트 안에 리스트를 추가하는 모습이 나온다.
+
+> fruits.append(color) 리스트 안에 리스트를 추가하는 모습이 나온다.
 
 `['apple', 'banana', 'melon', ['red', 'green', 'blue']]`
 
@@ -111,13 +103,13 @@ fruits.append(color)
 
 * fruits리스트의 1번째 위치에 'mango'를 추가해보자
 
-```
+```python
 fruits.insert(1, 'mango')
 ```
 
 * fruits리스트의 100번째 위치에 'pineapple'을 추가해보자
 
-```
+```python
 fruits.insert(100, 'pineapple')
 ```
 
@@ -131,14 +123,14 @@ fruits.insert(100, 'pineapple')
 
 ### 리스트 항목 추출 후 삭제 (pop)
 
-```
+```python
 fruits.pop()
 fruits.pop(-3)
 ```
 
 ### 값으로 리스트 항목 찾기 (index)
 
-```
+```python
 >>> fruits.index('apple')
 0
 ```
@@ -151,7 +143,7 @@ fruits.pop(-3)
 
 ### 값 세기 (count)
 
-```
+```python
 >>> fruits.append('red')
 >>> fruits.append('red')
 >>> fruits.count('red')
@@ -163,6 +155,17 @@ fruits.pop(-3)
 * sort는 리스트 자체를 정렬한다.
 * sorted는 리스트의 정렬 복사본을 반환
 
+```python
+def number(n):
+  # number라는 함수는 매개변수 n의 1번째 요소를 리턴해준다.
+  return n[1]
+
+random = [(1,2,3), (2,3,4), (1,4,2), (2,1,3),(2,5,6)]
+# random이라는 변수를 함수 number에 따라 정렬한다.
+random.sort(key=number)
+print(random)
+>>> [(2, 1, 3), (1, 2, 3), (2, 3, 4), (1, 4, 2), (2, 5, 6)]
+```
 
 ### 튜플 (tuple)
 
@@ -176,7 +179,7 @@ fruits.pop(-3)
 ### 실습
 1.문자열 'Fastcampus'를 리스트, 튜플 타입으로 형변환하여 새 변수에 할당한다.
 
-```
+```python
 li = ['Fastcampus,']
 tu = ('Fastcampus,')
 ```
