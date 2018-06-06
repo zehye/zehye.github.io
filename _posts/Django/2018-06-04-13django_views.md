@@ -134,3 +134,72 @@ def post_detail(request, post_id):
     # 숙제: post_detail view function이 올바르게 동작하는 html을 작성해서 결과보기
     return render(request, 'blog/post_detail.html', context)
 ```
+
+### post_create view function
+
+```python
+def post_create(request):
+    # print(request.GET.get('title'))
+
+    if request.method == 'POST':
+        # request의 method값이 'POST'일 경우 (POST method로 요청이 왔을경우)
+        # request.POST에 있는 title, text값과
+        # request.user에 있는 USER인스턴스(로그인한 유저)속성을 사용해서
+        # 새 POST인스턴스를 생성
+        # HttpResponse를 사용해 새로 생성된 인스턴스의 id, title, text정보를 출력(string)
+
+        post = Post.objects.create(
+            author=request.user,
+            title=request.POST.get('title'),
+            text=request.POST.get('text')
+        )
+        # return HttpResponse('id:{}, title:{}, text:{}'.format(post.id, post.title, post.text))
+        # post.author는 객체
+
+        # HTTP Redirection을 보낼 URL은 http://localhost:8000/ <- 도메인
+        # '/'은 가장 최 하단
+        # /로 시작하면, 절대경로, 절대경로의 시작은 도메인 :http://localhost:8000/
+        # return HttpResponseRedirect('/')
+
+        # post.delete()  # 이렇게 해도 지워진다.
+        return redirect('post-list')
+
+    else:
+        return render(request, 'blog/post_create.html')
+```
+
+### post_delete view function
+
+```python
+def post_delete(request, post_id):
+    # 연결되는 URL: localhost:8000/3/delete
+
+    # 템플릿을 사용하지 않음(render하는 경우가 없음) -> 그냥 지우기만 하고 넘어가면 되니까 굳이 렌더링이 필요없다.
+
+    # view function의 동작
+    # 1. 오로지 request.method 가 'POST'일 때만 동작
+    # (request.method가 'GET'일 때는 아무 동작도 안해도 됨
+
+    # 2. request.method가 'POST'일때의 동작
+    # post_id에 해당하는 Post인스턴스에서 delete()를 호출해서 DB에서 삭제
+    # 이후 post-list(url name)로 redirect
+
+    # post_list.html템플릿에서 for문을 순회하는 각 요소마다 form을 하나씩 추가
+    # action은 post_delete() view function으로 연결되는 url
+    # -> url태그를 사용한다, post_list.html에서 post_detail()로 연결하는 url생성법 참조
+
+    # method는 POST
+    # 내부에 있어야 할 input요소는 없음, 버튼 하나만 존재(삭제)
+    # POST요청이므로 csrf_token태그를 각 form안에 사용할 것
+
+    # 실제동작: post_list.html의 각 요소에 생성된 버튼을 클릭하면 이 함수가 실행되어야 함
+    # breakpoint를 아래 리턴에 걸어놓은 후 request내의 내용을 확인
+
+    # 먄약 request의 method가 POST라면
+    if request.method == 'POST':
+      # post_id에 해당하는 Post인스턴스에서 delete()함수를 호출
+        post = Post.objects.get(id=post_id)
+        post.delete()
+        return redirect('post-list')
+    return HttpResponse('post_delete view function')
+```
