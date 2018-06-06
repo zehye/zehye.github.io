@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - djangogirls-tutorial blog만들기 (+ 모듈 가져오기)
+title: Django - djangogirls-tutorial blog만들기 1, 가상환경 설정, requirements.txt
 category: Django
 tags: [django]
 comments: true
