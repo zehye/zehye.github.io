@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python을 활용한 웹툰 크롤링 완성
+title: python을 활용한 웹툰 크롤링 완성 - crawl.py
 category: python
 tags: [python, 크롤링]
 comments: true
@@ -9,7 +9,8 @@ comments: true
 > 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
 개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
 > 이 포스팅에서는 크롤링하는 방법에 대해 설명합니다.
-> 본 스크립트는 학습 목적으로만 사용해주세요.
+
+본 스크립트는 학습 목적으로만 사용해주세요.
 
 <hr>
 
