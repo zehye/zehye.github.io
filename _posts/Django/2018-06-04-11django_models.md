@@ -55,10 +55,10 @@ class Post(models.Model):
 즉, 우리가 클래스를 작성했다는 것은 이 클래스를 가진 어떤 데이터베이스를 가졌으면 좋겠다이지 아직 만든건 아니니까
 이제 이 모양으로 데이터베이스 테이블을 만들어줘라는 명령어를 내려줘야 한다.
 
-### python makemigration
+### python makemigrations
 ```
 cd app
-python manage.py makemigration
+python manage.py makemigrations
 
 blog/migrations/0001_initial.py
   - Create model Post

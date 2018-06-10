@@ -1,7 +1,6 @@
 ---
 layout: post
-title: python 함수 - scope, lambda, closure, decorator, generator
-category: algorithm
+title: python 함수 - 선택정렬, 순차검색
 tags: [algorithm]
 comments: true
 ---
