@@ -47,7 +47,7 @@ for index, tr in enumerate(tr_list):
 
   from urllib import parse
   url_detail = tr.select_one('td:nth-of-type(1) > a').get('href')
-  # tr의 첫 번째 td 자식 a태그의 'href' 속성값
+  # tr의 첫 번째 td 자식 a태그의 'href' 속성값 (바로 아래에 있는 애가 자식 > )
   query_string = parse.urlsplit(url_detail).query
   # query의 string부분만 출력
   query_dict = parse.parse_qs(query_string)

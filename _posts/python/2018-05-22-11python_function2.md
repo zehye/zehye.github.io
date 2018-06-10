@@ -189,8 +189,9 @@ local1()
 >>> local1 locals() : Ahri
     local2 locals() : {'champion': 'Ezreal'}
     local1 locals() : {'local2': <function local1.<locals>.local2 at 0x10ea617b8>, 'champion': 'Ezreal'}
-
 ```
+
+
 
 ### 글로벌 키워드와 인자 전달의 차이
 
@@ -232,7 +233,7 @@ def level_add():
 print(global_level)
 >>> 100
 
-level_add
+level_add()
 >>> 130
 
 print(global_level)
