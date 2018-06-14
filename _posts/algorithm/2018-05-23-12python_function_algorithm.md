@@ -130,3 +130,5 @@ for i in range(ori_length - 1):
             ori[i], ori[min_index] = ori[min_index], ori[i]
 print(ori)
 ```
+
+아직 정리가 더 필요하다.
