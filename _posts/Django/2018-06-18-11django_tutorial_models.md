@@ -86,4 +86,5 @@ admif.site.register(Choice)
 터미널로 돌아와
 
 `python manage.py createsuperuser`설정을 하고
+
 `python manage.py runserver`하면 admin 화면이 설정된다.
