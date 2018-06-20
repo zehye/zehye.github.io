@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - django-tutorial, 장고 최신버전으로 설정하기
+title: Django - django-tutorial 1, 장고 최신버전으로 설정하기
 category: Django
 tags: [django]
 comments: true

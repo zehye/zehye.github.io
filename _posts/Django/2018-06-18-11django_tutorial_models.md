@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - django-tutorial, (models.py)
+title: Django - django-tutorial 2, (models.py)
 category: Django
 tags: [django]
 comments: true
