@@ -70,5 +70,5 @@ disqus_short_name: 'zehye-github-io' # leave blank if you don't want disqus
 
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-paginate
