@@ -72,12 +72,12 @@ config/setting.py에서
     <!--value는 보내는 값, -->
     <label for="choice{{ forloop.counter }}">choice.choice_text: {{ choice.choice_text }} | choice.id : {{ choice.id }}</label><br>
     {% endfor %}
-
+{endraw}
     <!--전송버튼-->
     <button type="submit">Vote</button>
 
 </form>
-{endraw}
+
 ```
 
 ## results.html
@@ -91,6 +91,7 @@ config/setting.py에서
         <li>{{ choice.choice_text }} ( votes: {{ choice.votes }} )</li>
 
     {% endfor %}
-</ul>
 {endraw}
+</ul>
+
 ```
