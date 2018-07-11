@@ -324,7 +324,7 @@ def facebook_login(request):
   facebook_user_id = response_dict['id']
   facebook_name = response_dict['name']
   last_name = response_dict['last_name']
-  url_img_prifile = response_dict['picture']['data']['url']
+  url_img_profile = response_dict['picture']['data']['url']
 
   user, user_created = User.objects.get_or_create(username=facebook_user_id)
   # 유저가 새로 생성되었다면
