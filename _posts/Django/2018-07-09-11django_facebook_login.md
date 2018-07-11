@@ -94,10 +94,8 @@ https://www.facebook.com/v3.0/dialog/oauth?
 그리고 redirect_uri는 요청한 정보를 받아서 가지고 올 url을 의미한다. 위 주소에 dialog는 페이스북으로 넘어가는 링크를 의미하는데, 넘어간 페이스북에서 사용자가 로그인을 하면 어느 사이트에서 사용자의 정보를 쓰려고 한다는 정보가 넘어가고 그때 사용자가 확인을 누르고 우리사이트로 넘어와야 그 정보를 우리가 쓸 수 있다. 그때 돌아올 주소를 적는 것이 redirect_uri이다.
 
 ```html
-{% raw %}
 <div>
 	<form action="" method="POST">
-		{% csrf_token %}
 		<input type="text" name="username">
 		<input type="password" name="password">
 		<button type="submit" class="btn btn-info">로그인</button>
@@ -108,7 +106,6 @@ https://www.facebook.com/v3.0/dialog/oauth?
   &redirect_uri=http://localhost:8000/members/facebook-login/"
   class="btn btn-primary">Facebook 로그인</a>
 </div>
-{% endraw %}
 ```
 
 해당 형태를 나타낼 view만들기
@@ -244,7 +241,6 @@ html:
 ```html
 <div>
 	<form action="" method="POST">
-		{% csrf_token %}
 		<input type="text" name="username">
 		<input type="password" name="password">
 		<button type="submit" class="btn btn-info">로그인</button>
