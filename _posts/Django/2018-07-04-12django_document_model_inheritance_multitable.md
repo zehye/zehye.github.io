@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - django-document 5, introduction to models (Model Inheritance / multi table)
+title: Django - django-document 6, introduction to models (Model Inheritance / multi table)
 category: Django
 tags: [django]
 comments: true
