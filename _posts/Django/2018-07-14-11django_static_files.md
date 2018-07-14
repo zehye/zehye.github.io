@@ -28,7 +28,6 @@ comments: true
 ```python
 from django.shortcuts import render
 
-
 def index(request):
     # TEMPLATE 설정에 app/templates폴더 추가
     # templates폴더에 'index.html' 추가
