@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - static files
+title: Django - 배포 환경에서 static files 설정하기 
 category: Django
 tags: [django]
 comments: true

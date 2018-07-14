@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Django - deploy sh
+title: Django - 배포를 하기위한 deploy.sh(쉘 스크립트 이해하기)
 category: Django
 tags: [django]
 comments: true
