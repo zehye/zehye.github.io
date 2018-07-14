@@ -67,18 +67,67 @@ urlpatterns = [
 ### settings.py
 
 ```python
+# Static
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 
-# Static
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ROOT_DIR = os.path.dirname(BASE_DIR)
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(ROOT_DIR, '.static')
+MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
+MEDIA_URL = '/media/'
+```
+현재 우리가 만들어 놓은 static폴더에는 `css`, `images` 폴더가 각각 존재하고 장고 내부에서 admin안에 static, admin 폴더가 존재한다. 기본적으로 우리가 `static/~` 하고 파일을 불러올 경우 뒤에 나오는 파일의 이름은 겹치지 않도록 하게 되어있다. (둘다 참조하되, 무엇을 불러올지에 대한 혼란이 발생하기 때문)
+
+그렇기 때문에 admin/statis/admin 이렇게 처음과 끝의 폴더의 이름을 같게 해주도록 되어있다.
+
+우리가 url로 static이 넘어왔을때, 이를 참조하는 방법은 STATICFILES_DIRS에 무엇이 참조되고 있는지를 확인한 후 해당 파일을 불러온다. 그래서 이 경우에 이름이 겹치면 안되는 것이다.
+
+우리가 어떤 어플리케이션을 쓸 지 모르고, css를 사용한다고 하면 우리가 만든 static/css를 쓸지 admin/static/admin/css을 쓸지에 대한 혼란을 막기 위해 위처럼 설정을 해주는 것이다.
+
+우리가 파일을 runserver를 통해 불러오는 경우의 경로는
+
+`browser -> runserver -> static/~ -> STATICFILES_DIRS에서 각각 검사 -> response`로 너무 많은 경로를 거쳐지나간다. (낭비되는 작업)
+
+그런데 실제 배포과정에서는 요청을 받아주는 web server가 존재한다.
+
+`browser -> web server -> static/~ -> django로 전달 or return`
+
+여기서 web server는 외부에서 http 요청이 들어왔을 때, 정적파일을 돌려주는데에 가장 특화가 되어있다. (고정된 http, css image 등) 이러한 파일들은 web server에서 django까지 전달해줄 필요가 없이 바로 return해주면 된다.
+
+그런데 만약 우리가 동적인 파일을 전달해줘야 할 경우, 렌더링된 html을 전달해주면되고(데이터베이스까지 왔다갔다 할 수 있는) 이는 web server가 할수가 없다. 장고 어플리케이션 안쪽에서 db와의 작업을 통해서 동적인 html 전달
+
+이때, 렌더링이 필요없는 파일, 정적파일을 static파일이라고 하고 그대로를 돌려주면 되는데, 이를 돌려주는 과정은 장고를 안거쳐가는게 좋다. 성능상의 이득을 위해서 !
+
+그래서 현재 STATICFILES_DIRS안에는 static파일들을 검색하는 경로가 여러개일 것이다. (지금도 현재 2개) 그런 이유로 이러한 static파일들을 모아준다 -> `collectstatic`
+
+이 명령어를 실행하면 STATICFILES_DIRS에 있던 static폴더의 파일들을 하나로 모아주게 된다. 이런 모아진 파일을 웹 서버에서 static이라는 요청이 왔을때 이 폴더에서 가져가라고 명령하는 것이다. 즉, `static/~`하고 오는 요쳥은 장고까지 넘어가지 않고 웹 서버 단에서 곧바로 모아져있는 곳에서 가져가도록 한다. -> 그 곳이 `STATIC_ROOT`
+
+그래서 같은 이름이 존재하면 안된다는 것이다.
+
+### settings.py
+
+```python
+# Static
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+ROOT_DIR=os.path.dirname(BASE_DIR)
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
+
+STATIC_URL='/static/'
+STATIC_ROOT=os.path.join(ROOT_DIR, '.static')
 
 MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
 MEDIA_URL = '/media/'
+```
+
+여기서의 .static은 app폴더 바깥에 있는 `.static`폴더를 의미한다 (만들쟈)
+
+그러고 나서
+```python
+./manage.py collectstatic
 ```
