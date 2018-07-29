@@ -20,7 +20,7 @@ AWS에서는 2006년 출시되었을 때는 Iaas만 해당했지만 이제는 Ia
 <center>
 <figure>
 <img src="/assets/post-img/docker/cloud-stack.png" alt="" width="100%">
-<figcaption>ouath flow</figcaption>
+<figcaption>IaaS, PaaS, SaaS</figcaption>
 </figure>
 </center>
 
