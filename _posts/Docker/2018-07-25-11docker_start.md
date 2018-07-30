@@ -126,6 +126,10 @@ class User(AbstractUser):
   pass
 ```
 
+```
+./manage.py makemigration
+```
+
 #### members/admin.py
 
 ```python
