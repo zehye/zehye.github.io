@@ -27,3 +27,7 @@ python_version = "3.7"
 - `brew upgrade pyenv`를 해준다.
 - update가 있는 경우, `pyenv update`
 - 그러고 pyenv install --list를 통해 3.7.0을 확인하고 `pyenv install 3.7.0`
+
+  - 기존 가상황경을 삭제한다 `pipenv --rm`
+  - 새로운 환경을 설치한다 `pipenv install`
+  - 이후 python interpreter설정도 바꿔주면 된다. 
