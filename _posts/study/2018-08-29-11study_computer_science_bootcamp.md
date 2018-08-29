@@ -46,7 +46,7 @@ int num = 5;
 ```
 <center>
 <figure>
-<img src="/assets/post-img/study/019_1.png" alt="" width="100%">
+<img src="/assets/post-img/study/019_1.jpg" alt="" width="100%">
 <figcaption>C언어에서 말하는 변수의 의미</figcaption>
 </figure>
 </center>
@@ -62,7 +62,7 @@ num = 5
 ```
 <center>
 <figure>
-<img src="/assets/post-img/study/019_2.png" alt="" width="100%">
+<img src="/assets/post-img/study/020_1.jpg" alt="" width="100%">
 <figcaption>파이썬 언어에서 말하는 변수의 의미</figcaption>
 </figure>
 </center>
