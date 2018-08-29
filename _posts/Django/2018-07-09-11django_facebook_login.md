@@ -45,7 +45,7 @@ User는 Consumer에 인증을 받기 위해 페이스북 로그인을 버튼을 
 
 <center>
 <figure>
-<img src="/assets/post-img/django/oauth_flow.png" alt="">
+<img src="/assets/post-img/django/oauth_flow.png" alt="" width="100%">
 <figcaption>ouath flow</figcaption>
 </figure>
 </center>
