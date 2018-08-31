@@ -199,12 +199,24 @@ RUN                 apt -y install make build-essential libssl-dev zlib1g-dev li
                            xz-utils tk-dev libffi-dev
 
 # pyenv settings
+ENV                 PATH /root/.pyenv/bun:$PATH
+
+                    # pyenv명령어를 실행하기 위한 한줄
 RUN                 echo 'export PATH="~/.pyenv/bin:$PATH"' >> ~/.zshrc
+                    # pyenv를 통해 어떤 파이썬 버전을 가져오기 위한 한줄
 RUN                 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+                    # pyenv를 통해 virtualenv를 가져오기 위한 한줄
 RUN                 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
 
-# install python
+# 위의 두줄이 정상적으로 작동을 해야 그 쉘에서 정상적으로 pyenv가 가지고 있는 python, virtualenv가 작동이 된다. 그런데 이 내용이 zshrc에 들어가 있게 되면서, 밑에서 이 내용을 직접 실행해주지 않으면 작업이 이루어지지 않는다.
+
+# 그래서 지금 우리가 python3.6.5를 설치하는 데에는 성공했지만, 나중에 python을 실행할때 pyenv에서 가지고 오지를 못한다.
+
+# install python, apply pyenv settings
 ENV                 PATH /root/.pyenv/bin:$PATH
+# 그래서 아래 두 내용을 한번 더 추가해줘야 한다.
+RUN                 eval "$(pyenv init -)"
+RUN                 eval "$(pyenv virtualenv-init -)"
 RUN                 pyenv install 3.6.5
 
 # pipenv
