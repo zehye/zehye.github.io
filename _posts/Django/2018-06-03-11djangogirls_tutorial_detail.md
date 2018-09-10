@@ -8,7 +8,7 @@ comments: true
 
 > 패스트캠퍼스 웹 프로그래밍 수업을 듣고 중요한 내용을 정리했습니다.     
 개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.      
-> 이 포스팅에서는 djangogirls-tutorial을 보고 정리했습니다. 
+> 이 포스팅에서는 djangogirls-tutorial을 보고 정리했습니다.
 
 <hr>
 
@@ -19,7 +19,7 @@ projects/
   django/
     djangogitls-tutorial/
       git init
-      .git ignore(python, django, mac os, linux, git, pycharms+all)
+      .gitignore(python, django, mac os, linux, git, pycharms+all)
 
       pyenv virtualenv 3.6.5 <가상환경 이름>
       pyenv local <가상환경 이름>
