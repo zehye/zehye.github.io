@@ -5,6 +5,12 @@ category: etc
 tags: [python, computer science, django]
 comments: true
 ---
+
+> 공부하면서 참고헀던 다른 분들의 블로그입니다.
+불편한 분, 혹은 부분이 있다면 언제든지 연락주세요!
+
+<hr>
+
 # 동아리 면접 준비하면서 읽었던 문서, 블로그 정리
 
 ## 컴퓨터공학
