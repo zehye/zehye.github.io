@@ -102,7 +102,7 @@ comments: true
 
 ```
 >>> fruits = '사과, 바나나, 멜론'.split(',')
->>> colors = '빨강, 노랭, 초록'.splt(',')
+>>> colors = '빨강, 노랭, 초록'.split(',')
 
 >>> for item in fruits:
       print('fruits: {}, colors: {}'.format(item, colos[fruits.index(item)]))
