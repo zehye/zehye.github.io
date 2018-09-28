@@ -2,14 +2,15 @@
 layout: post
 title: 지킬 블로그 구글 검색 가능하게 하는 방법
 category: etc
-tags: [jekyll, 지킬, 검색, 구글검색, sitemap]
+tags: [jekyll, 지킬, 검색, 구글검색]
 comments: true
 ---
 
-# jekyll 블로그 글이 구글에서 검색되도록 만들기
+## jekyll 블로그 구글 검색 가능하도록 하는 방법
+> - [참고 글](https://wayhome25.github.io/etc/2017/02/20/google-search-sitemap-jekyll/)
+> 초보몽키님의 블로그를 참고하여 작성하고 실행하였습니다.
 
-jekyll로 만든 블로그 글은 구글에서 검색이 되지 않는다고 한다.   
-구글 검색이 가능하도록 하려면 몇가지 절차가 필요하다.
+<hr>
 
 ## 구글 웹마스터 도구(Search Console)에 속성 추가 및 인증
 1. [구글 웹 마스터 도구](https://www.google.com/webmasters/tools/home?hl=ko) 접속
@@ -25,7 +26,6 @@ jekyll로 만든 블로그 글은 구글에서 검색이 되지 않는다고 한
 url: https://zehye.github.io
 ```
 3. `주의사항 2` sitemap.xml은 [파일링크](https://github.com/zehye/zehye.github.io/blob/master/sitemap.xml) 내용을 복사&붙여넣기 하여 작성한다. 1~2 행의 `-------` 부분도 포함시켜야 한다.    
-(나는 포함시키지 않고 작성해서 여러번 테스트 에러가 발생했다.)    
 
 ## 구글 웹마스터 도구(Search Console)에 sitemap.xml 제출
 > 구글에게 sitemap.xml을 제출해야 구글이 내 블로그를 크롤링 하는 방식을 판단하고 검색엔진에 노출할 수 있다.
@@ -36,6 +36,3 @@ url: https://zehye.github.io
 4. 우측 상단의 `SITEMAP 추가/테스트` 버튼 선택
 5. 자신의 github에 커밋한 sitemap.xml 주소를 입력. (ex.https://zehye.github.io/ `sitemap.xml`)
 6. 테스트 후 문제가 발생하지 않으면 제출
-
-
-- [참고 글](http://joelglovier.com/writing/sitemaps-for-jekyll-sites)
