@@ -64,4 +64,4 @@ app.get('/dynamic', function(req, res){
 ## 템플릿 엔진
 - 정적인 것의 장점과 동적인 것의 장점을 합친 방법
 - 라우터 설정 필요, html 작성 편리, 변수 사용 가능, 수정 후 재기동 불필요
-- [템플릿 엔진 jade 알아보기](https://wayhome25.github.io/nodejs/2017/02/18/nodejs-10-express-template-engine-jade/)
+- [템플릿 엔진 jade 알아보기](https://zehye.github.io/nodejs/2017/02/18/nodejs-10-express-template-engine-jade/)

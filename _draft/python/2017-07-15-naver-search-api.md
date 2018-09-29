@@ -102,7 +102,7 @@ encText = urllib.parse.quote("파이썬") # 한글을 URL에 추가하기 위해
 url = "https://openapi.naver.com/v1/search/book?query=" + encText +"&display=3&sort=count" # 요청 URL + 요청 변수
 ```
 
-- [urllib.parse.quote](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote)를 통해서 비 ASCII 문자를 UTF-8 형식으로 URL 인코딩 해준다. (한글이 들어간 url은 UNICODE이고 url은 ASCII여야 하기 때문에 한글이 들어간 url은 UTF-8로 encoding 되어야 한다. [참고-강의노트 06. ASCII, UNICODE, utf8](https://wayhome25.github.io/cs/2017/04/05/cs-06/) )
+- [urllib.parse.quote](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.quote)를 통해서 비 ASCII 문자를 UTF-8 형식으로 URL 인코딩 해준다. (한글이 들어간 url은 UNICODE이고 url은 ASCII여야 하기 때문에 한글이 들어간 url은 UTF-8로 encoding 되어야 한다. [참고-강의노트 06. ASCII, UNICODE, utf8](https://zehye.github.io/cs/2017/04/05/cs-06/) )
 - 요청 URL과 요청 변수는 [naver api 사이트](https://developers.naver.com/docs/search/book/)에서 확인할 수 있다.
 
 ### Request 객체 생성 및 header 추가

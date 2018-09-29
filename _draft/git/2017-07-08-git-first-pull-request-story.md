@@ -63,7 +63,7 @@ comments: true
 - 자신의 컴퓨터에서 작업을 하기 위해서 Fork한 저장소를 로컬에 clone 한다.
 
 ```shell
-$ git clone https://github.com/wayhome25/blog.github.io.git
+$ git clone https://github.com/zehye/blog.github.io.git
 ```
 
 - 로컬 저장소에 원격 저장소를 추가한다. 위 작업과 동일하게 github 저장소에서 **clone or download** 메뉴를 통해서 확인한 url을 사용한다.

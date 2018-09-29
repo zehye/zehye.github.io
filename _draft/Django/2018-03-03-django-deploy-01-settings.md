@@ -88,7 +88,7 @@ project_folder/
 ```
 
 ## settings.py에서 json 데이터 참조하기
-- 참고 : [settings.py 의 SECRET_KEY 변경 및 분리하기](https://wayhome25.github.io/django/2017/07/11/django-settings-secret-key/)
+- 참고 : [settings.py 의 SECRET_KEY 변경 및 분리하기](https://zehye.github.io/django/2017/07/11/django-settings-secret-key/)
 
 ### base.py 예시
 ```python

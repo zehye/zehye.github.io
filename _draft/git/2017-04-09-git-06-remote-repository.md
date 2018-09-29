@@ -44,8 +44,8 @@ git checkout e83c5163316f89bfbde7d9ab23ca2e25604af290
 ### remote 저장소 설정
 ```shell
 # 원격 저장소의 이름(별명)을 각각 origin , memo 지정한다.
-❯ git remote add origin https://github.com/wayhome25/gitfth.git
-❯ git remote add memo https://github.com/wayhome25/memo.git
+❯ git remote add origin https://github.com/zehye/gitfth.git
+❯ git remote add memo https://github.com/zehye/memo.git
 ❯ git remote
 memo
 origin
@@ -60,7 +60,7 @@ origin
 # 현재 원격 저장소 상태 확인
 ❯ git remote -v
 # 변경하고자 하는 원격저장소 설정
-❯ git remote set-url origin https://github.com/wayhome25/fastcampus_school
+❯ git remote set-url origin https://github.com/zehye/fastcampus_school
 ```
 
 
@@ -68,10 +68,10 @@ origin
 - 별도의 remote 설정없이 clone을 통해서 원격 저장소와 연결된다.
 
 ```shell
-❯ git clone https://github.com/wayhome25/gitfth.git .
+❯ git clone https://github.com/zehye/gitfth.git .
 ❯ git remote -v
-origin	https://github.com/wayhome25/gitfth.git (fetch)
-origin	https://github.com/wayhome25/gitfth.git (push)
+origin	https://github.com/zehye/gitfth.git (fetch)
+origin	https://github.com/zehye/gitfth.git (push)
 ```
 
 

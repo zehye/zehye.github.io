@@ -40,7 +40,7 @@ comments: true
 # 코드
 - 여러 앱에서 범용적으로 사용할 수 있도록, utils 폴더의 slack.py 파일에 아래와 같은 코드를 작성했다.
 - token 값은 공개저장소에 노출되지 않도록 주의해야한다.
-- 비밀 값을 설정 파일에서 분리하는 방법은 다른 포스팅 ([Django - settings.py 의 SECRET_KEY 변경 및 분리하기](https://wayhome25.github.io/django/2017/07/11/django-settings-secret-key/))에 정리해보았다.
+- 비밀 값을 설정 파일에서 분리하는 방법은 다른 포스팅 ([Django - settings.py 의 SECRET_KEY 변경 및 분리하기](https://zehye.github.io/django/2017/07/11/django-settings-secret-key/))에 정리해보았다.
 
 
 

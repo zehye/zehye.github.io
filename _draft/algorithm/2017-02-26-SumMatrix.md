@@ -24,8 +24,8 @@ comments: true
 ## 느낀 점
 ### 자바스크립트
 - 2차원 배열을 만드는 것이 어려웠다. (`answer[i] = []` 으로 빈 배열 속 배열을 만든다)
-- .map() 메소드를 잘 활용하자. [참고](https://wayhome25.github.io/javascript/2017/02/17/js-method/)  
-- 화살표 함수에 익숙해지자.[참고](https://wayhome25.github.io/javascript/2017/02/23/js-Arrow-functions/)
+- .map() 메소드를 잘 활용하자. [참고](https://zehye.github.io/javascript/2017/02/17/js-method/)  
+- 화살표 함수에 익숙해지자.[참고](https://zehye.github.io/javascript/2017/02/23/js-Arrow-functions/)
 
 ### 파이썬
 - `list comprehension`을 활용하면 원하는 리스트 만들기가 정말 편하다.

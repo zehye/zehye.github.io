@@ -34,7 +34,7 @@ comments: true
 
 
 ## 들어가기
-요즘 연습중인 [인스타그램st 프로젝트](https://github.com/wayhome25/Instagram) 를 진행하며 좋아요 버튼을 눌렀을 때 새로고침 없이 좋아요 숫자가 증감하도록 구현하고 싶었다.
+요즘 연습중인 [인스타그램st 프로젝트](https://github.com/zehye/Instagram) 를 진행하며 좋아요 버튼을 눌렀을 때 새로고침 없이 좋아요 숫자가 증감하도록 구현하고 싶었다.
 
 ![ezgif.com-video-to-gif](http://i.imgur.com/Njc8k8D.gif)
 <center><figcaption>내가 원하는 것 (좋아요 숫자가 바로 변경된다)</figcaption></center>
@@ -92,7 +92,7 @@ jQuery는 Ajax 요청을 생성하고 서버로부터 전달 받은 데이터 �
 </center>
 
 ## 좋아요 구현코드1 (새로고침 O)
-- 기존의 방식대로 구현한 전체 코드는 [github](https://github.com/wayhome25/Instagram/commit/356b2ac64acdcce530a68bfe6f0902e99d5fef81)에서 확인 가능하다.
+- 기존의 방식대로 구현한 전체 코드는 [github](https://github.com/zehye/Instagram/commit/356b2ac64acdcce530a68bfe6f0902e99d5fef81)에서 확인 가능하다.
 
 ### Model
 
@@ -168,7 +168,7 @@ Ajax 를 통하여 전체 페이지를 새로 고치지 않고도 서버로 부�
 <br>
 
 ## 좋아요 구현코드2 (새로고침 X)
-- Ajax/jQuery를 할용하여 작성한 전체 코드는 [github](https://github.com/wayhome25/Instagram/commit/72b5649b8c4b38dda210d9a1bab00df55c1016a6)에서 확인 가능하다.
+- Ajax/jQuery를 할용하여 작성한 전체 코드는 [github](https://github.com/zehye/Instagram/commit/72b5649b8c4b38dda210d9a1bab00df55c1016a6)에서 확인 가능하다.
 
 ### Model
 - 상기 코드와 동일
@@ -275,7 +275,7 @@ def post_like(request):
 - 생각보다 많은 곳에서 Ajax가 활용되고 있다는 것을 알았다. (좋아요, 무한스크롤, 라이브검색, 계정 정보 표시 등)
 - 이걸 간단하게 만들어주는 jQuery가 새삼 더 고맙게 느껴진다.
 - 앞으로 Ajax를 잘 활용할 수 있도록 연습해야겠다.
-- (추가) 이 글을 작성한 이후에 Ajax를 활용하여 무한스크롤 기능, 댓글 추가, 팔로우 기능을 구현해보았다. 알고나니 계속 쓰게 된다. (이왕이면 새로고침 없는게 좋으니..!)[코드상세](https://github.com/wayhome25/Instagram/commit/9731cdc0cc9148a6270f412c37e920ba5f02d137)
+- (추가) 이 글을 작성한 이후에 Ajax를 활용하여 무한스크롤 기능, 댓글 추가, 팔로우 기능을 구현해보았다. 알고나니 계속 쓰게 된다. (이왕이면 새로고침 없는게 좋으니..!)[코드상세](https://github.com/zehye/Instagram/commit/9731cdc0cc9148a6270f412c37e920ba5f02d137)
 
 ## reference
 - [생활코딩 Ajax](https://opentutorials.org/course/1375/6843)

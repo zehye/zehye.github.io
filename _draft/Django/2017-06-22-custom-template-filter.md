@@ -28,7 +28,7 @@ comments: true
 <!-- tocstop -->
 
 ## 들어가기
-요즘 연습중인 [인스타그램st 프로젝트](https://github.com/wayhome25/Instagram) 를 진행하며     
+요즘 연습중인 [인스타그램st 프로젝트](https://github.com/zehye/Instagram) 를 진행하며     
 실제 인스타그램 처럼 본문의 해시태그 문자열을 링크 처리하고,       
 해당 링크를 클릭하면 태그 내용이 포함된 모든 post list를 검색 결과로 보여주는 기능을 구현하고 싶었다.      
 
@@ -46,7 +46,7 @@ comments: true
 ## Model
 - Post와 Tag 모델은 ManyToMany 관계를 갖고 있다.
 - content에 입력된 문자열 중에서 해시태그 형태 (#태그명)를 가진 문자열을 따로 추출하여 Tag 모델에 저장하도록 구현하였다.
-- 자세한 코드는 [github](https://github.com/wayhome25/Instagram/blob/master/project/post/models.py) 에서 확인 가능하다.
+- 자세한 코드는 [github](https://github.com/zehye/Instagram/blob/master/project/post/models.py) 에서 확인 가능하다.
 
 ```python
 class Post(models.Model):
@@ -183,7 +183,7 @@ def add_link(value):
 ## 결과물
 - 사용자 정의 템플릿 필터를 사용하면 템플릿 랜더링 시에 원하는 대로 DB를 조작할 수 있다. (줄바꿈 추가하기, 필터링, html escape 처리 등)
 - 좋은 점은 DB의 원본 데이터에는 영향을 미치지 않는다는 점이다.
-- css 작업 전이라 아직 수수하지만 결과물은 아래와 같다. 해시태그 링크를 클릭하면 해당 해시태그를 가진 모든 post list가 화면에 출력 되도록 구현하였다. (이 부분에 대한 코드는 [github](https://github.com/wayhome25/Instagram) 에서 확인 가능하다.)
+- css 작업 전이라 아직 수수하지만 결과물은 아래와 같다. 해시태그 링크를 클릭하면 해당 해시태그를 가진 모든 post list가 화면에 출력 되도록 구현하였다. (이 부분에 대한 코드는 [github](https://github.com/zehye/Instagram) 에서 확인 가능하다.)
 
 <br>
 ![스크린샷 2017-06-23 오전 12.47.21](http://i.imgur.com/3ojyWZi.jpg)

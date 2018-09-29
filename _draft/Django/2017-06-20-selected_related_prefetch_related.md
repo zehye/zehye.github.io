@@ -15,7 +15,7 @@ comments: true
 절대적으로 SQL 갯수를 줄이고, 각 SQL의 성능 및 처리속도 최적화가 필요하다.       
 
 리스트 조회 페이지를 만들때 `Post.objects.all()` 과 같은 queryset을 자주 활용했었다.
-이번에 [인스타그램st 프로젝트](https://github.com/wayhome25/Instagram)를 진행하며 데이터 조회시 몇개의 SQL 쿼리가 발생할까? 중복은 없을까? 궁금해졌다.       
+이번에 [인스타그램st 프로젝트](https://github.com/zehye/Instagram)를 진행하며 데이터 조회시 몇개의 SQL 쿼리가 발생할까? 중복은 없을까? 궁금해졌다.       
 [**django-debug-toolbar**](http://django-debug-toolbar.readthedocs.io/en/stable/) 를 활용해서 페이지 로딩시 발생하는 쿼리를 확인해보았는데, 결과가 충격적이었다.       
 **고작 글 9개를 조회하고 화면에 출력하는데, `28개의 쿼리문이 발생하고 그 중에 26개는 중복이었다.`** (부들부들..)       
 

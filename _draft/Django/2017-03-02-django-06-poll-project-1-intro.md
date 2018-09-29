@@ -10,7 +10,7 @@ comments: true
 
 
 ## 사전준비 - 프로젝트 및 앱 생성
-> [사전준비 상세내용](https://wayhome25.github.io/django/2017/02/28/django-03-lotto-project-1/)
+> [사전준비 상세내용](https://zehye.github.io/django/2017/02/28/django-03-lotto-project-1/)
 
 1. 가상환경 설치 (virtualenv)
 2. 가상환경 실행
