@@ -48,7 +48,7 @@ title: About
 
 ## 만들어 본 것
 
-- [문화행사 알림 사이트(진행중)](https:)
+- [문화행사 알림 사이트(진행중)](https://github.com/zehye/mini-project)
 
 
 - [인스타그램st 웹어플리케이션 구현](https://github.com/zehye/pro-insta)
