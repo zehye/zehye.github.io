@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 패스트캠퍼스 메모정리(serializer, deploy)
+title: 패스트캠퍼스 메모정리(serializer, 배포)
 category: etc
 tags: [python, computer science, django]
 comments: true
