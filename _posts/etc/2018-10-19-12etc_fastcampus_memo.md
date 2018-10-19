@@ -21,7 +21,7 @@ ModelSerializer 클래스가 마법을 부리는 도구는 아닙니다. 그저 
 create() 메서드와 update() 메서드가 이미 구현되어 있다.
 
 ```
-```In [8]: snippet = Snippet(code='foo = "bar"\n')
+In [8]: snippet = Snippet(code='foo = "bar"\n')
 
 In [9]: snippet.save()
 
@@ -130,7 +130,7 @@ In [17]: serializer.save()
 Out[17]: <Snippet: Snippet object (3)>
 
 In [18]: Snippet.objects.create(**serializer.validated_data)
-Out[18]: <Snippet: Snippet object (4)>```
+Out[18]: <Snippet: Snippet object (4)>
 ```
 
 ## get_object_or_404
