@@ -19,7 +19,7 @@ config/setting.py에서
 ## index.html
 
 ```html
-{raw}
+{% raw %}
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
@@ -37,7 +37,7 @@ config/setting.py에서
 {% else %}
     <p>No polls are available</p>
 {% endif %}
-{endraw}
+{% endraw %}
 ```
 
 ## detail.html
