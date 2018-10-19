@@ -12,11 +12,13 @@ comments: true
 
 ## 프로그램
 
+```
 메모리를 올린다는 것은 데이터를 올린다는 것
 -> 제대로 된 데이터를 올리기 위해 자료형을 알아야 한다.
 
 데이터의 종류에 따라 type이 달라지고 이 데이터에 따라 메모리가 달라지는데,
 메모리를 최대한 알뜰하게 사용하기 위해, 데이터의 타입에 따라 차지하는 메모리의 양이 다르다.
+```
 
 ## 지킬 사진 올리는 코드
 
@@ -50,32 +52,34 @@ Cat /var/log/uwsgi/error.log
 
 ## 장고를 통한 페이스북 로그인
 
-1 페이스북 로그인 버튼 클릭
-2 페이스북 페이지로 이동, 사용자가 로그인
-3 application으로 redirect되며, 'code'값을 GET parameter로 받음
-4 code를 access_token과 교환
+1. 페이스북 로그인 버튼 클릭
+2. 페이스북 페이지로 이동, 사용자가 로그인
+3. application으로 redirect되며, 'code'값을 GET parameter로 받음
+4. code를 access_token과 교환
 
-4-1 클라이언트가 access_token을 사용해서 사용자 정보를 받아온 추가 정보를 전부 서버로 전송
-4-2 클라이언트가 access_token만 서버로 전송
+		4-1 클라이언트가 access_token을 사용해서 사용자 정보를 받아온 추가 정보를 전부 서버로 전송
+		4-2 클라이언트가 access_token만 서버로 전송
 
 --------클라이언트---------
 
 5-1 받아온 정보들로 application에 회원가입
 5-2 access_token으로 유저의 페이스북 정보를 받아옴
+
 이후 페이스북에서 받은 유저정보로 application에 회원가입
 
 -> 서버에서는 Token을 돌려줌(DRF로그인 유지 토큰)
 
 ## 로그인 유지시키기
 
-1 서버에서 받아온 Token이 쿠키의 'token'키값에 저장되어 있음
-2 클라이언트가 처음 로드 될때 마다, 해당 키를 사용해 HTTP Header의 인증을 만든 상태로 유저 정보를 받아오는 API 실행
-3-1 API호출에 성공하면 (token이 유효하면) 전송받은 User정보를 사용해 화면을 랜더링(@@로 로그인중)
-3-2 API호출에 실패하면 (token이 유효하지 않으면) 로그인 버튼을 보여줌
+1. 서버에서 받아온 Token이 쿠키의 'token'키값에 저장되어 있음
+2. 클라이언트가 처음 로드 될때 마다, 해당 키를 사용해 HTTP Header의 인증을 만든 상태로 유저 정보를 받아오는 API 실행
+3. API호출에 성공하면 (token이 유효하면) 전송받은 User정보를 사용해 화면을 랜더링(@@로 로그인중)
+4. API호출에 실패하면 (token이 유효하지 않으면) 로그인 버튼을 보여줌
 
 
 ## django migration
 
+```
 Python manage.py showmigration
 -> migration을 했던 저장 테이블을 따로 두고 다 저장하고 있음을 볼 수 있다.
 
@@ -86,9 +90,11 @@ Db sqlite에서 django_migrations에 들어가서 보면 나와있다.(해당 �
 Python manage.py migrate proxy 0001 을 하면 0001까지만 migrate만 되고 그 이후는 unmigration된다.
 
 ** document - making query
+```
 
 ## django form
 
+```
 Class SighupForm(forms.Form):
 	field1
 	field2
@@ -120,6 +126,7 @@ form의 메서드 -> form 자체에 대한 정제
 		-> 검증에 성공하면 cleaned_data dict가 될 객체를 반환
 
 cleaded_data는 is_valid를 통과한 애들만 보여준다. (유효한 데이터)
+```
 
 ## clean 함수
 
