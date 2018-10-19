@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 두번째 프로젝트, WhatYouWant Project (js형식 파일의 크롤링)
+title: 두번째 프로젝트, WhatYouWant Project (open API활용하기)
 category: PROJECT
 tags: [project, whatyouwant]
 comments: true
@@ -50,3 +50,5 @@ postman에서 `https://swindow.naver.com/art/external/booking/more`에 GET요청
 나중에 크롤링할 때 원하는 부분을 파싱해서 가져오면 될듯
 
 혹시나 하는 마음에 해봤던 크롤링인데 의외의 복병을 처음 마주하게 돼서 당황했지만 클리어~
+
+> 참고 [잔재미코딩](http://www.fun-coding.org/crawl_basic3.html)
