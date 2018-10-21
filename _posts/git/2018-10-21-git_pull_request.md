@@ -34,7 +34,7 @@ git push origin dev1
 
 <center>
 <figure>
-<img src="/assets/git/git_pull_request.png" alt="" width="100%">
+<img src="/assets/post-img/git/git_pull_request.png" alt="" width="100%">
 <figcaption>git pull request를 하는 방법</figcaption>
 </figure>
 </center>
@@ -43,7 +43,7 @@ git push origin dev1
 
 <center>
 <figure>
-<img src="/assets/git/git_pull_request2.png" alt="" width="100%">
+<img src="/assets/post-img/git/git_pull_request2.png" alt="" width="100%">
 <figcaption>git pull request를 하는 방법</figcaption>
 </figure>
 </center>
@@ -53,7 +53,7 @@ git push origin dev1
 
 <center>
 <figure>
-<img src="/assets/git/git_pull_request3.png" alt="" width="100%">
+<img src="/assets/post-img/git/git_pull_request3.png" alt="" width="100%">
 <figcaption>git pull request를 하는 방법</figcaption>
 </figure>
 </center>
