@@ -38,7 +38,7 @@ settings -> settings/base.py -> base.json으로부터 SECRET_KEY할당
 
 ```json
 {
-  "SECRET_KEY": "settings.py에 있는 SECRET_KEY"
+  "SECRET_KEY": "<settings.py에 있는 SECRET_KEY>"
 }
 ```
 
@@ -78,11 +78,13 @@ STATIC_URL = '/static/'
 커밋을 남기기 전에, `git status`를 통해 ` .secrets`폴더가 포함되지 않았는지를 확인한다. 만약 포함이 되어있다면 `gitignore`를 통해 빼주도록 한다.
 
 <hr>
-### github으로 가서
+
+## github setting
 
 ```
 settings/ SSH and GPG keys
 ```
+
 공개키를 서버에 등록하는 곳으로, 공개키를 이곳에 등록을 해놓으면 git에 어떤 내용을 push하고 싶다고 보낼때 어떤 사용자라는 것을 공개키를 알고잇으니 공개키를 통해 우리에게 암호화된 데이터를 보낸다.
 
 지문이라는 기법을 통해 공개키로 결국 암호화된 데이터를 보내면, 이를 해석할 수 있는 것은 우리밖에 없다. 키가 만약 개인키가 우리에게 있고 공개키를 저장했다고 했을때, 공개키로 암호화해서 보내면 이를 해석할 수 있는건 나뿐이다.
@@ -102,7 +104,17 @@ Enter file in shich to save the key (/Users/jihye/.ssh/id_rsa):
 # 그냥 앞으로 나오는 질문에는 엔터만 세번 눌러주면 완성
 ```
 
-이제 `id_rsa.pub`의 키를 github에 등록해준다.
+이후
+```
+-rw-------   1 jihye  staff  1675  7 12 11:18 id_rsa
+-rw-r--r--   1 jihye  staff   400  7 12 11:18 id_rsa.pub
+```
+두 파일이 생겼음을 볼 수 있다.
+
+```
+vi id_ras.pub
+```
+해서 나온 공개키를 복사해 조금전의 github에 등록을 해준다.
 
 대부분의 title은 자신이 사용하는 노트북의 이름을 써준다.
 
@@ -113,13 +125,13 @@ git remote add origin git@github.com:<~>
 git push -u origin master
 ```
 
-### 커스텀 유저 만들기
+## Custom User Model 만들기
 
 ```shell
 ./manage.py startapp members
 ```
 
-#### members/models.py
+### members/models.py
 
 ```python
 class User(AbstractUser):
@@ -130,7 +142,7 @@ class User(AbstractUser):
 ./manage.py makemigration
 ```
 
-#### members/admin.py
+### members/admin.py
 
 ```python
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
@@ -142,7 +154,7 @@ class UserAdmin(BaseUserAdmin):
 admin.site.register(User, UserAdmin)
 ```
 
-#### config/settings/base.py
+### config/settings/base.py
 
 ```shell
 AUTH_USER_MODEL = 'members.User'
