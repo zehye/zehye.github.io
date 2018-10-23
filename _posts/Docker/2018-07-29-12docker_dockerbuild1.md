@@ -13,13 +13,13 @@ comments: true
 
 ## EB CLI
 
-> ([EB CLI](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-configuration.html))
+> [EB CLI](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-configuration.html)
 
 EB CLI는 Elasticbeanstalk을 사용할 수 있게 해주는 커맨드라인 인터페이스를 뜻한다.
 
 ### User만들기 (IAM)
 
-> ([AWS](https://aws.amazon.com/ko/))
+> [AWS](https://aws.amazon.com/ko/)
 > IAM - 사용자 - 사용자 추가
 
 - 사용자 이름 설정
@@ -72,7 +72,7 @@ COPY          .   /srv/project
 docker build -t eb-docker-new:local -f Dockerfile.local .
 
 export DJANGO_SETTINGS_MODULE=config.settings.local
-docker run --rm -t -p 9999:8000 eb-docker-new:local /bin/bash
+docker run --rm -it -p 9999:8000 eb-docker-new:local /bin/bash
 ```
 
 ```
