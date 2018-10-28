@@ -13,7 +13,6 @@ comments: true
 
 ## 프로젝트 초기 설정
 ```
-project/deploy/eb-docker-deploy
 git init
 cp ../ec2-deploy/.gitignore .
 
@@ -61,7 +60,7 @@ from .base import *
 DEBUG = True
 ALLOWED_HOSTS = []
 
-WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.local.application'
 
 DATABASES = {
     'default': {
