@@ -55,6 +55,10 @@ MAINTAINER          zehye.01@gmail.com
 ENV                 BUILD_MODE                  dev
 ENV                 DJANGO_SETTINGS_MODULE      config.settings.${BUILD_MODE}
 
+# requirements.txt를 새로 설치하는 이유는 build.py에서 build_dev를 새로 만들었는데
+# requirements.txt를 만들어주는 명령어가 다르다 (requirements.txt -- dev)
+# local과 production에서는 최소한의 패키지만을 설치하지만 dev에서는 최대로 설치를 하게 된다.
+# 따라서 build_dev에서 만든 패키지는 base이미지에 추가가 되어야 하기 때문에 새로 COPY해줘야 한다.
 COPY                ./requirements.txt          /srv/
 RUN                 pip install -r /srv/requirements.txt
 
@@ -75,6 +79,7 @@ RUN             cp -f   /srv/project/.config/${BUILD_MODE}/supervisor.conf \
 # supervisord 실행
 CMD             supervisord -n
 ```
+nginx 설정파일들을 복사할 경우 nginx와 nginx_app의 오타가 자주 발생할 수 있는데, 잘못 작성하게 된다면 `server block`에러가 뜬다. 이는 블럭에 있으면 안되는 무언가가 있는 의미로, 설정 파일 내 잘못된 것이 들어가있다고 생각하면 된다. 만약 이 외의 에러를 발견하게 된다면 docker exec로 들어가 하나씩 확인해보는게 좋다.
 
 ### Dockerfile.production
 
@@ -239,6 +244,23 @@ command=uwsgi --ini /srv/project/.config/dev/uwsgi.ini
 command=nginx
 ```
 
+supervisor가 uwsgi를 실행하는 방법에 변화가 있다. 원래는 pipenv를 사용했지만, 파이썬 이미지 안에서 pip, 파이썬 각각 한개씩 사용하기 때문에 uwsgi라고 실행을 해준다. 그리고 맨 뒤에 socket.ini가 붙은 이유도 우리가 http와 socket을 분리하는 것은 연습용이니 바로 uwsgi.ini를 붙여줬다.
+
+
+### settings/wsgi/dev.py
+```
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.dev")
+
+application = get_wsgi_application()
+```
+
+### settings/wsgi/production.py
+```
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.production")
+
+application = get_wsgi_application()
+```
+
 ### .config/dev/uwsgi.ini
 
 ```ini
@@ -257,4 +279,71 @@ vacuum = true
 
 ;Log
 logto = /var/log/uwsgi.log
+```
+
+위와 같이 settings의 wsgi를 파이썬 리팩토링을 한 후 dev와 production을 각각 바꿔주지 않으면 `setdefault`로 설정해주는 내용들이 uwsgi.ini에서 쓰는 `module = config.wsgi.dev:application` 즉, wsgi 어플리케이션과 파이썬 어플리케이션과 연결이 될 때 어떤 내용을 쓸건지가 중요한데, 지금 uwsgi.ini에서는 dev와 연결한다고 되어있으니 settings/wsgi/dev와 연결이 되어진다.
+
+
+<hr>
+그리고 추가적으로 .config에 production을 추가한다. production은 dev에 들어간 파일들과 내용은 같지만 supervisor.conf와 uwsgi.ini에서 dev를 production으로 바꿔주기만 하면 된다.  
+
+### settings/dev.py
+
+```
+from .base import *
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
+
+WSGI_APPLICATION = 'config.wsgi.dev.application'
+
+
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+STATIC_URL = '/static/'
+```
+
+### settings/production.py
+
+그러고 production의 도커 이미지를 만들고 docker run을 하기 전에 DEBUG = False와 ALLOWED_HOSTS=['localhost',]설정을 해준다.
+
+DEBUG가 False일 경우 일단 ALLOWED_HOSTS가 없다고 처리가 되기 때문에 localhost를 설정해준다.
+```
+from .base import *
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
+
+WSGI_APPLICATION = 'config.wsgi.production.application'
+
+
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+STATIC_URL = '/static/'
 ```
