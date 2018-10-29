@@ -196,6 +196,7 @@ git add requirements.txt
 그 이후에
 ```
 eb deploy --profile RCNP-EB-User --staged
+eb open
 ```
 
 <hr>
