@@ -1,7 +1,8 @@
 ---
 layout: post
-title: python 함수 - 선택정렬, 순차검색
-tags: [algorithm]
+title: pycharm 글자가 안써지는 경우 (IdeaVim 해제)
+category: etc
+tags: [python, django, pycharm]
 comments: true
 ---
 
