@@ -50,6 +50,7 @@ nav:
     - { Docker: '/blog/categories/#Docker' }
     - { git: '/blog/categories/#git' }
     - { PROJECT: '/blog/categories/#PROJECT' }
+  #  - { error: '/blog/categories/#error' }
     - { etc: '/blog/categories/#etc' }
     # - { Tags: '/blog/tags/' }
   About:

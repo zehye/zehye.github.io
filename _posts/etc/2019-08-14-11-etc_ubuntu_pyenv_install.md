@@ -7,7 +7,8 @@ comments: true
 ---
 
 > 개인 프로젝트를 정리한 것입니다.     
-잘못된 내용이 있다면 편하게 댓글 남겨주세요!    
+잘못된 내용이 있다면 편하게 댓글 남겨주세요!  
+
 
 <hr>
 
@@ -28,7 +29,7 @@ Xcode Command Line Tools가 기본적으로 설치해주던 라이브러리 패�
 
 따라서 이 라이브러리 패키지를 깔아주면 되고 해당 환경에 맞춰서 install 해주면 된다.
 
-[pyenv Common build problem]('https://github.com/pyenv/pyenv/wiki/common-build-problems')
+[pyenv Common build problem](https://github.com/pyenv/pyenv/wiki/common-build-problems)
 
 해당 링크를 통해 들어가 ubuntu 환경에 맞는
 
