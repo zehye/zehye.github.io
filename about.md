@@ -7,7 +7,7 @@ title: About
   <b>Junior Backend Developer</b><br>
   공부하며 겪었던 어려움을 조금이라도 쉽게 풀이하며<br>
   누군가에게 조금이라도 도움이 되고자 자유롭게 정리한 블로그입니다.<br>
-  (1차적 목표는 모르는 내가 제대로 이해하기 위해 정리하는 블로그);<br>
+  (1차적 목표는 내가 제대로 이해하기 위해 정리하는 블로그);<br>
 </p>
 
 
@@ -31,7 +31,7 @@ title: About
   - [Django Rest Framework](http://www.django-rest-framework.org/)
 
 
-- python
+- Python
 	- [파이써 입문](https://programmers.co.kr/learn/courses/2)
   - [김왼손의 미운코딩새끼:4시간만에 끝내는 파이썬 기초](https://programmers.co.kr/learn/courses/29)
 
@@ -45,6 +45,8 @@ title: About
   - [AWS Elasticbeanstalk](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html)
   - [AWS Docker](https://aws.amazon.com/ko/docker/?sc_channel=PS&sc_campaign=acquisition_KR&sc_publisher=google&sc_medium=english_docker_b&sc_content=docker_general_e&sc_detail=aws%20docker&sc_category=docker&sc_segment=161189699917&sc_matchtype=e&sc_country=KR&s_kwcid=AL!4422!3!161189699917!e!!g!!aws%20docker&ef_id=WtAUTAAAAYGJ47gw:20180905053429:s)
   - [초보를 위한 도커 안내서 - 도커란 무엇인가?](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
+
+- Java
 
 ## 만들어 본 것
 
