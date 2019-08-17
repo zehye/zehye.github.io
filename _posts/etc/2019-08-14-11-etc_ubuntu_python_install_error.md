@@ -20,7 +20,6 @@ ec2 연결과정에서 ubuntu에 접속 후 pyenv 를 통해 python을 설치하
 zipimport.ZipImportError: cant decompress data; zlib not available
 Makefile:1099: recipe for target 'install' failed
 make: *** [install] Error 1
-
 ```
 
 일반적인 경우에 (ubuntu환경이 아닌경우) 이러한 에러가 발생하는 이유는
