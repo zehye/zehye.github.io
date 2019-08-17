@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자바 초기 환경변수 셋팅
+title: Java - macOS 환경변수(PATH) 설정
 category: Java
 tags: [Java, setting]
 comments: true
