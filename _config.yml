@@ -41,12 +41,12 @@ nav:
   Categories:
     - '/'
     # - { Categories All: '/blog/categories/' }
-    - { TIL (Today I Learned): '/blog/categories/#til' }
+    - { TIL (Today I Learned): '/blog/categories/#TIL' }
     - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
     - { Django: '/blog/categories/#django' }
     - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }
-    - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
+    # - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
     - { Docker: '/blog/categories/#Docker' }
     - { git: '/blog/categories/#git' }
     - { PROJECT: '/blog/categories/#PROJECT' }
