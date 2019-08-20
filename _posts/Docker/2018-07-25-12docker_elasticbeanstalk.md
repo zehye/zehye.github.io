@@ -2,7 +2,7 @@
 layout: post
 title: Docker Elasticbeanstalk 소개
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 

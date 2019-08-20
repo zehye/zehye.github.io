@@ -2,7 +2,7 @@
 layout: post
 title: argparse를 활용한 build.py 만들기
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 

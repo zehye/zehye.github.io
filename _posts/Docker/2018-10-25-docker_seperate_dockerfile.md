@@ -2,7 +2,7 @@
 layout: post
 title: dockerfile 분리하기 (base, local, dev, production)
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 

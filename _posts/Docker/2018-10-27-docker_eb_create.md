@@ -2,7 +2,7 @@
 layout: post
 title: eb create, eb deploy.sh설정하기 1
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 

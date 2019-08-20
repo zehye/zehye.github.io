@@ -2,7 +2,7 @@
 layout: post
 title: Docker 프로젝트 초기설정
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: DockerBuild 2 (ebCLI)
 category: Docker
-tags: [docker]
+tags: [Docker]
 comments: true
 ---
 
@@ -92,4 +92,4 @@ chmod 755 build.py
 
 만약 여기서 계속 에러가 난다면
 
-`docker ps`를 통해 현재 실행되고 있는 docker container를 확인해 `docker exec -it CONTAINER ID`로 도커 내부로 들어가본다. (대신 끝에 `/bin/zsh` or `/bin/bash`) 그리고 env가 제대로 실행되고 들어가있는지 확인해본다. 
+`docker ps`를 통해 현재 실행되고 있는 docker container를 확인해 `docker exec -it CONTAINER ID`로 도커 내부로 들어가본다. (대신 끝에 `/bin/zsh` or `/bin/bash`) 그리고 env가 제대로 실행되고 들어가있는지 확인해본다.
