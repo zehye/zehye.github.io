@@ -44,7 +44,7 @@ nav:
     - { TIL (Today I Learned): '/blog/categories/#til' }
     - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
     - { Django: '/blog/categories/#django' }
-    - { Python: '/blog/categories/#Python' }
+    - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }
     - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
     - { Docker: '/blog/categories/#Docker' }
