@@ -2,7 +2,7 @@
 layout: post
 title: 첫번째 프로젝트, My real trip (selenium 사용하기)
 category: PROJECT
-tags: [project, my real trip]
+tags: [PROJECT, my real trip]
 comments: true
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: 두번째 프로젝트, WhatYouWant Project (json 크롤링하기)
 category: PROJECT
-tags: [project, whatyouwant]
+tags: [PROJECT, whatyouwant]
 comments: true
 ---
 

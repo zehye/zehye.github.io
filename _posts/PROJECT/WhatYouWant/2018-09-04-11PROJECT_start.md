@@ -2,7 +2,7 @@
 layout: post
 title: 두번째 프로젝트, WhatYouWant Project (django 설정)
 category: PROJECT
-tags: [project, whatyouwant]
+tags: [PROJECT, whatyouwant]
 comments: true
 ---
 
