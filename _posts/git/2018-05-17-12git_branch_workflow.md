@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git-branch의 workflow 이해하기 - push, fetch, remote repository
-category: branch
+category: git
 tags: [git, branch]
 comments: true
 ---

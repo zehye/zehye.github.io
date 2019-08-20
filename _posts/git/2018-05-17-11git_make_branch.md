@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git-branch 이해하기
-category: branch
+category: git
 tags: [git, branch]
 comments: true
 ---

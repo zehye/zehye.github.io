@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pull request 사용하는 방법
-category: branch
+category: git
 tags: [git, branch]
 comments: true
 ---
