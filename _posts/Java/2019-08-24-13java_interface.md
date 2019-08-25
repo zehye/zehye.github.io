@@ -74,7 +74,7 @@ public interface InterfaceB {
 }
 ```
 
-####InterfaceClass
+#### InterfaceClass
 
 만들어져 있는 두개의 인터페이스를 사용하기 위한 하나의 클래스 생성
 
