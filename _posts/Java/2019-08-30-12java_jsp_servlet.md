@@ -32,7 +32,7 @@ comments: true
 
 IntelliJ에서 jsp 파일을 작성하는 것은 html 기본하에 jsp 문법을 추가한 정도이다. html파일과 jsp파일 별도로 나누는 별개의 문서가 아니라 html파일 문서의 확장자를 jsp파일로 변경하면 된다. 즉, html 파일에서 jsp 문법을 추가해주면 웹 컨테이너에서 컴파일과 링크작업 모두 이루어진다.
 
-```js
+```html
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
