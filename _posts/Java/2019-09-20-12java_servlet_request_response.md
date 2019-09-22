@@ -25,7 +25,7 @@ comments: true
 HttpServlet는 추상클래스로 아래의 다이어그램을 살펴보자.
 <center>
 <figure>
-<img src="/assets/post-img/java/servlet.png" alt="" width="100%">
+<img src="/assets/post-img/java/servlet.png" alt="" width="100%" height="50%">
 <figcaption>HttpServlet class 다이어그램</figcaption>
 </figure>
 </center>
