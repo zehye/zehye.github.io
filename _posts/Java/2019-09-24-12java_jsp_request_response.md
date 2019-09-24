@@ -45,7 +45,7 @@ comments: true
 - 사용자로부터 들어온 요청을 어디로 응답할지를 정해줌
 
 #### firstPage.jsp
-```html
+```jsp
 <body>
   First Page </br>
   <%
@@ -63,4 +63,4 @@ comments: true
 
 위 코드는 사용자로부터 firstPage에 요청이 들어오면 secondPage로 보내는 응답을 한다는 것
 
-**즉, localhost:8090/firstPage.jsp가 입력되면 바로 localhost:8090/secondPage.jsp로 넘어가는 것을 볼 수 있다. **
+**즉, localhost:8090/firstPage.jsp가 입력되면 바로 localhost:8090/secondPage.jsp로 넘어가는 것을 볼 수 있다.**
