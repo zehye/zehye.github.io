@@ -47,6 +47,7 @@ nav:
     - { Django: '/blog/categories/#django' }
     - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }
+    - { JSP&Servlet: '/blog/categories/#JSP&Servlet' }
     - { IntelliJ: '/blog/categories/#IntelliJ' }
     - { Docker: '/blog/categories/#Docker' }
     - { git: '/blog/categories/#git' }
