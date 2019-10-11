@@ -76,4 +76,6 @@ xz-utils tk-dev libffi-dev
 
 # exit 후 ssh 재 접속 후 python 설치
 pyenv install 3.7.4
-```su
+```
+
+정리하면서 추가중 
