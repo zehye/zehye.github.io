@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 세번째 프로젝트, codedeploy
+title: 세번째 프로젝트, codedeploy를 통해 배포하기
 category: PROJECT
 tags: [PROJECT, 42world]
 comments: true
