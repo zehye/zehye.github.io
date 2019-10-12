@@ -16,6 +16,7 @@ comments: true
 
 `brew install pipenv`
 
+```
 pipenv --python 3.6.5
 <pyenv virtualenv 3.6.5하던것>
 pipenv install django
@@ -28,6 +29,7 @@ django-admin startproject mysite
 interpreter설정 잊지말기
 
 Users/name/.virtualenv/foldername/bin/python
+```
 
 MEDIA_ROOT설정하기
 admin으로 들어가서 post를 생성했는데, 이미지를 누르면 이미지가 나오지 않는다.
