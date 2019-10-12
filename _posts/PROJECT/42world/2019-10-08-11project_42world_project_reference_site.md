@@ -21,9 +21,22 @@ comments: true
 - [codedeploy start]('https://sarc.io/index.php/aws/1049-codedeploy-start')
 - [AWS codecommit]('http://labs.brandi.co.kr/2019/04/08/yangjh.html')
 
-## 빌드도구 관련 - 갑작스레 관심이 생겨 찾아보게 되었다.
+## 소셜 로그인 관련
+
+- 
+
+## 빌드도구 관련
 
 - [maven 공식 문서]('http://maven.apache.org/')
 - [maven (메이븐 구조, 차이점, 플러그인, 라이프사이클, 의존성, pom.xml)]('https://sjh836.tistory.com/131')
 - [Maven vs Gradle]('https://bkim.tistory.com/13')
 - [우아한 형제들 빌드도구 이야기]('http://woowabros.github.io/tools/2019/04/30/gradle-kotlin-dsl.html')
+
+## sql 관련
+
+- [mysql & postgresql]('https://neo-orcl.tistory.com/131')
+- [mariaDB & postgresql]('https://hamait.tistory.com/596')
+
+## 간단한 용어 관련
+
+- [로컬라이징과 써드파티]('https://zeddios.tistory.com/106')
