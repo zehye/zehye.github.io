@@ -23,7 +23,16 @@ comments: true
 
 ## 소셜 로그인 관련
 
-- 
+-
+
+## 장고 모델관련
+
+- [field option]('https://zehye.github.io/django/2018/06/20/14django_document_model/')
+- [relation]('https://zehye.github.io/django/2018/06/22/11django_document_model_relation/')
+- [meta option]('https://zehye.github.io/django/2018/07/01/11django_document_model_meta_option/')
+- [model method]('https://zehye.github.io/django/2018/07/01/12django_document_model_attribute/')
+- [model inheritance]('https://zehye.github.io/django/2018/07/02/11django_document_model_inheritance/')
+- [model inheritance2, multi table]('https://zehye.github.io/django/2018/07/04/12django_document_model_inheritance_multitable/')
 
 ## 빌드도구 관련
 
