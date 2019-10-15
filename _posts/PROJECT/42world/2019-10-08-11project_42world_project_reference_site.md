@@ -23,7 +23,7 @@ comments: true
 
 ## 소셜 로그인 관련
 
--
+- [소셜로그인 구현]('https://ssungkang.tistory.com/entry/Django-13-%EC%86%8C%EC%85%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-kakaogoogle-fackbook-%EB%93%B1')
 
 ## 장고 모델관련
 
