@@ -62,7 +62,7 @@ class Person(models.Model):
 
 기본 구현은 아무 도움이 되지 않는 문자열을 리턴하기 때문에, 모든 모델에 대해 오버라이드 해서 알맞게 구현해주는게 좋다.
 
-####overriding predefined model method
+#### overriding predefined model method
 
 이미 정의되어 있는 모델 메서드를 새로 정의한다는 뜻으로 부모의 함수를 자식에서 재 정의하는 것을 의미한다.
 
