@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 세번째 프로젝트, 42world
+title: 세번째 프로젝트, 42world 배포과정 정리
 category: PROJECT
 tags: [PROJECT, 42world]
 comments: true
@@ -78,4 +78,4 @@ xz-utils tk-dev libffi-dev
 pyenv install 3.7.4
 ```
 
-정리하면서 추가중 
+정리하면서 추가중
