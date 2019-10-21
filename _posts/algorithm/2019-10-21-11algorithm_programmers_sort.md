@@ -32,10 +32,10 @@ comments: true
 
 ### 입출력 예
 
-```
-array	      |          commands	 | return
+
+array | commands | return
 [1, 5, 2, 6, 3, 7, 4] |	[[2, 5, 3], [4, 4, 1], [1, 7, 3]]	| [5, 6, 3]
-```
+
 
 ### 입출력 예 설명
 
