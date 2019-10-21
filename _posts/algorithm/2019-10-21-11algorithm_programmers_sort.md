@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [프로그래머스/코딩테스트 고득점 kit] 정렬1_k번째 수_JAVA
+title: 프로그래머스/코딩테스트 고득점 kit: 정렬1_k번째 수_JAVA
 tags: [algorithm]
 comments: true
 ---
