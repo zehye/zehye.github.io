@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 코딩테스트 고득점 kit: 큐&스택_탑_JAVA
+title: 프로그래머스 코딩테스트 고득점 kit, 큐&스택_탑_JAVA
 category: Algorithm
 tags: [Algorithm]
 comments: true

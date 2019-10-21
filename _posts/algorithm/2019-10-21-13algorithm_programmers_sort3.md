@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 코딩테스트 고득점 kit: 정렬3_H-index_JAVA
+title: 프로그래머스 코딩테스트 고득점 kit, 정렬3_H-index_JAVA
 category: Algorithm
 tags: [Algorithm]
 comments: true
