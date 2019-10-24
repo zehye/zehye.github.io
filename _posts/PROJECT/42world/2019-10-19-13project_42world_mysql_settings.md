@@ -31,13 +31,13 @@ mysql_secure_installation  # mysql 설정을 위한 명령어
 NO/YES/YES/YES/YES/YES
 ```
 
-- "Remove anonymous users? (Press y|Y for Yes. any other key for No)"
+- "Remove anonymous users? (Press y/Y for Yes. any other key for No)"
   - 사용자 설정을 묻는 질문
-- "Disallow root login remotely? (Press y|Y for Yes, any other key for No)"
+- "Disallow root login remotely? (Press y/Y for Yes, any other key for No)"
   - 다른 IP에서 root 아이디로 원격접속을 설정하는 질문
-- "Remove test database and access to it? (Press y|Y for Yes, any other key for No)"
+- "Remove test database and access to it? (Press y/Y for Yes, any other key for No)"
   - Test 데이터베이스를 설정하는 질문
-- "Reload privilege tables now? (Press y|Y for Yes, any other key for No)"
+- "Reload privilege tables now? (Press y/Y for Yes, any other key for No)"
   - 변경된 권한을 테이블에 적용하는 설정에 대한 질문
   - 해당 질문은 무조건 `YES`
 
