@@ -69,7 +69,7 @@ grant all privileages on DB이름.* to '사용자'@'localhost';  # 특정 DB에�
 
 
 
-##django.db.utils.OperationalError: (1049, "Unknown database 'django_local'")
+## django.db.utils.OperationalError: (1049, "Unknown database 'django_local'")
 
 해당 데이터베이스가 생성이 안되어있음으로 생성해주자
 
