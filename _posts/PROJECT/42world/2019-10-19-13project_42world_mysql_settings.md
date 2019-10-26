@@ -72,6 +72,8 @@ create user '사용자'@'localhost' identified by '비밀번호';
 ```
 grant all privileges on *.* to '사용자'@'localhost';
 grant all privileges on DB이름.* to '사용자'@'localhost';
+
+flush privileges;
 ```
 
 ### 사용자 계정 삭제하기
