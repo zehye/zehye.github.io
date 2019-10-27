@@ -1,12 +1,12 @@
 /* Colors
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
-$red:      #ac4142;
-$orange:   #d28445;
-$yellow:   #f4bf75;
-$green:    #90a959;
+$red:      #E28691;
+$orange:   #E7BCA7;
+$yellow:   #F8F6D6;
+$green:    #8CB6AB;
 $cyan:     #75b5aa;
-$blue:     #1B6EC4;
+$blue:     #539fed;
 $magenta:  #aa759f;
 $brown:    #8f5536;
 $default:  #505050;
@@ -15,7 +15,7 @@ $white:      #fff;
 $lightgrey:  #eee;
 $black:      #000;
 
-$theme-color: $blue;
+$theme-color: $red;
 $theme-color-dark: darken($theme-color, 10%);
 
 $post-date-color: #9a9a9a;
