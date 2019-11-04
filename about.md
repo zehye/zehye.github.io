@@ -16,6 +16,9 @@ title: About
 
 - [패스트캠퍼스 웹 프로그래밍 스쿨](http://blog.pycon.kr/2017/12/27/python-seminar/) 2018.05
 - [알고리즘 스터디](http://) 2018.09
+- [MashUp 개발 동아리](http://) 2018.09
+- [자료구조 스터디](http://) 2019.09
+- [패스트캠퍼스 웹 프로그래밍 스쿨 조교](http://) 2019.11
 
 ## 공부한 것
 
@@ -50,9 +53,11 @@ title: About
   - [AWS Docker](https://aws.amazon.com/ko/docker/?sc_channel=PS&sc_campaign=acquisition_KR&sc_publisher=google&sc_medium=english_docker_b&sc_content=docker_general_e&sc_detail=aws%20docker&sc_category=docker&sc_segment=161189699917&sc_matchtype=e&sc_country=KR&s_kwcid=AL!4422!3!161189699917!e!!g!!aws%20docker&ef_id=WtAUTAAAAYGJ47gw:20180905053429:s)
   - [초보를 위한 도커 안내서 - 도커란 무엇인가?](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
 
-- Java
+
 
 ## 만들어 본 것
+
+- [42world 구현(진행중)](https://github.com/kahee/42world-backend)
 
 - [문화행사 알림 사이트(진행중)](https://github.com/zehye/mini-project)
 
