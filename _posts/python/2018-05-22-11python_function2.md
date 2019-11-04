@@ -92,7 +92,7 @@ change_global_champion()
 
 분리된 영역에서, 외부 영역에서는 내부 영역의 데이터를 사용할 수 없지만, 내부 영역에서는 자신의 외부 영역에 있는 데이터를 참조할 수 있다. (반대의 경우에는 함수의 인자로 데이터를 전달한다.)
 
-즉 위의 예를 보면 `champion = 'Lux'`에서는 아래 `show_global_champion`함수의 데이터를 사용할 수 없지만, `show_global_champion`에서는 `champion = 'Lux'`데이터를 참조할 수 있다.
+즉 위의 예를 보면 `show_global_champion`는 `change_glabal_champion`함수의 데이터를 사용할 수 없지만, `change_global_champion`에서는 `champion = 'Lux'`데이터를 참조할 수 있다.
 
 
 ### 내장함수와 내장영역
