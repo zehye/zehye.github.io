@@ -57,6 +57,8 @@ title: About
 
 ## 만들어 본 것
 
+- [크롤링(진행중]()
+
 - [42world 구현(진행중)](https://github.com/kahee/42world-backend)
 
 - [문화행사 알림 사이트(진행중)](https://github.com/zehye/mini-project)
