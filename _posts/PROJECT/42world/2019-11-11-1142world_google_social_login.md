@@ -95,25 +95,19 @@ SITES 를 클릭하면 `example.com`이 있을텐데 해당 문구 클릭해 들
 
 구글 로그인이 잘 되는지 확인해보기 위해 간단한 html 구현을 해본다.
 
-```html
+```
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello world</title>
-</head>
 <body>
 {% load socialaccount %}
 {% providers_media_js %}
 <h1>소셜 로그인을 해봐요!</h1>
 <a href = "/accounts/signup">회원가입</a><br>
 {% if user.is_authenticated %} <a href = "/accounts/logout">로그아웃</a>
-{{user.username}} 님이 로그인중 {% else %}
+{{user.username}} 님이 로그인중
+{% else %}
 <a href=" {% provider_login_url 'google' %}">구글 로그인</a><br>
-로그인 하셔야 합니다. {% endif %}
+로그인 하셔야 합니다.
+{% endif %}
 </body>
 </html>
 ```
