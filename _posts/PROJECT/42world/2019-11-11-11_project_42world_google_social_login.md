@@ -95,7 +95,9 @@ SITES 를 클릭하면 `example.com`이 있을텐데 해당 문구 클릭해 들
 
 구글 로그인이 잘 되는지 확인해보기 위해 간단한 html 구현을 해본다.
 
-```
+```html
+{% \raw %}
+{% block content %}
 <!doctype html>
 <body>
 {% load socialaccount %}
@@ -110,6 +112,8 @@ SITES 를 클릭하면 `example.com`이 있을텐데 해당 문구 클릭해 들
 {% endif %}
 </body>
 </html>
+{% endblock %}
+{% \endraw %}
 ```
 
 ### config/urls.py
