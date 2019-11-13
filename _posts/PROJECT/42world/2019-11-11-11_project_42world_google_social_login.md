@@ -97,7 +97,6 @@ SITES 를 클릭하면 `example.com`이 있을텐데 해당 문구 클릭해 들
 
 ```html
 {% raw %}
-{% block content %}
 <!doctype html>
 <body>
 {% load socialaccount %}
@@ -110,10 +109,9 @@ SITES 를 클릭하면 `example.com`이 있을텐데 해당 문구 클릭해 들
 <a href=" {% provider_login_url 'google' %}">구글 로그인</a><br>
 로그인 하셔야 합니다.
 {% endif %}
+{% endraw %}
 </body>
 </html>
-{% endblock %}
-{% endraw %}
 ```
 
 ### config/urls.py
