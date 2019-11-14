@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 세번째 프로젝트, mysql 기본 설정 및 user 및 database 생성하기
-category: PROJECT
-tags: [PROJECT, 42world]
+title: mysql 기본 설정 및 user 및 database 생성하기
+category: DATABASE
+tags: [DATABASE, mysql]
 comments: true
 ---
 
