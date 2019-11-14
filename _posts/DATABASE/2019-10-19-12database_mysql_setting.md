@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 세번째 프로젝트, MySQL 설치 및 셋팅과정 (+MySQL Workbench)
-category: PROJECT
-tags: [PROJECT, 42world]
+title: MySQL 설치 및 셋팅과정 (+MySQL Workbench)
+category: DATABASE
+tags: [DATABASE, mysql]
 comments: true
 ---
 
