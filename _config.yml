@@ -42,6 +42,7 @@ nav:
     - '/'
     # - { Categories All: '/blog/categories/' }
     - { TIL (Today I Learned): '/blog/categories/#TIL' }
+    - { DATABASE: '/blog/categories/#DATABASE' }
     - { Spring: '/blog/categories/#Spring' }
     - { Books: '/blog/categories/#Books' }
     - { Algorithm: '/blog/categories/#Algorithm' }
