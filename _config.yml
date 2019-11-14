@@ -46,12 +46,12 @@ nav:
     - { Spring: '/blog/categories/#Spring' }
     - { Books: '/blog/categories/#Books' }
     - { Algorithm: '/blog/categories/#Algorithm' }
-    - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
+    # - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
     - { Django: '/blog/categories/#django' }
     - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }
     - { JSP&Servlet: '/blog/categories/#JSP&Servlet' }
-    - { IntelliJ: '/blog/categories/#IntelliJ' }
+    # - { IntelliJ: '/blog/categories/#IntelliJ' }
     - { Docker: '/blog/categories/#Docker' }
     - { git: '/blog/categories/#git' }
     - { PROJECT: '/blog/categories/#PROJECT' }
