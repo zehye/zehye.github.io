@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Django - Dockerfile 분리해서 실행하기
-category: Django
-tags: [django]
+category: Docker
+tags: [Docker]
 comments: true
 ---
 

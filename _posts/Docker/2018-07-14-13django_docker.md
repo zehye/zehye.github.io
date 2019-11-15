@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Django - Docker란 무엇인가?
-category: Django
-tags: [django]
+category: Docker
+tags: [Docker]
 comments: true
 ---
 

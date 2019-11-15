@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Django - Docker 설치 후 실행하기
-category: Django
-tags: [django]
+category: Docker
+tags: [Docker]
 comments: true
 ---
 
