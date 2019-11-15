@@ -46,7 +46,7 @@ nav:
     - { Spring: '/blog/categories/#Spring' }
     - { Books: '/blog/categories/#Books' }
     - { Algorithm: '/blog/categories/#Algorithm' }
-    # - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
+    - { CS : '/blog/categories/#CS' }
     - { Django: '/blog/categories/#django' }
     - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }

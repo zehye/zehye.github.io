@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 컴퓨터 사이언스 부트캠프 with 파이썬 1장 - 변수
-category: Books
+category: CS
 tags: [study, computer science bootcamp with python, 변수]
 comments: true
 ---
