@@ -70,7 +70,7 @@ category_page: '/blog/categories/'
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
+google_analytics_token: 'UA-153120306-1' # leave blank if you don't want google analytics
 disqus_short_name: 'zehyes-blog' # leave blank if you don't want disqus
 
 
