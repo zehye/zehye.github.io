@@ -51,7 +51,7 @@ nav:
     - { python: '/blog/categories/#python' }
     - { Java: '/blog/categories/#Java' }
     - { JSP&Servlet: '/blog/categories/#JSP&Servlet' }
-    # - { IntelliJ: '/blog/categories/#IntelliJ' }
+    - { OS: '/blog/categories/#OS' }
     - { Docker: '/blog/categories/#Docker' }
     - { git: '/blog/categories/#git' }
     - { PROJECT: '/blog/categories/#PROJECT' }
