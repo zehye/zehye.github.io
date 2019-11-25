@@ -15,6 +15,12 @@ comments: true
 
 ### 1. 다중 프로세서 시스템(Multiprocessor system)
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/8.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 메모리는 하나인데 cpu가 여러개인 시스템
 
 - 병합 시스템(Parrallel system): cpu가 여러개, 병렬로 있다.
@@ -28,6 +34,12 @@ comments: true
 
 
 ### 2. 분산시스템(Distributed system)
+
+<center>
+<figure>
+<img src="/assets/post-img/OS/9.jpeg" alt="" width="50%">
+</figure>
+</center>
 
 여러개의 컴퓨터를 `근거리 통신망(LAN)`으로 연결 = cpu도 여러개, 메모리도 여러개로 이루어진 시스템
 
@@ -103,6 +115,12 @@ comments: true
 
 **os안에는 많은 코드들이 들어있으며, os 안의 코드는 인터럽트를 통해서 실행이 된다.**
 
+
+<center>
+<figure>
+<img src="/assets/post-img/OS/10.jpeg" alt="" width="50%">
+</figure>
+</center>
 
 ### Internal Interrupt
 

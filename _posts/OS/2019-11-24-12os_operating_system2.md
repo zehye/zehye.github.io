@@ -16,6 +16,12 @@ comments: true
 
 ### 1. No operating System
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/3.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 처음 컴퓨터가 만들어진 때는 세계 2차대전 중 1940년대 말 즈음이다. 컴퓨터의 발전과 함꼐 하드웨어의 발전도 이루어졌고, 그에 따라 운영체제의 기술 또한 발전되었다. 제일 처음 발명된 컴퓨터의 크기는 너무 컸기 때문에 책상위에 올려둘 수도 없었고 아예 한 건물안에 컴퓨터 하나가 들어가있는 모습이었다.
 
 그 건물에서 제일 큰 비중을 차지하는 것은 입력장치(카드리더)가 있는데, 이 카드리더에는 여러가지는 OCR에 적힌 내용을 읽어 처리기에 보내고 처리기에서 컴파일러 한 내용을 그대로 프린트(io)에 찍어보낸다.
@@ -29,6 +35,12 @@ comments: true
 
 ### 2. Batch processing System
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/4.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 Batch: 꾸러미, 묶어서 프로세스를 처리를 한다 (일괄처리)
 
 과거에 오퍼레이터가 했던 일련의 동작들을 이제는 메모리에 프로그램들을 넣어 컴파일 > 링크 > 로드하도록 하는, 즉 **프로그램들을 메모리에 넣는 것** 을 Batch processing system(일괄처리 시스템)이라고 한다.
@@ -39,6 +51,12 @@ Batch: 꾸러미, 묶어서 프로세스를 처리를 한다 (일괄처리)
 
 
 ### 3. Multiprogramming System
+
+<center>
+<figure>
+<img src="/assets/post-img/OS/5.jpeg" alt="" width="50%">
+</figure>
+</center>
 
 os(운영체제)의 변화중에서도 가장 큰 변화인 멀티 프로그래밍(다중 프로그래밍)이다.
 
@@ -74,6 +92,12 @@ cpu가 idle하지 않고 다른 프로그램(다른 유저 프로그램)으로 �
 
 
 ### 4. Time Sharing System
+
+<center>
+<figure>
+<img src="/assets/post-img/OS/6.jpeg" alt="" width="50%">
+</figure>
+</center>
 
 더 나아가, 60년대 후반 70년대로 오면서 모니터, 키보드가 생겨나게 되면서 컴퓨터와 사용자간의 `interactive`가 가능해졌다.
 
@@ -133,5 +157,11 @@ cpu가 idle하지 않고 다른 프로그램(다른 유저 프로그램)으로 �
 - embedded: 어디에 파묻혀있다. 즉, 내장되어져있다.
   - 컴퓨터가 어디에 포함되어있다. 자동차안의 컴퓨터(엔진제어..), 전기밥솥 안의 cpu, 냉장고, 세탁기..
   - 우리 눈에는 안보이지만, 세탁기도 지능화되어야하니까 컴퓨터가 들어잇다.
+
+  <center>
+  <figure>
+  <img src="/assets/post-img/OS/7.jpeg" alt="" width="50%">
+  </figure>
+  </center>
 
 이 모든 컴퓨터에는 모두 운영체제가 들어가 있다. 운영체제가 없으면 우리가 그것을 사용할 수가 없다. 그래서 아무리 간단해 보이는 컴퓨터라고 하더라도 모두 운영체제가 들어있다.

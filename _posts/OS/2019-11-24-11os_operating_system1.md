@@ -74,6 +74,12 @@ os: windowXP, linux, macOSX...
 
 ### 컴퓨터의 전원을 키는 순간 컴퓨터에서 일어나는 현상들
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/1.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 - 파워을 처음에 딱 껏다가 키면 프로세서는 롬 부분의 코드를 읽어온다. 즉, 롬 안의 instuction을 읽어와서 실행한다.
 - 이 프로그램에 제일 먼저 있는 내용은 `POST(Power on self-test)` 프로그램이다.
   - 전기를 키면은 컴퓨터가 모든 환경설정이 제대로 되어있는가를 확인
@@ -136,6 +142,12 @@ os: windowXP, linux, macOSX...
 우리가 공부하는 운영체제는 껍질이 아닌 커널!
 
 ## 운영체제의 위치
+
+<center>
+<figure>
+<img src="/assets/post-img/OS/2.jpeg" alt="" width="50%">
+</figure>
+</center>
 
 컴퓨터는 하드웨어 > 운영체제(커널+쉘) > 애플리케이션 이렇게 구성되어있다.
 
