@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iterable과 iterator
+title: python iterable과 iterator
 category: python
 tags: [python, iterable, iterator]
 comments: true
@@ -12,7 +12,7 @@ comments: true
 
 ## Iterable과 Iterator
 
-파이썬을 공부하면 할수록 용어의 어려움을 계속해서 느끼고있다. 파이썬 뿐만 아니라 일반적인 프로그래밍 언어에는 `iterator`라는 개념이 있는데, 종종 `iterable`이라는 개념과 혼동되는 경우가 많았다.
+파이썬을 공부하면 할수록 용어의 어려움을 계속해서 느끼고있다. 파이썬 뿐만 아니라 일반적인 프로그래밍 언어에는 `iterator`라는 개념이 있는데, 종종 `iterable`이라는 개념과 혼동되는 경우가 많았다. 
 
 
 ### Iterable
