@@ -12,7 +12,7 @@ comments: true
 
 ## Iterable과 Iterator
 
-파이썬을 공부하면 할수록 용어의 어려움을 계속해서 느끼고있다. 파이썬 뿐만 아니라 일반적인 프로그래밍 언어에는 `iterator`라는 개념이 있는데, 종종 `iterable`이라는 개념과 혼동되는 경우가 많았다. 
+파이썬을 공부하면 할수록 용어의 어려움을 계속해서 느끼고있다. 파이썬 뿐만 아니라 일반적인 프로그래밍 언어에는 `iterator`라는 개념이 있는데, 종종 `iterable`이라는 개념과 혼동되는 경우가 많았다.
 
 
 ### Iterable
@@ -56,3 +56,24 @@ for item in li:
 ```
 
 이렇게 for문을 돌려봄으로써도 확인할 수 있듯 for문에 list를 넣어 돌리면 순차적인 접근이 가능하다. 명시적으로 list를 iterator로 바꾸어주지 않았음에도 불구하고 말이다. 이는 for문에서 내부적으로 list를 iterator로 바꾸어 순차접근을 하고 있기 때문이다. 즉, for문을 돌려 순차접근이 가능한 객체는 모두 iterable하다고 볼 수 있다.
+
+
+
+## Iterator
+
+- 값을 차례대로 꺼낼 수 있는 객체
+- 파이썬 내장함수 `iter()`를 통해 iterator 객체를 만든다.
+
+
+
+```python
+li = [1,2,3]
+li_iter = iter(li)
+
+next(li_iter)  # 1
+next(li_iter)  # 2
+next(li_iter)  # 3
+next(li_iter)  # StopIteration
+
+type(li_iter)  # <class 'list_iterator'
+```
