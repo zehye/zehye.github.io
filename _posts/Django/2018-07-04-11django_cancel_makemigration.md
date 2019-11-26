@@ -1,6 +1,6 @@
 ---
 layout: post
-title: makemigrations 취소하는 방법
+title: Django - makemigrations 취소하는 방법
 category: Django
 tags: [python, pycharm, django]
 comments: true
