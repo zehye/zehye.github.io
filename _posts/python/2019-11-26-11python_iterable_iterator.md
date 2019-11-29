@@ -59,7 +59,7 @@ for item in li:
 
 
 
-## Iterator
+### Iterator
 
 - 값을 차례대로 꺼낼 수 있는 객체
 - 파이썬 내장함수 `iter()`를 통해 iterator 객체를 만든다.
