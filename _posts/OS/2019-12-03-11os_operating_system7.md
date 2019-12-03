@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CPU Scheduling 1 - FCFS, SJF, Priority, RR
+title: CPU Scheduling - FCFS, SJF, Priority, RR, 다중 큐 스케줄링
 category: OS
 tags: [OS, operating system]
 comments: true
@@ -164,10 +164,41 @@ P3 | 3
 - Example: Average Turnaround time(ATT)
   - ATT = 11.0 msec(time quantum = 1), 12.25msec(time quantum=5)
   : 반환시간. 처음 들어간 시간부터 나온시간까지
-  : time quantum을 얼마로 잡는가에 따라서 ATT가 되게 클수도 작을 수도 있다. 이에 따라서 성능이 달라진다. 좋은 time quantum을 잡는것이 중요하다. 
+  : time quantum을 얼마로 잡는가에 따라서 ATT가 되게 클수도 작을 수도 있다. 이에 따라서 성능이 달라진다. 좋은 time quantum을 잡는것이 중요하다.
 
 Process | Burst Time(CPU 이용시간)
 P1 | 6
 P2 | 3
 P3 | 1
 P4 | 7
+
+
+### Multilevel Queue Scheduling
+
+- Process group: 실행중인 프로그램들을 그룹할 수 있다.
+  - system processes: os안에서 작업하는 것.
+  - Interactive processes: 사용자와 대화하는 프로그램, 게임같은 것.
+    - 대화하지 않는 프로그램 : compile같은 것.
+  - Interactive editing processes: 컴퓨터와 대화를 굉장히 많이한다.
+  - Batch processes: 꾸러미, 일괄적으로 처리하는것, 일괄적으로 컴퓨터가 알아서 하니까 내가 관여할 것이 없다.
+  - Student processes
+
+프로세스들은 이렇게 그룹을 지을 수 있다. 성격이 다양한 애들을 동일한 줄에 세우는것은 안되는것. 그러니 큐를 하나만 두는것이 아닌 여러개를 두게 되었다.
+
+- Single ready queue -> Several separate queues
+: 여러차원을 둔다.
+  - 각각의 Queue에 절대적 우선순위 존재: system > interactive > batch > Student
+  - 또는 CPU time을 각 Queue에 차등배분 : 한정된 CPU시간을 차등으로 배분
+  - 각 Queue 는 독립된 scheduling 정책: 각각 프로세스마다 독립된 스케줄링 정책을 사용
+
+
+### Multilevel Feedback Queue Scheduling
+
+Queue를 여러개 두는것은 같으나
+
+- 복수개의 Queue
+
+- 다른 Queue로의 점진적 이동
+  - 모든 프로세스는 하나의 입구로 진입
+  - 너무 많은 CPU time 사용시 다른 Queue로
+  - 기아 상태 우려시 우선순위 높은 Queue로!
