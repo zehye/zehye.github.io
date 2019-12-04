@@ -45,11 +45,12 @@ Ready Queue에서 프로세스들이 CPU의 서비스를 받기 위해 기다리
   - 꼭 좋은 성능을 나타내는 것은 아니다.
 
 - example: Find Average Waiting Time
-  AWT = (0+24+27)/3 = 17 msec  cf.3 msec!
+  - AWT = (0+24+27)/3 = 17 msec  cf.3 msec!
 
 3개의 프로세스가 거의 동시에 Ready Queue에 도착했다고 해보자.
 
 - Gantt Chart
+
 Process | Burst Time(CPU 이용시간)
 P1 | 24
 P2 | 3
@@ -73,10 +74,10 @@ P3 | 3
   - ch. 10.25msec(FCFS)
 
 - `Provably optimal!`
-: 대기시간을 줄이는 측면에서는 가장 좋은 방법!
+  - 대기시간을 줄이는 측면에서는 가장 좋은 방법!
 
 - Not realistic, prediction may be needed
-: 비현실적이다. 실제로 이 프로세스가 얼마를 사용할지를 우리는 알수가 없다. 실제 돌려보기 전까지는 전혀 알수가 없다. 그래서 가장 이상적이지만 비현실적이다. 실제로 사용하기에는 예측을 할 수 밖에 없다. 예측하기 위해서는 os가 그동안 cpu를 사용했던 시간들을 다 정리해놓고 예측을 하는 것이긴 이 예측을 하기 위해서는 overhead가 많은것이고 그 만큼의 계산도 많이 들게된다.
+  - 비현실적이다. 실제로 이 프로세스가 얼마를 사용할지를 우리는 알수가 없다. 실제 돌려보기 전까지는 전혀 알수가 없다. 그래서 가장 이상적이지만 비현실적이다. 실제로 사용하기에는 예측을 할 수 밖에 없다. 예측하기 위해서는 os가 그동안 cpu를 사용했던 시간들을 다 정리해놓고 예측을 하는 것이긴 이 예측을 하기 위해서는 overhead가 많은것이고 그 만큼의 계산도 많이 들게된다.
 
 Process | Burst Time(CPU 이용시간)
 P1 | 6
@@ -91,7 +92,7 @@ P4 | 3
 </center>
 
 - Preemptive or Non-Preemptive
-cf. Shortest-Remaining-Time-First(최소잔여시간 우선): 남아있는 시간이 얼마나 짧은가가 우선시가 된다.
+ -  cf. Shortest-Remaining-Time-First(최소잔여시간 우선): 남아있는 시간이 얼마나 짧은가가 우선시가 된다.
 
 - Example
   - Preemptive: AWT =(9+0+15+2)/4 = 6.5msec
@@ -117,7 +118,7 @@ P4 | 3 | 5
   - 우선순위, 컴퓨터 프로그램에서는 정수값으로 나타내는데 대부분의 운영체제에서는 숫자가 작을수록 우선순위가 높아진다.
 
 - Example
-- AWT = 8.2 msec
+  - AWT = 8.2 msec
 
 Process | Burst Time(CPU 이용시간) | Priority
 P1 | 10 | 3
@@ -139,13 +140,13 @@ P5 | 5 | 2
     - 외부: 돈을 많이 낸쪽을 먼저, 정치적인 요소일수록..
 
 - Preemptive or Non-Preemptive
-둘다 만들 수 있음
+  - 둘다 만들 수 있음
 
 - Problem
   - `Indefinite blocking: starvation(기아)`
-  : 한 프로세스가 끝나고 그 다음 우선순위가 작동을 하게 되는데, 이 와중에도 외부에서는 계속해서 작업들이 들어올것이다. 그런데 아무리 오래 기다리고 있다고 하더라고 새로 들어오는 애들이 더 우선순위가 높다면 이전에 있던 애들 중에서도 계속해서 메모리에 올라가지 못하는 애들이 있을 것이다.
+    - 한 프로세스가 끝나고 그 다음 우선순위가 작동을 하게 되는데, 이 와중에도 외부에서는 계속해서 작업들이 들어올것이다. 그런데 아무리 오래 기다리고 있다고 하더라고 새로 들어오는 애들이 더 우선순위가 높다면 이전에 있던 애들 중에서도 계속해서 메모리에 올라가지 못하는 애들이 있을 것이다.
   - Solution: `aging`
-  : 오래 기다릴수록 우선순위를 조금씩 올려주는 것. 레디큐에 오래 머물고 있다면 점진적으로 우선순위를 조금씩 올려줘서 실행을 할 수 있도록 해줌.
+    - 오래 기다릴수록 우선순위를 조금씩 올려주는 것. 레디큐에 오래 머물고 있다면 점진적으로 우선순위를 조금씩 올려줘서 실행을 할 수 있도록 해줌.
 
 
 ### Round-Robin(RR)
@@ -171,8 +172,7 @@ P3 | 3
 </figure>
 </center>
 
-- Performance depends on the size of the time quantum
-: time quantum의 크기에 굉장히 의존적이다.
+- Performance depends on the size of the time quantum: time quantum의 크기에 굉장히 의존적이다.
   - Δ = ∞ : 해당 프로세스가 다 사용되고 나면 스위칭됨으로 FCFS와 같다.
   - Δ = 0 : Processor sharing(* context switching overhead)
     - 스위칭이 워낙 빈번하게 일어나서 3개의 프로세스가 거의 동시에 이루어지는것처럼 보여진다.
@@ -184,14 +184,15 @@ P3 | 3
 
 - Example: Average Turnaround time(ATT)
   - ATT = 11.0 msec(time quantum = 1), 12.25msec(time quantum=5)
-  : 반환시간. 처음 들어간 시간부터 나온시간까지
-  : time quantum을 얼마로 잡는가에 따라서 ATT가 되게 클수도 작을 수도 있다. 이에 따라서 성능이 달라진다. 좋은 time quantum을 잡는것이 중요하다.
+    - 반환시간. 처음 들어간 시간부터 나온시간까지
 
-<center>
-<figure>
-<img src="/assets/post-img/OS/26.jpeg" alt="" width="50%">
-</figure>
-</center>
+    <center>
+    <figure>
+    <img src="/assets/post-img/OS/26.jpeg" alt="" width="30%">
+    </figure>
+    </center>
+
+time quantum을 얼마로 잡는가에 따라서 ATT가 되게 클수도 작을 수도 있다. 이에 따라서 성능이 달라진다. 좋은 time quantum을 잡는것이 중요하다.
 
 Process | Burst Time(CPU 이용시간)
 P1 | 6

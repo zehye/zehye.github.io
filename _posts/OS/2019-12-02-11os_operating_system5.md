@@ -17,8 +17,8 @@ comments: true
 </figure>
 </center>
 
-application: 하드웨어의 자원을 사용
-hardware: resource
+application: 하드웨어의 자원을 사용<br>
+hardware: resource<br>
 os: 하드웨어 자원을 효율적으로 어플리케이션에게 나누어줌
 
 이런 os에는 여러가지 관리들이 있는데
@@ -107,13 +107,13 @@ Track/Sector로 구성된 디스크를 파일이라는 논리적 관점으로 �
 - Information: get/set time, get/set system data
 - communication: socket, send, receive
 
-<순서>
+<순서><br>
 
 EAX: 해당하는 명령<br>
 ECX = attributes<br>
 EBX = file name<br>
-swi
+swi<br>
 
--> 원하고자 하는 파일이 생성됨
+-> 원하고자 하는 파일이 생성됨<br>
 
 일반 어플리케이션이 os에 요청하는 것을 `system call` 이라고 하고, 시스템 콜은 일반적으로 특정 레지스터에 특정 값을 건 후에 swi를 걸어봄으로써 서비스를 받을 수 있다.
