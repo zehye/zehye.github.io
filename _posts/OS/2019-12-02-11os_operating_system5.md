@@ -58,6 +58,12 @@ cpu에 의해서 실행되는 프로그램은 메인 메모리 위로 올라와�
 
 ## 3. 파일관리 (File Management)
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/12.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 Track/Sector로 구성된 디스크를 파일이라는 논리적 관점으로 보게 관리
 
 - 파일의 생성과 삭제(file creation/deletion)
@@ -67,12 +73,6 @@ Track/Sector로 구성된 디스크를 파일이라는 논리적 관점으로 �
 - 백업(backup)
 
 ## 4. 보조기억장치 관리 (Secondary Storage Management)
-
-<center>
-<figure>
-<img src="/assets/post-img/OS/12.jpeg" alt="" width="50%">
-</figure>
-</center>
 
 하드디스크, 플래시 메모리 등
 
