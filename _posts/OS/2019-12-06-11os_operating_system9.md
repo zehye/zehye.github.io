@@ -132,8 +132,16 @@ class Test {
 
 ## 프로세스 동기화(Process Synchronization)
 
+<center>
+<figure>
+<img src="/assets/post-img/OS/30.jpeg" alt="" width="50%">
+</figure>
+</center>
+
 더 정확한 표현은 `Thread Synchronization`이다.<br>
 **서로간 영향을 주고받는 데이터들간에 데이터의 일관성이 유지될 수 있도록 해주는 것이 동기화이다.**
+
+보통 컴퓨터 메모리 안의 프로세스들은 독립적이지 않고 협조하는 관계이다. 즉, 다른 프로세스에게 영향을 주거나 영향을 받는다. 대부분 공통된 자원(메인메모리)을 서로 접근하려고 하다보니 그런것이다. 하나의 메인메모리에 프로세스들이 많으니 어떤 방식으로든 영향을 주고받으니 그럴수록 프로세스 동기화의 개념이 중요해지고 있다.
 
 - Processes
   - Independent vs Cooperating
@@ -215,7 +223,9 @@ class Test {
 
 잔액은 0원이 나올 것이다.
 
-### 시간지연: 잘못된 결과를 초래한다.
+### 프로세스 동기화가 안되는 경우의 문제
+
+시간지연에 따라 잘못된 결과를 초래한다.
 
 ```java
 class BankAccount {
