@@ -36,7 +36,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/OS/37.jpeg" alt="" width="30%">
+<img src="/assets/post-img/OS/37.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -67,5 +67,3 @@ comments: true
 - 주소구분
   - 논리주소(logical address, cpu가 내는 주소) vs 물리주소(physical address, 실제로 mmu를 통과해서 메인메모리오 오는 주소)
   - cpu는 항상 모든 주소가 0번지에서 돌고있다고 생각하며 Relocation register를 통해 프로그램들이 메인메모리의 어느 위치든 올리기가 가능해진다.
-
-  

@@ -59,7 +59,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/OS/39.jpeg" alt="" width="30%">
+<img src="/assets/post-img/OS/39.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -87,7 +87,7 @@ cpu는 여전히 메모리에 연속적으로 들어갔다고 생각하지만 �
 
 <center>
 <figure>
-<img src="/assets/post-img/OS/40.jpeg" alt="" width="30%">
+<img src="/assets/post-img/OS/40.jpeg" alt="" width="50%">
 </figure>
 </center>
 
