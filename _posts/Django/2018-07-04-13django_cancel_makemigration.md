@@ -50,3 +50,9 @@ abstract_base_classes
 그리고 이러한 상태에서는 파이참 migrations 폴더에 있는 파일을 직접 delete할 수 있다.
 
 데이터베이스가 이상하다고 해서 migrations에 있는 파일을 지우면 안되는 이유가 여기에 있다.
+
+
+혹은
+```
+./manage.py migrate <취소하고자 하는 앱 이름> zero
+```
