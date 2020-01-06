@@ -58,6 +58,7 @@ nav:
     - { PROJECT: '/blog/categories/#PROJECT' }
   #  - { error: '/blog/categories/#error' }
     - { etc: '/blog/categories/#etc' }
+    - { swift: '/blog/categories/#swift' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
