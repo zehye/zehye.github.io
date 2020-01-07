@@ -52,7 +52,8 @@ abstract_base_classes
 데이터베이스가 이상하다고 해서 migrations에 있는 파일을 지우면 안되는 이유가 여기에 있다.
 
 
-혹은
+만약 0001의 migrations을 취소하고 싶다면 `zero`를 해주면 된다.
+
 ```
 ./manage.py migrate <취소하고자 하는 앱 이름> zero
 ```
