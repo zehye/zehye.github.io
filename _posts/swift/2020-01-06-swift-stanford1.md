@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Stanford Lecture1 - Introduction to iOS11, Xcode9 and Swift4
-category: OS
-tags: [OS, operating system]
+category: swift
+tags: [swift]
 comments: true
 ---
 
