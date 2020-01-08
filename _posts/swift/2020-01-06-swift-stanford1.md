@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 ```
 
 
-### UIButton
+### 카드만들기 - UIButton 써보기
 
 <center>
 <figure>
@@ -60,8 +60,12 @@ class ViewController: UIViewController {
 </figure>
 </center>
 
+카드를 구성하기 위해 Button이라는 객체를 사용하게 된다. 이 Button은 View를 상속받고 있기 때문에 배경화면을 설정할 수 있다.
 
-#### connection:action
+
+### UI에 있는 항목 조작하기
+
+UI에 있는 항목을 조작하기 위해서는 실행에 대해 코드를 연결해야 한다.
 
 <center>
 <figure>
@@ -76,7 +80,7 @@ action: 버튼을 눌렀을 때 메서드를 호출하라는 의미
 
 즉, touchCard가 넘어오면 뒤집을 수 있어야 하는데 이러한 소통을 위해 인수가 존재한다.
 
-Type은 인수의 타입으로 Any가 되어있는데 `Button`으로 변경해줘야 한다.<br>
+Type은 인수의 타입으로 Any가 되어있는데 Button으로 변경해줘야 한다.<br>
 버튼이 메소드를 보내주는 것이기 때문으로 만약 `UIButton`으로 변경해주지 않으면 나머지 코드가 작동하지 않는다.
 
 event는 Touch Up Inside로 경계안에서 터치하고 손을 뗄 때 이 메시지를 보내라는 뜻을 가진다.
@@ -99,14 +103,19 @@ swift의 모든 인수에는 이름이 있으며 메소드를 부를때 이 이�
 이름을 하나만 가지는 것도 가능하고 유효하다. withemoji가 emoji가 된다면 외부, 내부 이름 모두 emoji가 된다.<br>
 그리고 만약 인수 앞에 `_` 가 있다면 그것은 인수가 없다는 것을 의미한다. (거의 사용하지는 않는다.)
 
-```swift
-func flipCard(withEmoji emoji:String, on button: UIButton) {}
-```
-
 touchCard에는 _ 가 있는데 iOS에서 메시지를 보내는 것으로 이건 Objective-C에서 왔고 여기서는 내부 외부 이름이 없었기 때문에 있다.
 
 ```swift
 @IBAction func touchCard(_ sender: UIButton)
+```
+
+
+### 카드뒤집기
+
+카드를 클릭했을 때 카드가 뒤집히는 효과를 주기 위해 함수를 하나 선언한다. 두개의 인자를 받는 함수이며, 개별 인자에 대해 '외부이름'과 '내부이름'을 설정한다. 실제 Button을 클릭했을때, flipCard라는 함수가 호출되고 해당 함수에 두가지 인자를 전달하게 된다. 첫번째 인자는 고스트 이모지이며, 두번째 인자는 눌러진 버튼이다. 이렇게 flipCard로 전달된 두개의 인자를 이용해 우리가 원하는 결과(카드 뒤집기)를 만들어낸다.
+
+```swift
+func flipCard(withEmoji emoji:String, on button: UIButton) {}
 ```
 
 근본적으로 flipCard는 토글이다. flipCard 메소드에게 버튼을 확인해서 이미 유령이면 텍스트 없이 주황색으로 뒤집게 한다. <br>
@@ -120,37 +129,42 @@ touchCard에는 _ 가 있는데 iOS에서 메시지를 보내는 것으로 이�
 
 
 ```swift
-import UIKit
+func flipCard(withEmoji emoji:String, on button: UIButton) {
+    // print("flipCard(withEmoji: \(emoji))")
 
-class ViewController: UIViewController {
-  func flipCard(withEmoji emoji:String, on button: UIButton) {
-  //        print("flipCard(withEmoji: \(emoji))")
-      // 버튼의 현재 타이틀이 유령으로 되어있는지를 확인
-      if button.currentTitle == emoji {
-          button.setTitle("", for: UIControl.State.normal)
-          button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
-      } else { // 유령이 없다면 유령을 넣어줘야 함
-          button.setTitle(emoji, for: UIControl.State.normal)
-          button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-      }
-  }
+    // 버튼의 현재 타이틀이 유령으로 되어있는지를 확인
+    if button.currentTitle == emoji {
+        button.setTitle("", for: UIControl.State.normal)
+        button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+    } else { // 유령이 없다면 유령을 넣어줘야 함
+        button.setTitle(emoji, for: UIControl.State.normal)
+        button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
 }
 ```
+button.currentTitle에 따라 다른내용을 수행하게 한다.
+
+> 토글? 하나의 설정값으로부터 다른 값으로 전환하는것으로 오직 두가지 상태밖에 없는 상황에서 스위치를 한번 누르면 한 값이 되고, 다시 한번 누르면 다른 값으로 변하는 것을 의미한다.
 
 
-#### 에러: swift는 모든 인스턴스 변수(속성)은 초기화를 해야한다. 즉, 속성엔 초기값이 항상 있어야 한다.
+### 몇번 뒤집는지 확인해보기
 
-<center>
-<figure>
-<img src="/assets/post-img/swift/7.png" alt="" width="50%">
-</figure>
-</center>
 <center>
 <figure>
 <img src="/assets/post-img/swift/5.png" alt="" width="50%">
 </figure>
 </center>
 
+이와 같은 방식으로 선언을 하게 되면 에러를 만나게 된다.
+
+
+#### swift는 모든 인스턴스 변수(속성)은 초기화를 해야한다. 즉, 속성엔 초기값이 항상 있어야 한다.
+
+<center>
+<figure>
+<img src="/assets/post-img/swift/7.png" alt="" width="50%">
+</figure>
+</center>
 
 초기화 방법에는 두가지가 있다.
 
@@ -160,17 +174,17 @@ class ViewController: UIViewController {
 2. 값에 0을 쓰는것
 
 
-#### swift의 타입 지정
+```swift
+var flipCount = 0
+```
 
-swift는 강한 타입 추론을 가지는 언어로 어떤 타입을 사용하는지 분명히 해야하며, 가능하기만 하다면 타입을 추측해준다.
-
-
-### UILabel
-
-읽기전용 텍스트 필드
+위와 같이 0을 할당함으로써 간단하게 초기화하도록 한다. swift의 경우 타입에 매우 엄격하다. 사용되는 거의 모든 변수는 타입을 가지며, Objective-C와의 호환을 위해 타입이 없는 경우가 종종있을 뿐이다. 변수의 타입을 명시적으로 적을수도 있지만, 특정 값을 할당하게 되면 해당 변수의 타입을 추론하기도 한다.
 
 
-#### connection:outlet
+
+### 다른 카드 만들기 - UILabel 써보기
+
+UILabel: 읽기전용 텍스트 필드
 
 outlet: 인스턴스 변수(속성)를 만든다.<br>
 이 속성은 UILabel을 가리키고 횟수가 바뀌면 스스로를 업데이트 하라고 말해준다.
@@ -181,7 +195,7 @@ outlet: 인스턴스 변수(속성)를 만든다.<br>
 
 `!`는 일단 굳이 초기화를 하지 않아도 된다는 특징이 있다. 초기화를 하지않아도 에러가 뜨지 않는다.
 
-모든 속성을 원한다면 속성 다음 `didSet`이라는 코드를 추가할 수 있다.
+모든 속성을 원한다면 속성 다음 `didSet`이라는 코드를 추가할 수 있다. didSet을 사용하게 되면 매번 flipCountLabel의 텍스트 값을 할당하는 코드를 넣어주지 않고도 원하는 결과값을 얻을 수 있게 된다. 프로퍼티의 값이 바뀐 후에 실행되는 프로퍼티 감시다(didSet)이다.
 
 ```swift
 var flipCount = 0 {
@@ -198,85 +212,124 @@ var flipCount = 0 {
 UI와 인스턴스 변수의 싱크를 맞추기 위해 속성감시자는 많이 사용된다
 
 
-#### 배열
+### 여러장의 카드 - 배열
 
-모든 카드의 배열을 만든다.
-
-- touchCard가 눌리면 배열을 보고 눌러진 버튼을 찾아내면 어떤 카드인지 알 수 있다.
-- 어떤 카드가 배열 안 어느 인덱스에 있는지 알면 다른 배열에서 사용할 이모티콘을 찾는다
-
-데이터에 의해 구동되는 것으로 카드를 추가하고 싶다면 이모티콘 배열에 카드를 추가하기만 하면 된다.
-
-
-#### 카드를 담을 배열을 어떻게 만드는가?
+여러장의 카드를 만들기 위해서 버튼들을 배열에 넣고 인덱스를 통해 조작하도록 하면 새롭게 생기게 되는 모든 카드에 대해 반복적으로 함수를 선언할 필요가 없다.
 
 UI와 코드의 연결이기 때문에 드래그로! var를 하나 더 만든다.
 
-
-#### connection:Outlet Collection
-
-UI에 잇는 것들의 배열
+connection:Outlet Collection > UI에 잇는 것들의 배열(ULButton의 배열이라는 뜻의 특별한 문법이다)
 
 ```swift
 @IBOutlet var cardButtons: [UIButton]!
 ```
 
-ULButton의 배열이라는 뜻의 특별한 문법이다.
-
-
 ### optional
 
-index의 리턴값은 int가 아니다. optional 값이다. 물음표가 그 뜻이고 ?는 optional이라는 뜻이다.
+여러장의 카드를 만들기 위해 배열을 만들엇다면 이 배열속에 저장된 버튼의 인덱스 값을 접근하기 위해 아래와 같은 코드를 작성한다.
+
+```swift
+let cardNumber = cardButtons.lastIndex(of: sender)
+```
+
+이때 인덱스에 Option+click을 하게 되면 반환값이 Int가 아닌 `Int?`임을 알 수 있다.
+
+<center>
+<figure>
+<img src="/assets/post-img/swift/8.png" alt="" width="50%">
+</figure>
+</center>
+
+index의 리턴값은 optional 값이다. **물음표가 그 뜻이고 ?는 optional이라는 뜻이다.** <br>
 optional과 int는 전혀 다른 타입이고 int와는 아무런 상관이 없다
 
-optional은 오직 두가지 상태를 가지는 타입으로 설정된 것과 설정되지 않은 상태 => 열거형
-열거형은 다른 언어와 마찬가지로 불연속형 값들의 모음이다
-열거형의 각 경우마다 관련된 데이터를 가질 수 있다
-같이 따라다니는 데이터
-optional은 설정된 상태일 때 관련된 데이터가 있는데 이 경우 int인 것을 의미한다
+optional은 값이 있거나 없는 두가지 경우만 존재한다. optional 타입인 변수에 값이 할당되지 않은 상태에서 값이 있다고 변수를 사용하게 되면 충돌이 일어나게 된다.
 
-이 Index 메소드는 주어진 버튼을 찾을 수 있는 지 없는지를 설정되었거나 되지 않은 상태로써 리턴하는 것
+<center>
+<figure>
+<img src="/assets/post-img/swift/9.png" alt="" width="50%">
+</figure>
+</center>
 
-그리고 만약 찾앗다면 그것과 관련된 int형 데이터도 리턴한다.
-cardNumber를 출력하면 그건 optional이고 설정된 상태이며 관련된 갑은 int라고 알려주는 것
-cardNumber배열에 없는 카드를 클릭하면 nil이라고 나온다.
-swift에서 nil은 설정되지 않은 optional의 상태를 의미한다
-
-여기서는 optional값은 옳지않다(이모티콘 배열에서 옵셔널로 찾아볼 수는 없다.) 정확한 Int값이 필요하다.
-그러면 설정된 상태의 관련된 값은 어떻게 가져올까? = 끝에 느낌표를 붙이는 것도 하나의 방법이다
-느낌표를 붙이면 optional이 설정되었다고 가정하고 관련된 값을 가져오라는 뜻이다.
-
-let cardNumber = cardButtons.lastIndex(of: sender)!
+예상하지 못한 nil을 발견했다는 뜻으로 optional을 푸는 과정에서 발생했다는 의미의 에러이다. 이 optional을 정상적으로 사용하기 위한 방법으로 해당 타입의 뒤에 `느낌표(!)`를 붙이거나 `if let` 조건문을 활용하는 방법이 있다.
 
 optional 문법은 정말 간단하게 ? ! 이런식으로 되어있는데, 이는 optional이 굉장히 흔히 쓰이기 때문이다.
 
-이때 연결되지 않은 애를 클릭하면 충돌이 일어나고
-이 충돌이 일어나는 이유는 설정되지 않은 옵셔널을 리턴하기 때문이다
-관련된 값이 없으니 프로그램을 충돌시킨다.
 
+#### 충돌을 일으키는 느낌표(!)
 
-예상하지 못한 nil을 발견했다는 뜻으로 optional을 푸는 과정에서 발생했다고 적혀잇음
+```swift
+let cardNumber = cardButtons.lastIndex(of: sender)!
+```
+
+느낌표를 사용하는 경우 연결되지 않은 애를 클릭하면 충돌이 일어나고 이 충돌이 일어나는 이유는 설정되지 않은 optional을 리턴하기 때문이다. 즉 관련된 값이 없으니 프로그램을 충돌시킨다.
 
 
 그러나 이렇게 충돌이 일어나지 않는 방법을 쓰고 싶은 경우도 있다.
+
+#### 충돌을 일으키지 않는 if let 조건문
+
 조건적으로 설정된 상태에 있는 지 보고 맞으면 쓰고 아니면 쓰지 않도록 한다.
 
-그럴때에는 !가 아닌 앞에 if를 적는다.
-
+```swift
 if let cardNumber = cardButtons.lastIndex(of: sender)
+```
 
-이제 이 optional이 설정된 상태에 있다면 코드가 실행되고 아니라면 실행되지 않는다.
-충돌은 일어나지 않는다.
-
-여기서도 optional은 제일 간단한 문법을 가진다는 걸 알 수 있다.
+이제 이 optional이 설정된 상태에 있다면 코드가 실행되고 아니라면 실행되지 않는다.충돌은 일어나지 않는다.
 
 
+### cardNumber를 이모티콘 배열에서 찾아보기
 
-!: 초기화하지 않아도 되게 해준다.
-optional이긴 하지만 ?가 아니라 !라 약간 다른 optional이다.
+```swift
+var emojiChoices = ["👻","🎃","👻","🎃"]
+```
 
 
-마지막으로 받은 cardNumber를 이모티콘 배열에서 찾아보는 것
+## 전체 소스코드
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+
+    var flipCount = 0 {
+        didSet {
+            flipCountLabel.text = "Flpis: \(flipCount)"
+        }
+    }
+
+    @IBOutlet var cardButtons: [UIButton]!
+
+    @IBOutlet weak var flipCountLabel: UILabel!
+
+    var emojiChoices = ["👻","🎃","👻","🎃"]
+
+    @IBAction func touchCard(_ sender: UIButton) {
+        flipCount += 1
+//        flipCountLabel.text = "Flpis: \(flipCount)"
+//        flipCard(withEmoji: "👻", on: sender)
+        if let cardNumber = cardButtons.lastIndex(of: sender) {
+            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+            print("cardNumber: \(cardNumber)")
+        } else {
+            print("chosen card was not in cardButtons")
+        }
+    }
 
 
-UI와 코드 모두 건드리는 것의 이름을 바꿀때는 cmd+rename
+    func flipCard(withEmoji emoji:String, on button: UIButton) {
+        // print("flipCard(withEmoji: \(emoji))")
+        // 버튼의 현재 타이틀이 유령으로 되어있는지를 확인
+        if button.currentTitle == emoji {
+            button.setTitle("", for: UIControl.State.normal)
+            button.backgroundColor = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+        } else { // 유령이 없다면 유령을 넣어줘야 함
+            button.setTitle(emoji, for: UIControl.State.normal)
+            button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        }
+    }
+}
+```
+
+
+- 참고: UI와 코드 모두 건드리는 것의 이름을 바꿀때는 cmd+rename
