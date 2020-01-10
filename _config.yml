@@ -59,6 +59,7 @@ nav:
   #  - { error: '/blog/categories/#error' }
     - { etc: '/blog/categories/#etc' }
     - { swift: '/blog/categories/#swift' }
+    - { Data Structure: '/blog/categories/#Data Structure' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
