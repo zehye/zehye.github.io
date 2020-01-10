@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Structure, Abstract data types
+title: Data Structure, Array
 category: Data Structure
 tags: [Data Structure]
 comments: true
