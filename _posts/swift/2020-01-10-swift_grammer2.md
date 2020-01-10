@@ -40,7 +40,7 @@ constant = "상수는 차후에 값을 변경할 수 없습니다."
 
 <center>
 <figure>
-<img src="/assets/post-img/swift/15.jpeg" alt="" width="80%">
+<img src="/assets/post-img/swift/15.png" alt="" width="80%">
 <figcaption>constant에는 값을 새로 할당할 수 없으니 let을 var로 변경하라.</figcaption>
 </figure>
 </center>
@@ -75,7 +75,7 @@ nickname = "jihye"
 
 <center>
 <figure>
-<img src="/assets/post-img/swift/16.jpeg" alt="" width="80%">
+<img src="/assets/post-img/swift/16.png" alt="" width="80%">
 <figcaption>초기화 되기 이전에 사용이 되었다.</figcaption>
 </figure>
 </center>
