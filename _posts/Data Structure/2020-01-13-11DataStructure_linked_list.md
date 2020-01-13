@@ -66,10 +66,22 @@ else:
 첫번째 변수는 **next node** 를 가리키고 있다.(이 노드의 다음 노드가 무엇인가를 저장, 레퍼런스 구조를 저장한다)<br>
 두번째 변수는 **value object**, 즉 어떤 값이 저장될 것인지 그 밸류를 저장하고 있는 레퍼런스를 저장
 
-`special node`: head와 tail이 있다 > Singly linked list 에서 꼭 저장할 필요는 없지만 해두면 유용하다.
+`specialized node`: head와 tail은 specialized node라고 한다. 이유는 Head와 Tail의 위치가 정해져있기 때문이다.<br>
+ -> Singly linked list 에서 꼭 저장할 필요는 없지만 해두면 유용하다.
 
-**head**: list의 맨 처음 노드에 저장 > 아무값도 저장되어있지 않고 next는 존재. 그러나 head앞의 next는 존재하지 않는다.<br>
-**tail**: 맨 마지막에 있는 노드 > 아무값도 저장되어있지않고 next도 없는 리스트의 마지막 노드
+**head**: list의 맨 처음에 있는 노드 > 아무값도 저장되어있지 않고 next는 존재. 그러나 head앞의 next는 존재하지 않는다.<br>
+**tail**: list의 맨 마지막에 있는 노드 > 아무값도 저장되어있지 않고 next도 없는 리스트의 마지막 노드
+
+
+#### Empty Linked List
+
+<center>
+<figure>
+<img src="/assets/post-img/DataStructure/4.jpeg" alt="" width="80%">
+</figure>
+</center>
+
+start와 end를 가리키는 linked list를 구성하는 핵심적인 요소가 된다.
 
 <center>
 <figure>
@@ -79,7 +91,7 @@ else:
 
 중간에 있는 레퍼런스 구조를 조작하여 공간을 한번에 만들어낼 수 있는 장점이 있다.
 
-
+사실 linked list에서는 head와 tail이 존재하지 않더라도 구현은 가능하다. 그러나 있으면 훨씬 편하게 구현이 가능하다.
 
 ### Implementation of Node Class
 
