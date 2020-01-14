@@ -130,3 +130,120 @@ class Node:
   def isTail(self):
     return self.blnTail
 ```
+
+
+### Search procedure in Singly linked list
+
+1. 해당 리스트로부터 d와 c를 찾는다
+2. array와 마찬가지로 처음부터 끝까지 순서대로 확인한다.
+3. 패턴(차례대로 순회) 차원에서는 달라지는것은 없지만, 인덱스는 사용할 수 없다. (next를 사용)
+
+<center>
+<figure>
+<img src="/assets/post-img/DataStructure/5.jpeg" alt="" width="80%">
+</figure>
+</center>
+
+1) 맨 처음 해야할일은 list로 부터 head를 찾는다. <br>
+2) head의 next node를 찾는다. <br>
+3) next가 tail인지 아닌지를 확인한다.
+
+```python
+if next == tail:
+  break
+if next != tail:
+  next.objValue == 'd'
+  # next.next
+```
+
+N번의 operation을 통해 유무를 찾아볼 수 있다.
+
+
+### Insert procedure in Singly linked list > b와 d사이에 c를 넣는다
+
+linked list에서 자료를 넣는 방법 > power of a linked list
+
+크게 3개의 operation이 필요하다!
+
+<center>
+<figure>
+<img src="/assets/post-img/DataStructure/6.jpeg" alt="" width="80%">
+</figure>
+</center>
+
+1. 어디에 넣고싶은지는 알고있어야 한다. > `node prev`, `node next`
+2. node new에서의 next는 무엇인지 모르는 상황이다.
+3. node prev와 node next 사이의 연결을 끊는다.
+4. 이때 node prev의 next값을 node new로 향하게 한다. (nodeprev.next = nodenew)
+5. node new의 next는 node next로 연결되도록 한다. (nodenew.next = nodenext)
+
+
+
+### Delete procedure in Singly linked list > d를 삭제한다
+
+linked list에서 자료를 삭제하는 방법 > power of a linked list
+
+크게 3개의 operation이 필요하다!
+
+<center>
+<figure>
+<img src="/assets/post-img/DataStructure/7.jpeg" alt="" width="80%">
+</figure>
+</center>
+
+1. 무엇을 삭제할 것인지는 알고있다. > `node prev`, `node remove`, `node next`
+2. 현재 상황 : node remove = nodeprev.next, node next = nodeprev.next.next
+3. node prev에서 node remmove로 가는 길을 끊어준다.
+4. node prev의 next를 node next를 향하게 한다. (nodeprev.next = nodenext)
+
+
+#### 그렇게 된다면 `d`는 어디에 있을까?
+
+GC를 통해 `d`에 대한 메모리를 삭제시켜준다. 궁극적으로 우리가 삭제시키는 것은 아니다.
+
+
+
+### Implementation of Singly linked list
+
+```python
+class SinglyLinkedList:
+  nodeHead = ''
+  nodeTail = ''
+  size = 0
+
+  def __init__(self):
+    self.nodeTail = Node(blnTail=True)
+    self.NodeHead = Node(blnHead=True, nodeNext=self.nodeTail)
+
+  def insert(self, objInsert, idxInsert):
+    nodeNew = Node(objValue = objInsert)
+    nodePrev =  self.get(idxInsert -1)
+    nodeNext = nodePrev.getNext()
+    nodePrev.setNext(nodeNew)
+    nodeNew.setNext(nodeNext)
+    self.size = self.size +1
+
+  def removeAt(self. idxRemove):
+    nodePrev = self.get(idxRemove-1)
+    nodeRemove = nodePrev.getNext()
+    nodeNext = nodeRemove.getNext()
+    nodePrev.setNext(nodenext)
+    self.size = self.size -1
+    return nodeRemove.getValue()
+
+  def get(self.idxRetrieve):
+    nodeReturn = self.nodeHead
+    for itr in range(idxRetrieve +1):
+      nodeReturn = nodeReturn.getNext()
+    return nodeReturn
+
+  def printStatue(self):
+    nodeCurrent = self.nodeHead
+    while nodeCurrent.getNext().isTail() == False:
+      nodeCurrent = nodeCurrent.getNext()
+      print(nodeCurrent/getValue(), )
+    print
+
+  def getSize(self):
+    return self.size
+```
