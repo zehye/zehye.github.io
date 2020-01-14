@@ -241,8 +241,8 @@ class SinglyLinkedList:
     nodeCurrent = self.nodeHead
     while nodeCurrent.getNext().isTail() == False:
       nodeCurrent = nodeCurrent.getNext()
-      print(nodeCurrent/getValue(), )
-    print
+      print(nodeCurrent.getValue(),)
+    print()
 
   def getSize(self):
     return self.size
