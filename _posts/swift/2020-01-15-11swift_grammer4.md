@@ -31,7 +31,6 @@ let someDouble: Double = someAny
 <center>
 <figure>
 <img src="/assets/post-img/swift/17.png" alt="" width="80%">
-<figcaption></figcaption>
 </figure>
 </center>
 
@@ -56,7 +55,6 @@ nil은 NULL과 유사한 표현으로 보면 된다.
 <center>
 <figure>
 <img src="/assets/post-img/swift/18.png" alt="" width="80%">
-<figcaption></figcaption>
 </figure>
 </center>
 
