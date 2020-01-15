@@ -16,7 +16,7 @@ comments: true
 
 값이 '있을 수도, 없을 수도 있음'
 
-```swift 
+```swift
 let optionalConstant: Int? = nil  //혹은
 let optionalConstant: Optional<Int> = nil
 
@@ -127,17 +127,17 @@ optionalValue = optionalValue + 1
 
 옵셔널 값을 어떻게 꺼내서 쓰고 활용하는가?
 
-- 옵셔널 바인딩(Optional Binding)
-- 강제 추출(Force Unwrapping)
+- 옵셔널 바인딩(Optional Binding) > **if let**
+- 강제 추출(Force Unwrapping) > **!**
 
 
 #### 옵셔널 바인딩(Optional Binding)
 
-옵셔널 값을 꺼내오는 방법 중 하나로 `nil체크 + 안전한 값 추출`
+옵셔널 값을 꺼내오는 방법 중 하나로 `nil체크 + 안전한 값 추출`하다는 특징을 가진다.
 
 <center>
 <figure>
-<img src="/assets/post-img/swift/21.jpeg" alt="" width="80%">
+<img src="/assets/post-img/swift/21.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -154,7 +154,7 @@ var myName: String? = nil
 printName(myName)
 ```
 
-전달되는 값의 타입이 다를때마다 컴파일 오류가 발생하기 때문에 `if-let`을 통해 옵셔널 바인딩을 하도록 한다.
+전달되는 값의 타입이 다를때마다 컴파일 오류가 발생하기 때문에 `if-let`을 통해 안전하게 옵셔널 값을 추출하도록 한다.
 
 ```swift
 func printName(_ name: String) {
