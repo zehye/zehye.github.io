@@ -13,7 +13,7 @@ comments: true
 
 ## 이름짓기 규칙
 
-- Lower Camel Cae: function, method, variable, constant > someVariableName..
+- Lower Camel Case: function, method, variable, constant > someVariableName..
 - Upper Camel Case: type(class, struct, enum, extension) > Person, Point, Week..
 
 
@@ -49,7 +49,7 @@ class Person {
 
 let zehye: Person = Person()
 print(zehye)
-dumo(zehye)
+dump(zehye)
 ```
 
 ```consol

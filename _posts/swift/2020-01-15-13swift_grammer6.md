@@ -99,7 +99,7 @@ func 함수이름() {
 ```
 
 ```swift
-funcA() { print("bye")}
+funcA() { print("bye") }
 ```
 
 

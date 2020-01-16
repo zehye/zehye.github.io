@@ -42,6 +42,14 @@ someInteger는 bool타입이 아닌 Int 타입이기 때문에 컴파일 오류�
 
 ### Switch
 
+if는 bool 값으로 조건을 확인하기 위해, 양자 택일의 형태밖에 처리하지 못한다.
+
+값을 확인하고 다수의 분기를 할 수 있도록 하는것이 switch문이다. 체크하는 값을 준비하고 그 값에 따라 처리하는 부분에 점프를 한다.
+
+- swift 이후에 체크하는 값을 작성한다. >> 숫자, 텍스트, 논리값 다 쓸 수 있다.
+- case: 값을 작성한다.
+- default: 마지막에는 default를 준비해야한다.
+
 ```
 switch value {
 case pattern:
@@ -71,7 +79,7 @@ default:
 그리고 정수 외의 대부분의 기본 타입을 사용할 수 있다.<br>
 문자열을 가지고 비교값에 넣어주고 case구문을 작성할 수 있다.
 
-```swfit
+```swift
 switch "zehye" {
 case "jake", "mina":
   print("jake")
@@ -87,7 +95,7 @@ default:
 
 혹은 break가 걸리지 않게 하고 싶다면 `fallthrough`를 사용해주면 된다.
 
-```swfit
+```swift
 switch "zehye" {
 case "jake":
   print("jake")
@@ -96,10 +104,16 @@ case "mina":
   print("mina")
 case "zehye":
   print("zehye")
+  fallthrough
 default:
   print("unknown")
 }
+
+>>>zehye
+   unknown
 ```
+
+
 
 
 
