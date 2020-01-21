@@ -17,7 +17,7 @@ Recursion에 의해 나오는 다양한 함수호출 결과를 저장, 재활용
 
 <center>
 <figure>
-<img src="/assets/post-img/DataStructure/13.jpeg" alt="" width="80%">
+<img src="/assets/post-img/DataStructure/13.jpeg" alt="" width="50%">
 </figure>
 </center>
 

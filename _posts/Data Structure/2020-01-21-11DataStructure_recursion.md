@@ -37,7 +37,7 @@ class Department:
 
 <center>
 <figure>
-<img src="/assets/post-img/DataStructure/13.jpeg" alt="" width="80%">
+<img src="/assets/post-img/DataStructure/13.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -99,7 +99,7 @@ def Fibonacci(n):
 
 <center>
 <figure>
-<img src="/assets/post-img/DataStructure/14.jpeg" alt="" width="80%">
+<img src="/assets/post-img/DataStructure/14.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -123,7 +123,7 @@ pop: 함수가 리턴을 함으로써 밖으로 나가게 될 떄 pop 실행
 
 <center>
 <figure>
-<img src="/assets/post-img/DataStructure/15.jpeg" alt="" width="80%">
+<img src="/assets/post-img/DataStructure/15.jpeg" alt="" width="50%">
 </figure>
 </center>
 
