@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swift 인터페이스 빌더와 객체를 코드와 연결
+title: swift 인터페이스 빌더와 객체를 코드와 연결(IBOulet)
 category: swift
 tags: [swift]
 comments: true
@@ -10,9 +10,9 @@ comments: true
 
 <hr>
 
-## 인터페이스 빌더와 객체를 코드와 연결
+## 인터페이스 빌더와 객체를 코드와 연결(IBOulet)
 
-생성된 인터페이스 빌더의 객체를 코드와 연결하는 작업을 해보자.
+생성된 인터페이스 빌더의 객체를 코드(프로퍼티)와 연결하는 작업을 해보자.
 
 
 <center>
