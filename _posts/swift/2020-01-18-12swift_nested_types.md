@@ -7,6 +7,7 @@ comments: true
 ---
 
 > 개인공부 후 자료를 남기기 위한 목적임으로 내용 상에 오류가 있을 수 있습니다.    
+[참고](https://xho95.github.io/swift/language/grammar/nested/2017/03/02/Nested-Types.html)
 
 <hr>
 
@@ -65,3 +66,12 @@ struct BlackjackCard {
     }
 }
 ```
+
+Suit 열거 타입은 네 벌의 공통 카드 묶음과 그 기호를 표현하기 위한 Character 원시 값을 나타낸다.
+
+Rank 열거 타입은 13 개의 가능한 카드 등급과 그들이 표시할 값인 Int 원시값을 나타낸다. (이 Int 값은 잭, 퀸, 킹 그리고 에이스 카드에서는 사용하지 않는다.)
+
+위에서 언급한 대로 Rank 열거 타입은 Values 라는 중첩된 구조 타입을 정의하고, 이 구조 타입은 대부분의 카드는 하나의 값을 갖지만 에이스 카드는 두 값을 가지고 있다는 사실을 감춘다. Values 구조 타입은 이를 나타내기 위해 두 개의 속성을 정의한다
+
+- first 는 Int 타입
+- second 는 Int? 타입으로 “옵셔널 Int”
