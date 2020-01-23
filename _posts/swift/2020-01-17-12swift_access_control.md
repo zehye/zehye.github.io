@@ -14,7 +14,7 @@ comments: true
 ## 접근 제한(Access Control)
 
 접근권한을 말한다.<br>
-calss, struct, enum등의 type들을 비롯해 property. method, subscript 등 모두에게 접근제한을 부여할 수 있다.
+class, struct, enum등의 type들을 비롯해 property. method, subscript 등 모두에게 접근제한을 부여할 수 있다.
 
 이를 이해하기 위한 간단한 개념부터 봐보자.
 
@@ -29,9 +29,9 @@ calss, struct, enum등의 type들을 비롯해 property. method, subscript 등 �
 프로젝트 파일 하나하나를 의미한다. 보통 한 Source File안에 하나의 class나 하나의 struct를 만드는 것이 일반적이지만 꼭 그럴필요는 없다.
 
 
-### Hiding Implementation Detail
+#### Hiding Implementation Detail
 
-어떤 함수나 class 인스턴스 등의 안에서 실행되는 코드를 외부에서는 알 수 없게 가린다는 의미이다. 이에 따라 밖에서는 안에 어떤 property나 mmethod가 있는 지도 알 수 없으며, 이름을 알더라도 접근할 수 없게 만든다.
+어떤 함수나 class 인스턴스 등의 안에서 실행되는 코드를 외부에서는 알 수 없게 가린다는 의미이다. 이에 따라 밖에서는 안에 어떤 property나 method가 있는 지도 알 수 없으며, 이름을 알더라도 접근할 수 없게 만든다.
 
 
 ### 5가지의 Access Level
