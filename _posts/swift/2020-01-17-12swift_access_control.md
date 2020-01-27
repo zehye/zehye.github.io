@@ -51,7 +51,7 @@ open과 마찬가지로 외부 모듈이 import해서 접근 가능하지만, su
 
 #### internal
 
-자신의 모듈 안에서만 접근 가능하고 외부 모듈에서는 접근 불가하다. 한마디로 프로젝트 내부용이다. 모든 객체는 별도의 지정이 ㅇ벗으면 기본적으로 internal로 셋팅되며 Open API를 제공하지 않는 앱은 대체로 객체들을 internal로 두면 문제될 것이 없다. 다만, 다른 Source file이나 declaration 밖에서의 접근이 없다면 internal로 놔두는 것보다 private으로 두는 것이 더좋다.
+자신의 모듈 안에서만 접근 가능하고 외부 모듈에서는 접근 불가하다. 한마디로 프로젝트 내부용이다. 모든 객체는 별도의 지정이 없으면 기본적으로 internal로 셋팅되며 Open API를 제공하지 않는 앱은 대체로 객체들을 internal로 두면 문제될 것이 없다. 다만, 다른 Source file이나 declaration 밖에서의 접근이 없다면 internal로 놔두는 것보다 private으로 두는 것이 더좋다.
 
 
 #### fileprivate
