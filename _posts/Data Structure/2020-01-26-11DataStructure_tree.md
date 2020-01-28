@@ -18,11 +18,6 @@ comments: true
 - `traverse`를 다양하게 정의할 수 있다
   - traverse: 속에 있는 데이터를 모두 끄집어내는 것
 
-<center>
-<figure>
-<img src="/assets/post-img/DataStructure/18.png" alt="" width="50%">
-</figure>
-</center>
 
 만약 linked list의 경우 우리가 리스트 안의 데이터를 모두 꺼내온다고 하면 알아서 순서대로 데이터를 꺼내올 것이다. 그러나 트리의 경우 일직선의 구조가 아니기 때문에 데이터를 하나하나 꺼낼때마다 다양한 변종이 생긴다. 즉 traverse를 다양하게 정의할 수 있다.
 
