@@ -1,8 +1,8 @@
 ---
 layout: post
 title: swift 인터페이스 빌더와 객체를 코드와 연결(IBOulet)
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

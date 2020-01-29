@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cocoa Touch 프레임워크와 UIKit, Foundation
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 프로그래밍 디자인 패턴
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

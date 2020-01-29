@@ -1,8 +1,8 @@
 ---
 layout: post
 title: swift 에셋 카탈로그 그리고 앱 시닝과 앱 슬라이싱
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

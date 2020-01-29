@@ -1,8 +1,8 @@
 ---
 layout: post
 title: iOS View 체계
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

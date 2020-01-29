@@ -1,8 +1,8 @@
 ---
 layout: post
 title: swift UIButton, UISlider, UILabel
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

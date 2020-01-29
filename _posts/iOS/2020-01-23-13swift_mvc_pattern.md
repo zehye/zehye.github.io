@@ -1,8 +1,8 @@
 ---
 layout: post
 title: MVC(Model-View-Controller Design Pattern)
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 오토레이아웃이란?
-category: swift
-tags: [swift]
+category: iOS
+tags: [iOS]
 comments: true
 ---
 
