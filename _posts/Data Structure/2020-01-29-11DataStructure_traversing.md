@@ -22,6 +22,12 @@ comments: true
 LHS를 먼저팔지, RHS를 먼저팔지를 recursion으로 처리하는 traversing 기법<br>
 -> LHS가 더 작은 값이기 때문에 일반적으로 먼저 프린트한다. 그럼 이때 이 LHS와 RHS를 가리키고 있는 current value는 어디에 프린트해야할까?
 
+<center>
+<figure>
+<img src="/assets/post-img/DataStructure/34.png" alt="" width="50%">
+</figure>
+</center>
+
 1. Pre-order traverse : traversing이 일어나기전에 출력 > 3 2 0 1 5 4 7 6 9 8
 2. In-order traverse : LHS와 RHS사이에 출력 > 0 1 2 34 5 6 7 8 9
 3. Post-order traverse : traversing이 일어난 후에 출력 > 1 0 2 4 6 8 9 7 5 3
