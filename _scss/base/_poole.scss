@@ -54,7 +54,7 @@ html {
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -67,7 +67,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #E28691;
+  color: #1B6EC4;
   text-decoration: none;
 }
 a strong {
@@ -291,7 +291,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 30rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;

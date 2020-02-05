@@ -19,7 +19,7 @@
  */
 
 .container {
-  max-width: 28rem;
+  max-width: 20rem;
   a {
     @if $theme-color != $default { color: $theme-color; }
   }
@@ -35,7 +35,7 @@
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 1800px;
+    max-width: 1000px;
   }
 }
 
@@ -97,7 +97,7 @@
 #blog-title{
   vertical-align: text-top;
   font-size: 80%;
-  color : r#665A5C;
+  color : rgba(49, 49, 49, 0.82);
 }
 
 .nav-up {
