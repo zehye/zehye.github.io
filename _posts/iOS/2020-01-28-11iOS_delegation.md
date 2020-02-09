@@ -91,7 +91,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 }
 ```
-
+<center>
 <figure>
 <img src="/assets/post-img/iOS/18.png" alt="" width="80%">
 </figure>
