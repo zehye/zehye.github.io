@@ -92,6 +92,7 @@ comments: true
 
 ### UITableView
 
+[]()
 #### Declaration
 
 ```swift
@@ -119,3 +120,5 @@ iOS의 테이블뷰에는 세로 스크롤 컨텐츠의 단일 열이 행으로 
 
 
 ### Table
+
+[Table apple doce](https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/)
