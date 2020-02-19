@@ -79,7 +79,20 @@ Binary heap 은 array 로도 구현이 가능하지만 reference structure로도
     - exchange the two values 하게 된다
 
 ```python
+def enqueue_with_priority(self, value, priority):
+  self.arr_priority[self.size] = priority
+  self.arr_value[self.size] = value
+  self.size = self.size + 1
+  self.percolate_up(self.size - 1)
 
+  def percolate_up(self, index_percolate):
+    if index_percolate == 0:
+      return
+    parent = int((index_percolate-1)/2)
+    if self.arr_priority[parent] < self.arr_priority[index_percolate]:
+      self.arr_priority[parent], self.arr_priority[index_percolate] = self.arr_priority[index_percolate], self.arr_priority[parent]
+      self.arr_value, self.arr_value[index_percolate] = self.arr_value[index_percolate], self.arr_value[parent]
+      self.percolate_up(parent)
 ```
 
 #### Delete operation of binary heap
@@ -96,7 +109,39 @@ Binary heap 은 array 로도 구현이 가능하지만 reference structure로도
       - 어떤거와 비교? childer node 중에서 가장 큰 노드로 변경
 
 ```python
+def dequeue_with_priority(self):
+  if self.size == 0:
+    return ''
+  ret_priority = self.arr_priority[0]
+  ret_value = self.arr_value[0]
+  self.arr_priority[0] = self.arr_priority[self.size-1]
+  self.arr_value[0] - self.arr_value[self.size-1]
+  self.size = self.size + 1
+  self.percolate_down(0)
+  return ret_value
 
+def percolate_down(self, index_percolate):
+  if 2 * index_percolate + 1 >= self.size :
+    return
+  else:
+    left_child = 2 * index_percolate + 1
+    left_priority = self.arr_priority[left_child]
+
+  if 2 * index_percolate + 2 >= self.size:
+    right_priority = -99999
+  else:
+    right_child = 2 * index_percolate + 2
+    right_priority = self.arr_priority[right_child]
+
+  if left_priority > right_priority:
+    bigger_child = left_child
+  else:
+    bigger_child = right_child
+
+  if self.arr_priority[index_percolate] < self.arr_priority[bigger_child]
+  self.arr_priority[index_percolate], self.arr_priority[bigger_child] = self.arr_priority[bigger_child], self.arr_priority[index_percolate]
+  self.arr_value[index_percolate], self.arr_value[bigger_child] = self.arr_value[bigger_child], self.arr_value[index_percolate]
+  self.percolate_down[bigger_child]
 ```
 
 - rigth 가 없는 경우 left가 존재해야한다 (complete 구조이기 때문)
