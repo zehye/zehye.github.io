@@ -81,6 +81,6 @@ class PriorityQueue:
 
 <center>
 <figure>
-<img src="/assets/post-img/DataStructure/38.jpeg" alt="" width="50%">
+<img src="/assets/post-img/DataStructure/39.png" alt="" width="50%">
 </figure>
 </center>
