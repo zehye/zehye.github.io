@@ -96,7 +96,7 @@ UITableViewCell 클래스에서 제공하는 표준 스타일 셀을 이용해 �
 
 ### UITableViewCell
 
-[참고한 애플 문서](https://developer.apple.com/documentation/uikit/uitableviewcell)
+[참고한 애플 문서-UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell)
 
 #### Declaration
 

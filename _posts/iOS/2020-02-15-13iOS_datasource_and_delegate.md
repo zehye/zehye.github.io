@@ -101,7 +101,7 @@ func tableView(UITableView, didEndEditingRowAt: IndexPath?)
 
 ### UITableViewDataSource
 
-[참고한 애플 문서](https://developer.apple.com/documentation/uikit/uitableviewdatasource)
+[참고한 애플 문서-UITableViewDataSource](https://developer.apple.com/documentation/uikit/uitableviewdatasource)
 
 #### Declaration
 
@@ -109,9 +109,12 @@ func tableView(UITableView, didEndEditingRowAt: IndexPath?)
 protocol UITableViewDataSource
 ```
 
-테이블 뷰는 데이터 표현 만 관리합니다. 그들은 데이터 자체를 관리하지 않습니다. 데이터를 관리하기 위해 데이터 소스 오브젝트, 즉 UITableViewDataSource 프로토콜을 구현하는 오브젝트를 테이블에 제공합니다. 데이터 소스 개체는 테이블의 데이터 관련 요청에 응답합니다. 또한 테이블의 데이터를 직접 관리하거나 앱의 다른 부분과 조정하여 해당 데이터를 관리합니다. 데이터 소스 개체의 다른 책임은 다음과 같습니다.
+테이블 뷰는 데이터 표현 만 관리하며 데이터 자체를 관리하지 않는다. 데이터를 관리하기 위해 데이터 소스 오브젝트, 즉 UITableViewDataSource 프로토콜을 구현하는 오브젝트를 테이블에 제공한다. 데이터 소스 개체는 테이블의 데이터 관련 요청에 응답하며, 테이블의 데이터를 직접 관리하거나 앱의 다른 부분과 조정하여 해당 데이터를 관리한다.
 
-테이블의 섹션 및 행 수를보고합니다. 테이블의 각 행에 셀을 제공합니다. 섹션 머리글과 바닥 글에 제목을 제공합니다. 테이블의 인덱스 구성 (있는 경우) 기본 데이터를 변경해야하는 사용자 또는 테이블 시작 업데이트에 응답 이 프로토콜의 두 가지 방법 만 필요하며 다음 예제 코드에 나와 있습니다.
+- 테이블의 섹션 및 행 개수를 보고
+- 테이블의 각 행에 셀을 제공
+- 섹션 머리글과 바닥 글에 제목을 제공
+<!-- - 테이블의 인덱스 구성(있는 경우) 기본 데이터를 변경해야하는 사용자 또는 테이블 시작 업데이트에 응답 -->
 
 ```swift
 // Return the number of rows for the table.     
@@ -134,7 +137,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 ### UITableViewDelegate
 
-[참고한 애플 문서](https://developer.apple.com/documentation/uikit/uitableviewdelegate)
+[참고한 애플 문서-UITableViewDelegate](https://developer.apple.com/documentation/uikit/uitableviewdelegate)
 
 #### Declaration
 
@@ -142,4 +145,9 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 protocol UITableViewDelegate
 ```
 
-이 프로토콜의 방법을 사용하여 다음 기능을 관리하십시오. 사용자 정의 머리글 및 바닥 글보기를 만들고 관리합니다. 행, 머리글 및 바닥 글에 대한 사용자 지정 높이를 지정하십시오. 더 나은 스크롤링 지원을 위해 높이 추정치를 제공하십시오. 행 내용을 들여 씁니다. 행 선택에 응답합니다. 스 와이프 및 테이블 행의 다른 작업에 응답합니다. 테이블 내용 편집을 지원합니다. 테이블 뷰는 NSIndexPath 객체를 사용하여 행과 섹션을 지정합니다. 행 및 섹션 인덱스를 해석하는 방법에 대한 자세한 내용은 행 및 섹션의 위치 지정을 참조하십시오.
+- 사용자 정의 머리글 및 바닥 글보기를 만들고 관리
+- 행, 머리글 및 바닥 글에 대한 사용자 지정 높이를 지정
+- 더 나은 스크롤링 지원을 위해 높이 추정치를 제공
+- 행 내용을 들여 쓰고 행 선택에 응답
+- 스와이프 및 테이블 행의 다른 작업에 응답 > 테이블 내용 편집을 지원
+- 테이블 뷰는 NSIndexPath 객체를 사용하여 행과 섹션을 지정

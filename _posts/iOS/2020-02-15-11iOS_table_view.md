@@ -92,7 +92,7 @@ comments: true
 
 ### UITableView
 
-[]()
+[참고한 애플 문서-UITableView](https://developer.apple.com/documentation/uikit/uitableview)
 #### Declaration
 
 ```swift
@@ -108,6 +108,8 @@ iOS의 테이블뷰에는 세로 스크롤 컨텐츠의 단일 열이 행으로 
 
 ### Table Views
 
+[참고한 애플 문서-TableView](https://developer.apple.com/documentation/uikit/views_and_controls/table_views)
+
 테이블뷰에는 세로 스크롤 컨텐츠의 단일 열이 행과 섹션으로 나누어 표시된다. 테이블의 각 행에는 앱과 관련된 단일 정보가 표시되며 섹션을 사용하면 관련 행을 그룹화 할 수 있다.
 
 테이블 뷰는 다음을 포함하여 여러 다른 객체 간의 협업입니다.
@@ -121,4 +123,4 @@ iOS의 테이블뷰에는 세로 스크롤 컨텐츠의 단일 열이 행으로 
 
 ### Table
 
-[Table apple doce](https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/)
+[참고한 애플 문서-Table](https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/)
