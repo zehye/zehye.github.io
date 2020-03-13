@@ -10,6 +10,10 @@ comments: true
 
 <hr>
 
+## UICollectionViewFlowLayout
+
+UICollectionViewFlowLayout 클래스를 사용하면 컬렉션뷰의 셀을 원하는 형태로 정렬할 수 있다. 플로우 레이아웃은 레이아웃 객체가 셀을 선형 경로에 배치하고 최대한 이 행을 따라 많은 셀을 채우는것을 의미한다. 현재 행에서 레이아웃 객체의 공간이 부족하면 새로운 행을 생성하고 거기에서 레이아웃 프로세스를 계속 진행한다.
+
 ```swift
 override func viewDidLoad() {
     super.viewDidLoad()
