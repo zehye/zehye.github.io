@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navivation Item, CollectionView
+title: Navigation Item, CollectionView
 category: iOS
 tags: [iOS]
 comments: true
