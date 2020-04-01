@@ -30,7 +30,12 @@ Alamofire는 iOS, macOS를 위한 스위프트 기반 HTTP 네트워킹 라이�
 - 광범위한 단위 테스트 보장
 - [완벽한 문서화](http://cocoadocs.org/docsets/Alamofire/)
 
-Alamofire의 우아함은, Swift로 작성되었고, Objective-C팀의 AFNetworking에서 어떤것도 상속받지 않은 사실에서 비롯된 것이라고 한다.
+즉, 정리해보자면 아래와 같다.
+
+- Alamore란 iOS, macOS를 위한 Swift 기반의 HTTP 네트워킹 라이브러리
+- Alamofire는  URLSession 기반이며 URLSession은 네트워킹 호출에서 모호한 부분이 많은데 Alamofire를 사용한다면 데이터를 접근하기 위한 노력을 줄일 수 있으며 코드를 더 깔끔하고 가독성 있게 쓰는 것이 가능해짐
+
+> Alamofire는 HTTP 네트워킹을 하는데 자주 사용하게 되는 코드나 함수를 더 쉽게 사용할 수 있도록 모아놓은 것
 
 iOS에서 기본적으로 제공하고 있는 HTTP통신 방법은 여러가지가 있지만 URLSession을 이용한 방법이 있다. 모두가 같은 방법으로 사용하진 않겠지만 기본적으로 이러한 형태로 요청이 가능하다.
 
