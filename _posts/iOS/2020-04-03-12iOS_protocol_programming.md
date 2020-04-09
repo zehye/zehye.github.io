@@ -31,8 +31,42 @@ comments: true
 
 ### 프로토콜 초기구현
 
-프로토콜을 채택한 타입의 정의부에 프로토콜의 요구사항을 구현하지 않더라고 프로토콜의 익스텐션에 미리 프로토콜의 요구사항을 구현하는 것을 의미한다.
+프로토콜을 채택한 타입의 정의부에 프로토콜의 요구사항을 구현하지 않더라도 프로토콜의 익스텐션에 미리 프로토콜의 요구사항을 구현하는 것을 의미한다.
 
+원래 프로토콜에는 기능을 수행하는 코드는 작성을 할 수 없는데, 이를 swift2 protocol extension에는 실제 값을 계산하고, 기능을 하는 메서드를 구현할 수 있게 되었다. 즉 일반 클래스처럼 프로퍼티와 메서드를 정의하는 것이 가능해짐을 의미한다. 즉 extension을 통해 protocol의 기능을 추가하는 것이 가능해지게 된 것이다.
+
+```swift
+protocol Talkable {
+    var topic: String { get set }
+    func talk(to: Self)
+}
+
+struct Person: Talkable {
+    var topic: String
+    var name: String
+
+    func talk(to: Person) {
+        print("\(topic)에 대해 \(to.name)에게 이야기합니다")
+    }
+}
+```
+이런식으로 Talkable이라는 프로토콜을 생성하고 Person은 이 프로토콜을 채택한다. 근데 Person 말고도 다른 타입에서도 채택하고 싶어진다면 그 타입에서도 Talkable 프로토콜이 요구하는 사항을 모두 구현해주어야 한다. 그런데 이때 프로토콜이 요구하는 사항을 미리 한꺼번에 구현해둔다면 중복되는 코드를 피할 수 있게 될 것이다.
+
+```swift
+protocol Talkable {
+    var topic: String { get set }
+    func talk(to: Self)
+}
+
+// 익스텐션을 사용한 프로토콜 초기 구현
+extension Talkable {
+    func talk(to: Self) {
+        print("\(to)! \(topic)")
+    }
+}
+```
+
+이렇게 하나의 프로토콜을 만들어주고 초기구현을 해준다면 여러타입에서 해당 기능을 사용하고 싶을 때 해당 프로토콜만 채택해주면 된다. 만약 프로토콜의 초기구현과 다른 동작을 하고 싶다면, 해당 타입에 프로토콜의 요구사항을 재정의해주기만 하면 된다. 따라서 프로토콜 초기구현만 제대로 해놓는다면 여러 프로토콜을 그저 채택하기만 해도 그 타입에 기능이 추가될 수 있음을 의미한다.
 
 
 ## 프로토콜 지향 프로그래밍을 추구하는 이유
