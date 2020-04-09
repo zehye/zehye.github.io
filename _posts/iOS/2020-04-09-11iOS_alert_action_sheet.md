@@ -174,7 +174,7 @@ destructive 스타일이 쓰이는 떄는 삭제를 하거나 동작을 취했�
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS2/9.jpeg" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/9.jpeg" alt="" width="50%">
 </figure>
 </center>
 
@@ -197,6 +197,6 @@ alertController.addTextField(configurationHandler: { (field: UITextField) in
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS2/8.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/8.png" alt="" width="50%">
 </figure>
 </center>
