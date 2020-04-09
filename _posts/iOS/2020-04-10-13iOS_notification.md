@@ -16,7 +16,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS2/24.png" alt="" width="50%">
+<img src="/assets/post-img/iOS/iOS2/25.png" alt="" width="50%">
 </figure>
 </center>
 
