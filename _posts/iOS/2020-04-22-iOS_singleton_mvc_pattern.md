@@ -100,7 +100,7 @@ View는 Controller의 꼭두각시일 뿐이지만 때에 따라 View가 Control
 버튼이 눌러져 Action이 발생하면 본 Controller의 nextBtn() 메서드가 Target으로 대응하게 될 것이다.
 
 
-#### Delagation
+#### Delegation
 
 두번째 방법은 Delegation Protocol을 사용하는 것이다. Controller class 안에 View class의 인스턴스를 만드는 IBOutlet처럼 View class 안에 Controller class를 만드는 것과 유사하다. 다만 class 대신 Protocol이 활용되는 것으로 Delegation은 View가 자신에 대한 제어권을 Controller에게 위임하는 protocol로서 앱을 사용하는 유저가 다음 5가지 행동을 하는 경우에 대한 권한이 위임된다.
 
