@@ -134,11 +134,11 @@ View가 실질적으로 Controller에게 말을 걸 수 없듯(다이렉트로) 
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS2/28.png" alt="" width="50%">
+<img src="/assets/post-img/iOS/iOS2/28.png" alt="" width="80%">
 </figure>
 </center>
 
-애플의 MVC 패턴은 기존 MVC패턴과는 조금 다르게 View와 Controller가 강학 연결되어 있어 ViewController가 거의 모든일을 다 한다. ViewController에서는 Controller가 View의 라이프사이클에 관여하기 때문에 View와 Controller를 분리하기 어렵다. 그래서 앱을 테스트할 때 Model은 따로 분리되어 테스트 할 수 있어도 View와 Controller는 강하게 연결되어 있어 각각 테스트하기 어렵다고 한다.
+애플의 MVC 패턴은 기존 MVC패턴과는 조금 다르게 View와 Controller가 강하게 연결되어 있어 ViewController가 거의 모든일을 다 한다. ViewController에서는 Controller가 View의 라이프사이클에 관여하기 때문에 View와 Controller를 분리하기 어렵다. 그래서 앱을 테스트할 때 Model은 따로 분리되어 테스트 할 수 있어도 View와 Controller는 강하게 연결되어 있어 각각 테스트하기 어렵다고 한다.
 
 
 
