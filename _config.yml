@@ -61,6 +61,7 @@ nav:
     - { etc: '/blog/categories/#etc' }
     - { swift: '/blog/categories/#swift' }
     - { Data Structure: '/blog/categories/#Data Structure' }
+    - { RxSwift: '/blog/categories/#RxSwift' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
