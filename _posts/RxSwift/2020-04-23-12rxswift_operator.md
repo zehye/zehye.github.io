@@ -110,3 +110,7 @@ class ViewController: UITableViewController {
     }
 }
 ```
+
+추가적인 operators들이 궁금하다면 >> [Rxswift docs](http://reactivex.io/documentation/ko/operators.html) 참고!<br>
+++ [참고>>>>](https://github.com/iamchiwon/RxSwift_In_4_Hours/blob/master/README_s1.md)<br>
+++ marble diagram
