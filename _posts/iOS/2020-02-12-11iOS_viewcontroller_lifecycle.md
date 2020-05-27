@@ -72,7 +72,7 @@ viewDidDisappear
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS2/29.png" alt="" width="50%">
+<img src="/assets/post-img/iOS/iOS2/29.png" alt="" width="50%">
 </figure>
 </center>
 
@@ -83,7 +83,7 @@ viewDidDisappear
 
 view가 데이터와 함께 완전히 화면에 나타난 후 호출되는 메서드이다.
 
-즉, 뷰가 나타났다는 것을 컨트롤러에 알리는 역할로 뷰가 화면에 나타난 직후에 실행되며 화면에 적용될 애니메이션을 그려준다. 
+즉, 뷰가 나타났다는 것을 컨트롤러에 알리는 역할로 뷰가 화면에 나타난 직후에 실행되며 화면에 적용될 애니메이션을 그려준다.
 
 
 ### viewwillDisappear
