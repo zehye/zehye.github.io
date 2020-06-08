@@ -24,7 +24,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/ios/ios2/30.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/30.png" alt="" width="80%">
 </figure>
 </center>
 
@@ -50,7 +50,7 @@ ScrollView를 추가하고 화살표를 눌러 ContentLayoutGuide와 FrameLayout
 
 <center>
 <figure>
-<img src="/assets/post-img/ios/ios2/31.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/31.png" alt="" width="80%">
 </figure>
 </center>
 
@@ -65,7 +65,7 @@ ScrollView를 추가했으니 알맞게 제약을 설정해준다.
 
 <center>
 <figure>
-<img src="/assets/post-img/ios/ios2/32.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/32.png" alt="" width="80%">
 </figure>
 </center>
 
@@ -77,7 +77,7 @@ ScrollView안에 컨텐츠를 넣기 위한 상위 View 하나를 추가해준�
 
 <center>
 <figure>
-<img src="/assets/post-img/ios/ios2/33.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/33.png" alt="" width="80%">
 </figure>
 </center>
 
