@@ -13,8 +13,9 @@ comments: true
 
 ## 프로젝트 기본 구조
 
-1주동안 정리된 상황 
+1주동안 정리된 상황
 
+```
 ├── Diary
 │   ├── Diary.xcdatamodeld
 │   │   └── Diary.xcdatamodel
@@ -58,3 +59,4 @@ comments: true
 │       │   └── PlanVC.swift
 │       ├── SearchBarViewController.swift
 │       └── ViewController.swift
+```
