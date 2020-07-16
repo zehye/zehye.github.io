@@ -55,17 +55,17 @@ func swapTwoInts<T>(_ a: inout: T, _ b: inout: T) {
 이렇게만 해주면 이 함수 하나로 Int, String, Double 변수들의 값을 바꿔줄 수 있다. <br>
 단 a, b가 모두 같은 타입일 때만 말이다!
 
-그렇다면 이때ㅅ **T** 는 무엇을 의미할까?
+그렇다면 이때 **T** 는 무엇을 의미할까?
 
 
 ### T 타입 파라미터
 
-1. 파라미터: 타입이 들어갈 부분에 T를 적었다.
+#### 1. 파라미터: 타입이 들어갈 부분에 T를 적었다.
 
 이때 T는 Placeholder 타입 "이름"을 의미한다. String, Int타입도 이름으로 이 대신 T라는 **타입이름** 이 들어간것!<br>
 이 T는 swapTwoInts라는 함수가 호출될 때마다 결정된다. 그리고 이때 a와 b는 이 T타입과 반드시 일치해야 한다.
 
-2. <T>
+#### 2. <T>
 
 generic함수와 일반함수에서의 가장 큰 차이일 것이다.
 
@@ -180,4 +180,4 @@ func findIndex<T: Equatable>(of valueToFind: T, in array: [T]) -> Int? {
 }
 ```
 
-즉, Equatable을 준수하는 모든 타입은 위 findIndex 함수를 안전하게 사용할 수 있게 된다. 
+즉, Equatable을 준수하는 모든 타입은 위 findIndex 함수를 안전하게 사용할 수 있게 된다.
