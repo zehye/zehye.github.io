@@ -65,7 +65,7 @@ func swapTwoInts<T>(_ a: inout: T, _ b: inout: T) {
 이때 T는 Placeholder 타입 "이름"을 의미한다. String, Int타입도 이름으로 이 대신 T라는 **타입이름** 이 들어간것!<br>
 이 T는 swapTwoInts라는 함수가 호출될 때마다 결정된다. 그리고 이때 a와 b는 이 T타입과 반드시 일치해야 한다.
 
-#### 2. <T>
+#### 2. `<T>`
 
 generic함수와 일반함수에서의 가장 큰 차이일 것이다.
 
@@ -81,7 +81,7 @@ func swapTwoInts<zehye>(_ a: inout: zehye, _ b: inout: zehye) {
 }
 ```
 
-뿐만 아니라 <T>자리에는 여러개가 들어갈 수 있다(,로 구분)
+뿐만 아니라 `<T>`자리에는 여러개가 들어갈 수 있다(,로 구분)
 
 그러나 swift는 매~우 안전한 언어이며 타입에 굉~장히 민감하기 때문에 a와 b의 타입은 반드시 같아야 한다. <br>
 즉, Int와 String을 서로 바꿀 수 없게 하며, 만약 이렇게 하면 컴파일 에러가 뜰 것이다!
