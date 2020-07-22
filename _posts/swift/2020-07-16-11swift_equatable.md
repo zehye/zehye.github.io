@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swift 기본문법 - Equatable
+title: swift Equatable
 category: swift
 tags: [swift]
 comments: true
