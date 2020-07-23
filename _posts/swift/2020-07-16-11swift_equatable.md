@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swift Equatable
+title: swift - Equatable
 category: swift
 tags: [swift]
 comments: true

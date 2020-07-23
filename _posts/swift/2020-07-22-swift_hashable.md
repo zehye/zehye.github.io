@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swift Hashable
+title: swift - Hashable
 category: swift
 tags: [swift]
 comments: true
