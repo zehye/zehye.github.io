@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kakao API 시작하기 for iOS
+title: Kakao API SDK v1 시작하기 for iOS
 category: iOS
 tags: [iOS]
 comments: true
