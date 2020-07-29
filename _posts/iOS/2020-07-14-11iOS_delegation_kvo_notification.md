@@ -25,12 +25,12 @@ Delegation, Notification center, KVO는 iOS를 만들다보면 자주 나오는 
 
 ### Delegation
 
-Delegate은 보통 프로토콜을 정의하여 사용한다.
+Delegate은 보통 프로토콜을 정의하여 사용한다. Protocol이란 일종의 기능 명세서 같은 것으로 Delegate로 지정된 객체가 해야 하는 메소드들의 원형을 적어 놓는다. Delegate 역할을 하려는 객체는 이 Protocol을 따르며 원형만 있던 메소드들의 구현을 한다. 이렇게 세팅 후 이전 객체는 어떤 이벤트가 일어났을 시 delegate로 지정한 객체에 알려줄 수 있다.
 
 
 
 ### Notification
 
-Notification center라는 싱글턴 객체를 통해 
+Notification center라는 싱글턴 객체를 통해
 
 ### KVO
