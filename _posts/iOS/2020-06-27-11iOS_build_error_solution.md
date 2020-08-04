@@ -22,7 +22,7 @@ info.plist 파일을 옮기게 되면 해당 에러가 발생한다.
 
 에러내용은 위와 같이 빌드 입력 파일을 찾을 수 없다는 의미로, 프로젝트를 생성할때 자동적으로 Xcode 최상위의 info.plist파일을 생성하는데 내가 그 파일을 다른곳으로 옮겼기 때문에 찾을 수 없다고 에러를 띄워주는 것이다. 따라서 info.plist가 어디에 있는지 정확히 알려주면 된다.
 
-### Solution 
+### Solution
 
 <center>
 <figure>
@@ -30,5 +30,5 @@ info.plist 파일을 옮기게 되면 해당 에러가 발생한다.
 </figure>
 </center>
 
-1. Xcode내 프로젝트 tarters의 buildsettions에서 infoplist라고 키워드를 검색
+1. Xcode내 프로젝트 targets의 Build Settings에서 infoplist라고 키워드를 검색
 2. infoplist에 관한 항목들이 나오면 Info.plist 파일의 위치를 수정
