@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode - Two Sum
+title: Swift, LeetCode - Two Sum
 category: Algorithm
 tags: [Algorithm]
 comments: true
