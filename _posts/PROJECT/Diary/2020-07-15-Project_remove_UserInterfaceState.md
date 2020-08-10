@@ -31,4 +31,14 @@ git rm --cached [Project Name].xcworkspace/xcuserdata/[User Name].xcuserdatad/Us
 git commit -m 'Removed file that shouldnt be tracked'
 ```
 
-커밋 하나 날려주면 git status에서 더이상 해당 파일이 추적되지 않음을 볼 수 있을 것이다. 
+커밋 하나 날려주면 git status에서 더이상 해당 파일이 추적되지 않음을 볼 수 있을 것이다.
+
+
+**+**
+
+그런데도 만약 계속 gst에서 추적이 된다면 그냥 gitignore에 추가해주도록 한다.<br>
+gitignore에 아래 추가
+
+```
+*.xcuserstate
+```
