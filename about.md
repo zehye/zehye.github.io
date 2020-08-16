@@ -4,10 +4,16 @@ title: About
 ---
 
 <p class="message">
-  <b>Junior Backend Developer</b><br>
+  <b>Junior iOS Developer</b><br>
   공부하며 겪었던 어려움을 조금이라도 쉽게 풀이하며<br>
   누군가에게 조금이라도 도움이 되고자 자유롭게 정리한 블로그입니다.<br>
   (1차적 목표는 내가 제대로 이해하기 위해 정리하는 블로그);<br>
+
+  #swift #iOS #python #Django #git #aws #docker #drf #jsp&sevlet #java <br>
+  진득히 성실하게 코딩하며 유쾌하게 소통할 수 있는 개발자가 되기를 희망합니다.<br>
+  인생은 즐겁게 그러나 깊이있게! 매 순간 배움있는 삶을 살고 싶습니다.<br>
+
+  **slogan > "빛나는 사람이 되자"**
 </p>
 
 
@@ -19,6 +25,10 @@ title: About
 - [MashUp 개발 동아리](http://) 2018.09
 - [자료구조 스터디](http://) 2019.09
 - [패스트캠퍼스 웹 프로그래밍 스쿨 조교](http://) 2019.11
+- [SuperStart ios 개발스터디](http://) 2019.01~
+- [SaterDay ios 개발스터디](http://) 2019.01~
+- [주말 스터디](http://) 2019.05~
+
 
 ## 공부한 것
 
@@ -26,7 +36,17 @@ title: About
 - 컴퓨터공학 (자료구조, 알고리즘)
     - [컴퓨터 사이언스 부트캠프 with 파이썬](https://thebook.io/006950/)
     - [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](http://book.algospot.com/)
+    - [LeetCode]()
 
+- Swift, iOS
+    - [야곰의 swift 기본문법](https://www.inflearn.com/course/%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8-%EA%B8%B0%EB%B3%B8-%EB%AC%B8%EB%B2%95/dashboard)
+    - [iOS 오토레이아웃](https://www.inflearn.com/course/autolayout-ui_ios/dashboard)
+    - [스탠포드 강의](https://www.inflearn.com/course/stanford-ios-%ED%95%9C%EA%B8%80%EC%9E%90%EB%A7%89-%EA%B0%95%EC%9D%98)
+
+- RxSwift, RxCocoa
+    - [곰튀김님 유투브 강의](youtube.com/watch?v=iHKBNYMWd5I)
+
+- SwiftUI
 
 - Django
   - [Django Girls Tutorial](https://tutorial.djangogirls.org/ko/)
@@ -57,12 +77,16 @@ title: About
 
 ## 만들어 본 것
 
-- [크롤링(진행중]()
 
-- [42world 구현(진행중)](https://github.com/kahee/42world-backend)
+- [회원가입 어플리케이션]()
+  - 회원가입 기능을 모두 다뤄봅니다.
+  - 카카오, 네이버, 페이스북, 구글, 일반 회원가입 폼 구현
 
-- [문화행사 알림 사이트(진행중)](https://github.com/zehye/mini-project)
-
+- [다이어리 어플리케이션 제작]()
+   - Swift를 통해 다이어리 어플리케이션을 제작합니다.
+   - 캘린더, 일정관리, 다이어리 기능
+   - UI 테스트코드
+   - 최소한의 라이브러리 사용을 지향합니다.
 
 - [인스타그램st 웹어플리케이션 구현](https://github.com/zehye/pro-insta)
   - Django를 활용하여 인스타그램 기능을 가진 웹어플리케이션을 구현합니다.
