@@ -74,3 +74,11 @@ git push --set-upstream origin master
 ```
 
 위 문장을 실행해주면 문제없이 push 되어 올라가는 것을 볼 수 있다!
+
+++ 그래도 안되는 경우가 있다면
+
+```
+git push -f
+```
+
+강제로 푸시를 해서 올리는 방법도 있다. 
