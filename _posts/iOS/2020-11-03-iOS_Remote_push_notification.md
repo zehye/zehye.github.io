@@ -20,7 +20,7 @@ Xcode 11.4부터 시뮬레이터에서 [Remote Push Notification](https://develo
 
 ### 시작
 
-Remote Push Notification을 시뮬레이션 하기 위해서는 우선 사용자에게 **푸시알림 사용 권한을 요청하고 허가를 받아야한다** <br>
+Remote Push Notification을 시뮬레이션 하기 위해서는 우선 사용자에게 **푸시알림 사용 권한을 요청하고 허가를 받아야한다.** <br>
 권한 요청을 위해 `AppDelegate`파일의 `didFinishLaunchingWithOptions` 델리게이트에 권한 요청 코드를 추가해줘야 한다.
 
 ```swift
@@ -38,7 +38,7 @@ func requestAuthorizationForRemotePushNotification() {
 }
 ```
 
-위 코드 혹은 아래 코드를 작성해주면 된다.
+위 코드 혹은 아래 코드를 작성해주면 된다. (둘 중 하나만)
 
 ```swift
 let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound] UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (isAllowed, error) in
@@ -49,7 +49,7 @@ let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound] UNUserNotific
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS2/61.png" alt="" width="80%">
+<img src="/assets/post-img/iOS/iOS2/61.png" alt="" width="50%">
 </figure>
 </center>
 
@@ -94,7 +94,7 @@ xcrun simctl push [사용 가능한 디바이스 identifier] [App Bundle ID] [AP
 </figure>
 </center>
 
-단순히 `xcrun simctl list devices`를 하게 되면 모든 시뮬레이터 기종이 나오게 되는데, 이때 시뮬레이터 기종이 ㅁ자고 상태가 `Booted`인 시뮬레이터 identifier를 골라주어야 한다. 아래 코드를 작성하면 현재 내가 실행중이고 사용가능한 시뮬레이터를 찾을 수 있다.
+단순히 `xcrun simctl list devices`를 하게 되면 모든 시뮬레이터 기종이 나오게 되는데, 이때 시뮬레이터 상태가 `Booted`인 시뮬레이터 identifier를 골라주어야 한다. 아래 코드를 작성하면 현재 내가 실행중이고 사용가능한 시뮬레이터를 찾을 수 있다.
 
 ```
 xcrun simctl list devices | grep Booted
@@ -106,4 +106,4 @@ xcrun simctl list devices | grep Booted
 xcrun simctl push 169DEF1A-288A-46C8-846F-8EB6079FD00C [App Bundle ID] test.apns
 ```
 
-그러면 정상적으로 작동하는 것을 볼 수 있을 것이다. 
+그러면 정상적으로 작동하는 것을 볼 수 있을 것이다.
