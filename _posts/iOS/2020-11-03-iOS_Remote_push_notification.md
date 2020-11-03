@@ -107,3 +107,10 @@ xcrun simctl push 169DEF1A-288A-46C8-846F-8EB6079FD00C [App Bundle ID] test.apns
 ```
 
 그러면 정상적으로 작동하는 것을 볼 수 있을 것이다.
+
+
+<center>
+<figure>
+<img src="/assets/post-img/iOS/iOS2/64.png" alt="" width="80%">
+</figure>
+</center>
