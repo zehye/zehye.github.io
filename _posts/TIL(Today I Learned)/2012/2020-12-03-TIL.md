@@ -1,0 +1,24 @@
+---
+layout: post
+title: 201203_TIL
+category: TIL (Today I Learned)
+permalink: /til/:year/:month/:day/:title/
+
+tags: [TIL, 개발]
+comments: true
+---
+
+# 오늘 한 일
+
+- chatList 넘어오는거 확인 > 화면에 데이터 뿌려주기
+- chatDetailList model, api 구현
+- zoom 화상회의
+- chatUI 고치기
+
+# 내일 할 일
+
+- GrowingTextView 다시 완성
+- ChatUI 자잘자잘한 거 해놓기
+- ChatDetail api 연동 > 데이터 넘어오는거 확인해서 화면에 띄우기
+  - 종현쓰한테 파라미터 물어보기
+- Date 통해서 날짜 자르기
