@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swift) UILable의 자동 줄바꿈하는 방법?
+title: UILable의 자동 줄바꿈하는 방법?
 category: iOS
 tags: [iOS]
 comments: true

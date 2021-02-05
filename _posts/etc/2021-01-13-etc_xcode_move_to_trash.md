@@ -32,7 +32,7 @@ Xcode내에는 이미 내가 파일을 삭제했으니 파일은 보이지않고
 
 <center>
 <figure>
-<img src="/assets/post-img/etc/2.png" alt="" width="100%">
+<img src="/assets/post-img/etc/2.png" alt="" width="50%">
 </figure>
 </center>
 
