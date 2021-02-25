@@ -115,7 +115,7 @@ class MyViewController: UIViewController {
   }
 
   func setAdfit() {
-      let adView = AdFitBannerAdView(clientId: "DAN-1hv61bgf3p7p4", adUnitSize: "320x100")
+      let adView = AdFitBannerAdView(clientId: "", adUnitSize: "")
       adView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 100)
       adView.rootViewController = self
       adView.addSubview(adView)
@@ -147,7 +147,7 @@ func adViewDidFailToReceiveAd(_ bannerAdView: AdFitBannerAdView, error: Error) {
 
 
 
-### 발생했던 에러 
+### 발생했던 에러
 
 ```
 The connection to service on pid 0 named com.apple.commcenter.coretelephony.xpc was invalidated from this process.
