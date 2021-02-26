@@ -78,7 +78,7 @@ Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch th
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS3/14.png" alt="" width="50%">
+<img src="/assets/post-img/iOS/iOS3/14.png" alt="" width="50%" height="50%">
 </figure>
 </center>
 
@@ -86,7 +86,7 @@ Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch th
 
 <center>
 <figure>
-<img src="/assets/post-img/iOS/iOS3/15.png" alt="" width="50%">
+<img src="/assets/post-img/iOS/iOS3/15.png" alt="" width="50%" height="50%">
 </figure>
 </center>
 
