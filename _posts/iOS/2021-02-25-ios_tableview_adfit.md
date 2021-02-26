@@ -47,3 +47,8 @@ func setAD(rootVC: UIViewController, frame: CGRect) -> AdFitBannerAdView {
     return adView
 }
 ```
+
+## 그런데 잠깐...
+
+혹시 앱을 실행시켰는데 광고가 제대로 된 사이즈로 나오지 않았다면, 셀에 제대로 제약을 걸어주었는지 확인합시다.<br>
+uiView를 올리고 해당 뷰에 높이 설정을 제대로 해주었다면 사실 문제없이 광고가 정 사이즈로 나오겠지만, uiView를 띄우지 않고 addSubview를 했다면 셀높이에 대한 제약 조건을 걸어주어야 합니다 :)
