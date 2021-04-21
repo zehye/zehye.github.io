@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS 다크모드 해제하는 방법
+title: iOS xcode에서 다크 혹은 라이트모드 지정해주는 방법
 category: iOS
 tags: [iOS]
 comments: true
@@ -10,7 +10,7 @@ comments: true
 
 <hr>
 
-## 다크모드 해제하는 방법
+## Xcode에서 모드 지정해주기
 
 ### 1. ViewController에서 override
 
