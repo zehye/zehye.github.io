@@ -260,7 +260,7 @@ comments: true
   - 병렬성: N:N
 
 - NSOperationQueue와 GCD Queue의 차이
-  - OperationQueue: 직렬, 동기적 > 어떤 작업이 완벽하게 마무리 되어야 그 다음작업으로 넘어가짐(작업간 의존성 높음) > KVO가능
+  - OperationQueue: 비동기적으로 실행되어야 하는 작업을 객체 지향적인 방법으로 사용 > 어떤 작업이 완벽하게 마무리 되어야 그 다음작업으로 넘어가짐(작업간 의존성 높음) > KVO가능
   - GCDQueue: 메인과 백그라운드에서 동기/비동기 모두 가능 > KVO 불가능
     - Serial Dispatch Queue: 등록된 작업을 한번에 하나씩 차례대로 처리 한다. 처리중인 작업이 완료되면 다음 작업을 처리!
     - Concurrent Dispatch Queue: Concurrent Queue는 등록된 작업을 한번에 하나씩 처리 하지 않고 여러 작업들을 동시에 처리
