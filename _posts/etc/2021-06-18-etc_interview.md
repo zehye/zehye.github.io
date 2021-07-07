@@ -94,11 +94,11 @@ comments: true
 
 - **LayoutSubViews**
   - 뷰와 서브뷰의 위치와 크기 재조정
-  - vc 내 뷰가 재계산되서 다시 그려질 때 호출됨 →
+  - vc 내 뷰가 재계산되서 다시 그려질 때 호출됨 > 뷰의 크기나 위치가 변경된 모든것
   - 뷰의 값이 갱신되고, vc의 `viewDidLayoutSubViews` 호출 → 뷰 값에 의존하는 행위는 모두  `viewDidLayoutSubViews`에 구현해야함
   - 뷰 크기 조절, 서브뷰 추가, 스크롤뷰를 스크롤할 때, 디바이스 회전, 뷰의 contraint 값 변경했을 때 자동 호출
-  - **LayoutSubViews를 수동적으로 예약하는 기능** : `setNeedsLayout`
-  - **setNeedsLayout을 통해 LayoutSubViews를 예약호출하는 것 말고, 자동으로 더 빨리 호출되는 기능** : `layoutIfNeeded`
+  - **LayoutSubViews를 수동적으로 예약하는 기능** : `setNeedsLayout` > 다음 update cycle에서 LayoutSubViews를 호출
+  - **setNeedsLayout을 통해 LayoutSubViews를 그 즉시 호출** : `layoutIfNeeded`
 
 - 스토리 보드의 장단점
   - 장점: 시각화, 시간절약, 낮은 진입장벽
