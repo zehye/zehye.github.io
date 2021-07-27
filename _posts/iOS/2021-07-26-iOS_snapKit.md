@@ -126,7 +126,7 @@ extension LayoutConstraintItem {
 
 ### Anchor
 
-1. 모든 앵커와 제약 조건 자체를 함께 연결하는 것이 가능
+**1. 모든 앵커와 제약 조건 자체를 함께 연결하는 것이 가능**
 
 ```swift 
 child.snp.makeContraints { make in 
@@ -134,7 +134,7 @@ child.snp.makeContraints { make in
 }
 ```
 
-2. edges를 이용해 더욱 간편하게 사용 가능
+**2. edges를 이용해 더욱 간편하게 사용 가능**
 
 ```swift 
 child.snp.makeConstraints { make in 
@@ -142,7 +142,7 @@ child.snp.makeConstraints { make in
 }
 ```
 
-3. view에 inset 값을 주고싶다면 inser() 가능
+**3. view에 inset 값을 주고싶다면 inser() 가능**
 
 ```swift 
 child.snp.makeConstraints { make in 
