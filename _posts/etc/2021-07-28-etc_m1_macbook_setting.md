@@ -218,3 +218,12 @@ iterm configuration 에 들어가서 <br>
 - **Accessibility** > Pointer Control > Trackpad options > Enable dragging > three finger drag: 세 손가락으로 드래그 가능하게 함 > 요건 신세계였음
   - 근데 이 방법을 사용하면 원래 세 손가락으로 미션컨트롤 이동을 했는데, 이젠 네손가락으로 이동을 하게 됨(선택은 자유!)
 - **finder preference** > show all filename extensions 체크함: 모든 파일의 확장자를 보여줌
+
+
+
+
+### cocoapods 설치
+
+- 터미널복제 > 터미널2의 get info > use rosetta
+- 터미널2에서 `sudo gem install ffi`
+- iterm2로 돌아와서 `brew install cocoapods`
