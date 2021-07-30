@@ -12,7 +12,8 @@ comments: true
 
 ## ContentMode
 
-UIImageView안에 이미지를 삽입하려하다보면 각각의 이미지를 어떤 비율로 넣을 지 정해주어야 하는데, 이때 UIView에서 ContentMode로 정해줄 수 있다.
+UIImageView안에 이미지를 삽입하려하다보면 각각의 이미지를 어떤 비율로 넣을 지 정해주어야 하는데, <br>
+이때 UIView에서 ContentMode로 정해줄 수 있다.
 
 기본적으로 top, bottom, left, right 등이 존재하지만 이 속성들은 직관적으로 바로 느껴질 것이다. > 위, 아래, 왼쪽, 오른쪽<br>
 외에 많이 사용하지만 헷갈리는 `scaleToFill, scaleAspectFit, scaleAspectFill` 이 세가지를 정리해보자.
