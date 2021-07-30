@@ -70,4 +70,4 @@ button.setImage(UIImage(named: "")?.withRenderingMode(.alwaysTemplate), for: .no
 button.tintColor = UIColor.red
 ```
 
-이런식으로 코드가 짜여진다면 버튼에 들어가는 이미지의 원본 색상은 사라지고 내가 지정한 tintColor인 red 색상이 버튼 이미지의 색상이 될 것이다. 
+이런식으로 코드가 짜여진다면 버튼에 들어가는 이미지의 원본 색상은 사라지고 내가 지정한 tintColor인 red 색상이 버튼 이미지의 색상이 될 것이다.
