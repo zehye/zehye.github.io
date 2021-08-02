@@ -2,7 +2,7 @@
 layout: post
 title: m1 맥북 초기 설정 정리해보기
 category: etc
-tags: [interview]
+tags: [etc]
 comments: true
 ---
 

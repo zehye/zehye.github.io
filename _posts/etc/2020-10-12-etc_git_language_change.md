@@ -2,7 +2,7 @@
 layout: post
 title: Terminal에서 git 언어 설정 변경하기
 category: etc
-tags: [interview]
+tags: [etc]
 comments: true
 ---
 

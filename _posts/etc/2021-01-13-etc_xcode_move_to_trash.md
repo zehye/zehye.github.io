@@ -2,7 +2,7 @@
 layout: post
 title: Xcode에서 remove reference한 파일 직접 삭제하는 방법
 category: etc
-tags: [interview]
+tags: [etc]
 comments: true
 ---
 
