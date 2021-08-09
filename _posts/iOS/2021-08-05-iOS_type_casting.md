@@ -41,7 +41,7 @@ class Person {
 
 }
 
-classs Teacher: Person {
+class Teacher: Person {
 
 }
 
