@@ -18,7 +18,9 @@ comments: true
 타겟에 대한 문서 설명 먼저 봐보자!
 
 
-`A target specifies a product to build and contains the instructions for building the product from a set of files in a project or workspace. A target defines a single product; it organizes the inputs into the build system—the source files and instructions for processing those source files—required to build that product. Projects can contain one or more targets, each of which produces one product.`
+```
+A target specifies a product to build and contains the instructions for building the product from a set of files in a project or workspace. A target defines a single product; it organizes the inputs into the build system—the source files and instructions for processing those source files—required to build that product. Projects can contain one or more targets, each of which produces one product.
+```
 
 이 문서를 직역해보자면, 타겟은 Xcode 프로젝트를 빌드할 때 빌드 과정에서 어떤 리소스, 소스파일들을 포함할 지 설정할 수 있고 빌드 과정의 순서 등 프로젝트의 큰 설정을 지정할 수 있는 것을 의미하는 것 같다. 그리고 이때 중요한 점은 하나의 타겟이 하나의 프로덕트인 것으로 즉, 타겟에 따라 하나의 프로젝트에서 여러 버전으로 프로덕트를 분리할 수 있는 것이다. 그렇기 때문에 기본적으로 회사에서는 Qa, Dev, DevTest 이런 식으로 각각의 타겟이 분리되어 있을 것이다.
 
@@ -187,4 +189,4 @@ A 뷰컨트롤러의 Target Membership과 B 뷰컨트롤러의 Target Membership
 
 
 
-따라서 타겟을 분리해 사용할 때에는 이렇게 Target Membership을 한번씩 확인해 주는 습관!! 꼭 가지자! 
+따라서 타겟을 분리해 사용할 때에는 이렇게 Target Membership을 한번씩 확인해 주는 습관!! 꼭 가지자!
