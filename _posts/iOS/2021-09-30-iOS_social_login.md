@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 소셜로그인(카카오, 네이버, 페이스북)
+title: Swift로 소셜로그인(카카오, 네이버, 페이스북) 연동해보기!
 category: iOS
 tags: [iOS]
 comments: true
