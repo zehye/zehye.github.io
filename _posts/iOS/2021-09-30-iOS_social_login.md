@@ -657,7 +657,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-### ViewController에 카카오톡 버튼 추가하기
+### ViewController에 네이버 버튼 추가하기
 
 ```swift
 import NaverThirdPartyLogin
