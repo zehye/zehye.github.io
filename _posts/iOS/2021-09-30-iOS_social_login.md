@@ -28,8 +28,8 @@ pod 'FBSDKLoginKit'
 
 ### Facebook 개발자 사이트에서 앱 등록하기
 
-#### 앱만들기 탭 선택
-#### 앱만들기 유형 선택 후 표시할 이름 작성 & 이메일 작성해야 앱 만들기 버튼 활성화 됨
+#### 1. 앱만들기 탭 선택
+#### 2. 앱만들기 유형 선택 후 표시할 이름 작성 & 이메일 작성해야 앱 만들기 버튼 활성화 됨
 
 <center>
 <figure>
@@ -38,7 +38,7 @@ pod 'FBSDKLoginKit'
 </center>
 
 
-#### Facebook 로그인 셀 선택
+#### 3. Facebook 로그인 셀 선택
 
 <center>
 <figure>
@@ -47,7 +47,7 @@ pod 'FBSDKLoginKit'
 </center>
 
 
-#### iOS 셀 선택
+#### 4. iOS 셀 선택
 
 <center>
 <figure>
@@ -58,9 +58,9 @@ pod 'FBSDKLoginKit'
 
 ### 개발 환경 설정은 아래 순서대로 합니다.
 
-#### 개발 환경 설정: pod 'FBSDKLoginKit' 했으면 패스
+#### 1. 개발 환경 설정: pod 'FBSDKLoginKit' 했으면 패스
 
-#### 번들 ID(Xcode에서 설정해준 번들 아이디) 작성
+#### 2. 번들 ID(Xcode에서 설정해준 번들 아이디) 작성
 
 <center>
 <figure>
@@ -68,7 +68,7 @@ pod 'FBSDKLoginKit'
 </figure>
 </center>
 
-#### 앱에 대한 SSO 활성화 > 활성화로 선택
+#### 3. 앱에 대한 SSO 활성화 > 활성화로 선택
 
 <center>
 <figure>
@@ -77,7 +77,7 @@ pod 'FBSDKLoginKit'
 </center>
 
 
-#### info.plist 구성
+#### 4. info.plist 구성
 
 ```swift
 <key>CFBundleURLTypes</key>
@@ -97,26 +97,26 @@ pod 'FBSDKLoginKit'
 
 ```swift
 <key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fbapi20130214</string>
-		<string>fbapi20130410</string>
-		<string>fbapi20130702</string>
-		<string>fbapi20131010</string>
-		<string>fbapi20131219</string>
-		<string>fbapi20140410</string>
-		<string>fbapi20140116</string>
-		<string>fbapi20150313</string>
-		<string>fbapi20150629</string>
-		<string>fbapi20160328</string>
-		<string>fbauth</string>
-		<string>fb-messenger-share-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-	</array>
+<array>
+	<string>fbapi</string>
+	<string>fbapi20130214</string>
+	<string>fbapi20130410</string>
+	<string>fbapi20130702</string>
+	<string>fbapi20131010</string>
+	<string>fbapi20131219</string>
+	<string>fbapi20140410</string>
+	<string>fbapi20140116</string>
+	<string>fbapi20150313</string>
+	<string>fbapi20150629</string>
+	<string>fbapi20160328</string>
+	<string>fbauth</string>
+	<string>fb-messenger-share-api</string>
+	<string>fbauth2</string>
+	<string>fbshareextension</string>
+</array>
 ```
 
-#### AppDelegate, SceneDelegate 설정
+#### 5. AppDelegate, SceneDelegate 설정
 
 AppDelegate는 앱의 라이프사이클을 관리하는 부분으로 앱이 실행될 때마다 해주어야 하는 작업을 작성해준다. <br>
 네이티브로 페이스북 앱을 열기 위해서는 앱을 실행할 때마다 SDK를 초기화해 주어야 한다.
@@ -173,7 +173,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 
 페이스북 버튼을 추가하는 방법엔 페이스북 자체에서 제공해주는 버튼을 상속받아와 사용하는 방법과 직접 버튼을 구현해 함수를 연결해주는 방법이 있다.
 
-#### 페이스북 버튼 상속받아와 사용해보기
+#### 1. 페이스북 버튼 상속받아와 사용해보기
 
 ```swift
 import FBSDKLoginKit
@@ -204,7 +204,7 @@ class ViewController: UIViewController {
 ```
 
 
-#### 커스텀 버튼 만들기
+#### 2. 커스텀 버튼 만들기
 
 ```swift
 import FBSDKLoginKit
@@ -270,7 +270,8 @@ extension ViewController {
                 return
             }
 
-            GraphRequest.init(graphPath: "me", parameters: ["fields": "id, name, email, picture"]).start(completion: {(connection, result, error) -> Void in
+            GraphRequest.init(graphPath: "me", parameters: ["fields": "id, name, email, picture"])
+            .start(completion: {(connection, result, error) -> Void in
                 print("error: ", error ?? "No error")
                 guard let fb = result as? [String: AnyObject] else { return }
 
@@ -278,7 +279,8 @@ extension ViewController {
                 let name = fb["name"] as? String
                 let email = fb["email"] as? String
                 var profile = ""
-                if let profileImg = fb["picture"] as? [String: AnyObject], let data = profileImg["data"] as? [String: AnyObject] {
+                if let profileImg = fb["picture"] as? [String: AnyObject],
+                let data = profileImg["data"] as? [String: AnyObject] {
                     profile = data["url"] as? String ?? ""
                 }
 
@@ -320,12 +322,12 @@ extension ViewController {
 
 [홈페이지 '내 어플리케이션' 클릭] > [내 어플리케이션 추가하기 클릭] > [앱 이름 작성 후 저장]
 
-#### 플랫폼 등록
+#### 1. 플랫폼 등록
 
 [만들어 놓은 앱 선택] > [플랫폼 설정하기 클릭] > [iOS 플랫폼 등록 클릭] > [번들 ID 작성 후 저장]
 
 
-#### 카카오 로그인 설정
+#### 2. 카카오 로그인 설정
 
 [왼쪽 탭에서 카카오 로그인 클릭] > [활성화 설정 ON] > [활성화 버튼 클릭]
 
@@ -335,7 +337,7 @@ extension ViewController {
 </figure>
 </center>
 
-#### 동의항목 설정
+#### 3. 동의항목 설정
 
 [왼쪽 탭에서 동의항목 클릭] > [원하는 항목 설정 버튼 클릭] > [필수/선택 동의 선택 후 동의목적 필수 작성, 카카오 계정으로 정보수집 후 제공 체크박스 선택]
 
@@ -526,7 +528,7 @@ extension ViewController {
 
 ### 어플리케이션 등록하기
 
-#### 상단 Application 탭에서 어플리케이션 등록 선택
+#### 1. 상단 Application 탭에서 어플리케이션 등록 선택
 
 <center>
 <figure>
@@ -534,7 +536,7 @@ extension ViewController {
 </figure>
 </center>
 
-#### 어플리케이션 이름과 사용 API > 네아로 선택 후 저장
+#### 2. 어플리케이션 이름과 사용 API > 네아로 선택 후 저장
 
 <center>
 <figure>
@@ -542,7 +544,7 @@ extension ViewController {
 </figure>
 </center>
 
-#### 네아로 선택 시 제공 정보 선택 필수, 선택 체크박스 지정!
+#### 3. 네아로 선택 시 제공 정보 선택 필수, 선택 체크박스 지정!
 
 <center>
 <figure>
@@ -551,7 +553,7 @@ extension ViewController {
 </center>
 
 
-#### 이때 로그인 오픈 API 서비스 환경 > iOS로 선택
+#### 4. 이때 로그인 오픈 API 서비스 환경 > iOS로 선택
 
 <center>
 <figure>
@@ -568,6 +570,7 @@ extension ViewController {
 <img src="/assets/post-img/iOS/Social-Login/N5.png" alt="" width="50%">
 </figure>
 </center>
+
 
 ### NaverSDK 설치하기
 
@@ -742,7 +745,8 @@ extension ViewController: NaverThirdPartyLoginConnectionDelegate {
         let url = URL(string: urlStr)!
 
         let authorization = "\(tokenType) \(accessToken)"
-        let req = AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Authorization": authorization])
+        let req = AF.request(url, method: .get, parameters: nil,
+          encoding: JSONEncoding.default, headers: ["Authorization": authorization])
 
         req.responseJSON {(response) in
             print(response)
@@ -771,4 +775,4 @@ extension ViewController: NaverThirdPartyLoginConnectionDelegate {
 ## 4.Error Solution
 
 
-[카카오, 네이버, 페이스북 소셜 로그인 연동시 발생했던 에러 정리](https://www.zehye.kr/ios/2021/09/24/iOS_social_login/) 를 참고해주세요!
+[카카오, 네이버, 페이스북 소셜 로그인 연동시 발생했던 에러 정리](https://www.zehye.kr/ios/2021/09/24/iOS_social_login/)를 참고해주세요!
