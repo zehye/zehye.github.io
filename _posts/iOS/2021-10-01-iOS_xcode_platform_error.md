@@ -14,6 +14,10 @@ comments: true
 
 프로젝트 빌드를 하려는데 갑자기 이런 에러가 발생했다.
 
+```swift
+aborting: platform initialization failed
+```
+
 [stackoverflow](https://stackoverflow.com/questions/47224594/error-at-launch-app)에서 같은 상황을 발견!
 
 
