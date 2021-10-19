@@ -61,3 +61,25 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
           return true
 }
 ```
+
+
+### 5. SearchBar내 TextField의 Clear Button의 색상 변경해보기
+
+```swift
+if #available(iOS 13.0, *) {
+    self.searchBar.searchTextField.clearButtonMode = .always
+    if let button = searchBar.searchTextField.value(forKey: "_clearButton") as? UIButton {
+      let templateImage = button.imageView?.image?.withRenderingMode(.alwaysTemplate)
+      button.setImage(templateImage, for: .normal)
+      button.tintColor = .white
+    }
+} else if let textField = self.searchBar.value(forKey: "_searchField") as? UITextField {
+    textField.clearButtonMode = .always
+
+    if let button = searchBar.searchTextField.value(forKey: "_clearButton") as? UIButton {
+      let templateImage = button.imageView?.image?.withRenderingMode(.alwaysTemplate)
+      button.setImage(templateImage, for: .normal)
+      button.tintColor = .white
+  }
+}
+```
