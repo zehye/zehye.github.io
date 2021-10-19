@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS15 업데이트 후 NavigationBar 대응 
+title: iOS15 업데이트 후 NavigationBar 대응
 category: iOS
 tags: [iOS]
 comments: true
@@ -14,7 +14,11 @@ comments: true
 
 아이폰13이 나오고 iOS15가 발표되고 난 후 큰 틀이 바뀌진 않았지만 그중 큰 변화로는 네비게이션 바의 변화였습니다.
 
-![NavigationBar]({{ site.url }}{{ site.baseurl }}/images/2021/iOS/navi1.png)
+<center>
+<figure>
+<img src="/assets/post-img/swift/55.png" alt="" width="80%">
+</figure>
+</center>
 
 iOS15로 업데이트가 된 이후부터는 네비게이션 바가 확장이 되면서 `scrollEdgeAppearance`는 기본적으로 투명한 배경으로 생성이 되면서 UINavigationBarAppearance가 아닌 UINavigationBar를 채택해 옵션을 생성해주어야 한다고 합니다.
 
