@@ -62,6 +62,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+일반적으로는 첫번째 방법으로도 텍스트 컬러의 변경이 가능합니다.<br>
+다만 전역에서 디폴트 값으로 텍스트필드의 텍스트 컬러값을 지정해주고 싶다면 아래 방법을 사용합니다!
+
 
 ### 5. SearchBar내 TextField의 Clear Button의 색상 변경해보기
 
