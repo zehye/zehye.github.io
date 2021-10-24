@@ -118,6 +118,44 @@ send()의 경우 데이터를 보내는 주체가 자기 자신이기 때문에 
 더 이상 데이터 송수신이 필요없게 되면 소켓을 닫기 위해 close() API를 호출합니다. 이렇게 close()에 의해 닫힌 소켓은 더 이상 유효한 소켓이 아니기 때문에 해당 소켓을 사용해 데이터를 송수신할 수 없게 됩니다. 만약 소켓 연결이 종료된 후 다시 데이터를 주고받고자 한다면 다시 한번 소켓의 생성, 연결 과정을 통해 소켓이 데이터를 송수신할 수 있는 상태가 되어야 합니다.
 
 
+### 예시
+
+```swift
+import UIKit
+import SocketIO
+
+class SocketIOManager: NSObject {
+  static let shared = SocketIOManager()
+  var manager = SocketManager(socketURL: URL(string: "http://localhost:9000")!, config: [.log(true), .compress])
+  var socket: SocketIOClient!
+
+  override init() {
+    super.init()
+    socket = self.manager.socket(forNamespace: "/test")
+    socket.on("test") { dataArray, ack in   // test로 송신된 이벤트 수신
+      print(dataArray)
+    }
+  }
+
+  func establishConnection() {
+    socket.connect()  // 설정한 주소와 포트로 소켓 연결 시도
+  }
+
+  func closeConnection() {
+    socket.disconnect()  // 소켓 연결 종료
+  }
+
+  func sendMessage(message: String, nickname: String) {
+    socket.emit("event", ["message" : "This is a test message"])  // event라는 이름으로 뒤 데이터 송신
+    socket.emit("event1", [["name" : "ns"], ["email" : "@naver.com"]])
+    socket.emit("event2", ["name" : "ns", "email" : "@naver.com"])
+    socket.emit("msg", ["nick": nickname, "msg" : message])
+  }
+}
+```
+
+- socket.IO에서는 소켓을 룸으로 나누어 소켓을 룸단위로 구분
+  - 클라이언트가 /test 룸에 속한 소켓이라면 서버에서도 /test룸으로 설정하고 처리해줘야 통신 가능
 
 ### 서버 소켓 프로그래밍(Server Socket Programming)
 
@@ -178,3 +216,28 @@ bind의 사전적의미로 '결합하다', '구속하다', '묶다'등의 의미
 클라이언트 소켓 처리 과정과 마찬가지로 소켓을 닫기 위해 close() API를 호출합니다.
 
 그런데 서버 소켓에서는 close()의 대상이 하나만 있는것이 아니란 것이 중요합니다. 최초 socket() API를 통해 생성한 서커 소켓에 더해 accept() API 호출에 의해 생성된 소켓 또한 관리해야하기 때문이죠.
+
+
+
+### 예시
+
+아래는 Socket.IO 문서에 나오는 Server를 구현하는 예시 코드입니다.
+
+
+```swift
+var app = require('http').createServer(handler)  // http 서버를 생성
+var io = require('socket.io')(app);  // 소켓 생성
+var fs = require('fs');
+
+app.listen(80);  // 80번 포트를 연결해 클라이언트 요청을 대기
+
+// 이제 클라이언트 소켓은 localhost:80으로 연결을 요청 
+
+io.on('connection', function (socket) {  // connection되면
+  socket.emit('news', { hello: 'world' });  // 클라이언트로 news라는 키로 뒤 객체를 보냄
+  socket.on('my other event', function (data) {  
+    // 클라이언트에서 서버로 보낸 데이터중 'my other event'라는 키로 들어오는 값을 받아 console.log 출력
+    console.log(data);
+  });
+});
+```
