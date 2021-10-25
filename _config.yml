@@ -44,8 +44,7 @@ nav:
     - { TIL (Today I Learned): '/blog/categories/#TIL' }
     - { iOS: '/blog/categories/#iOS' }
     - { DATABASE: '/blog/categories/#DATABASE' }
-    - { Spring: '/blog/categories/#Spring' }
-    - { Books: '/blog/categories/#Books' }
+    # - { Books: '/blog/categories/#Books' }
     - { Algorithm: '/blog/categories/#Algorithm' }
     - { CS : '/blog/categories/#CS' }
     - { Django: '/blog/categories/#django' }
