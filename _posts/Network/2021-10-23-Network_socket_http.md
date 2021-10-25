@@ -98,7 +98,7 @@ HTTP 프로그래밍의 가장 큰 특징은 클라이언트의 요청이 있을
 
 #### 연결 요청(connect())
 
-connect() API는 **IP주소** 와 **포트번호** 로 식벽되는 대상에 연결 요청을 보냅니다.
+connect() API는 **IP주소** 와 **포트번호** 로 식별되는 대상에 연결 요청을 보냅니다.
 
 이 API는 블럭방식으로 동작하는데, 블럭 방식이라는 것은 연결 요청에 대한 결과(성공, 거절 등)가 결정되기 전에는 connect()의 실행이 끝나지 않는 것을 의미합니다. 그렇기 때문에 connect API가 실행되지 마자 실행결과와 관계없이 무조건 결과가 리턴될 것이라고 가정해서는 안됩니다. 이 connect API 호출이 성공하면 이제부터 데이터의 송수신(send/recv) API를 통해 데이터를 주고받을 수 있게 됩니다.
 
@@ -231,7 +231,7 @@ var fs = require('fs');
 
 app.listen(80);  // 80번 포트를 연결해 클라이언트 요청을 대기
 
-// 이제 클라이언트 소켓은 localhost:80으로 연결을 요청 
+// 이제 클라이언트 소켓은 localhost:80으로 연결을 요청
 
 io.on('connection', function (socket) {  // connection되면
   socket.emit('news', { hello: 'world' });  // 클라이언트로 news라는 키로 뒤 객체를 보냄
