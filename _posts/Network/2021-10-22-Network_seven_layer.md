@@ -207,7 +207,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/Network/3.png" alt="" width="50%">
+<img src="/assets/post-img/Network/4.png" alt="" width="50%">
 </figure>
 </center>
 
