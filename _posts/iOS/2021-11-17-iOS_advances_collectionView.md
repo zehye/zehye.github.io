@@ -53,7 +53,7 @@ json 파일은 아래와 같습니다. (Home.json)
 {
     "companyInfoList" : [
         {
-            "companyName" : "닥프렌즈 병원",
+            "companyName" : "병원",
             "addrRoad" : "서울 특별시",
             "introPath" : ""
         },
@@ -73,7 +73,7 @@ json 파일은 아래와 같습니다. (Home.json)
             "readCnt" : 22,
             "title" : "감기에 걸렸을때 어느 병원으로 가야할까요?",
             "lastAnswer" : {
-                "content" : "안녕하세요, 닥톡-네이버 지식iN 상담한의사 박지혜입니다.\n",
+                "content" : "안녕하세요. 박지혜입니다.\n",
                 "profileImg" : "",
             }
         }
