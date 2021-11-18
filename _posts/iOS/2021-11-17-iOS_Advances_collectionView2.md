@@ -10,10 +10,12 @@ comments: true
 
 <hr>
 
-이전 글에서는 CustomCell을 register해서 사용하는 방식을 보여드렸습니다.<br>
+이전 글에서는 CustomCell을 register해서 사용하는 방식을 보여드렸습니다. <br>
 사실 커스텀셀을 사용하는 방법은 구글에 검색을 해봐도 잘 나오지 않더군요..
 
 있어도 제 입맛에 맞게 수정하는것에 하나하나 제약사항도 너무 많았구요.
+
+[CustomCell 로 보는 Advances CollectionView 포스팅 바로가기](https://www.zehye.kr/ios/2021/11/17/iOS_advances_collectionView/)
 
 이번에는 애플에서 기본적으로 제공해주는 방식으로 셀을 구성해 데이터를 보여주는 컬렉션뷰를 한번 보여드리도록 하겠습니다.
 
