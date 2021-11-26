@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ==와 ===
+title: swift - ==와 ===
 category: swift
 tags: [swift]
 comments: true
@@ -40,4 +40,4 @@ print(p1 === p3)  // true
 <hr>
 
 클래스의 인스턴스는 heap 영역에 할당되며 인스턴스를 참조하는 변수는 stack영역에 할당된다.<br>
-그래서 `===`는 heap 영역의 값을 비교하고 `==`는 stack영역의 값을 비교한다. 
+그래서 `===`는 heap 영역의 값을 비교하고 `==`는 stack영역의 값을 비교한다.
