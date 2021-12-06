@@ -46,7 +46,7 @@ view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
 ## keyWindow
 
 keyWindow란 윈도우가 여러개 존재할 때, 가장 앞쪽에 배치된 윈도우를 의미합니다. <br>
-터치, 키보드 이벤트같은 경우 해당 이벤트들은 이벤트가 발생한 윈도우에 직접 전달이 됩니다.
+터치 이벤트같은 경우 해당 이벤트들은 이벤트가 발생한 윈도우에 직접 전달이 됩니다.
 
 그런데 관련 좌표값이 없는 이벤트 같은 경우에는 키 윈도우로 전달이 됩니다.
 
