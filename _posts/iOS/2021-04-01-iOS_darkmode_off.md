@@ -29,4 +29,4 @@ class ViewController: UIViewController {
 
 ### 2. Info.plist 에서 지정해주기
 
-`Add Row > UserInterfaceStyle > Dark or Light 로 지정`
+`Add Row > Appearance > Dark or Light 로 지정`
