@@ -12,7 +12,7 @@ comments: true
 
 ## Equatable
 
-우선 가장 먼저 주시해야할 것은 Equatable은 프로토콜이란 것이다.
+Equatable은 프로토콜이다.
 
 즉, Equatable이라는 약속이 있다는 것을 의미하며, 이를 채택하면 이를 준수해야한다는 것이다.
 
