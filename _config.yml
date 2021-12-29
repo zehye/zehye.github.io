@@ -62,6 +62,7 @@ nav:
     - { Data Structure: '/blog/categories/#Data Structure' }
     - { RxSwift: '/blog/categories/#RxSwift' }
     - { Network: '/blog/categories/#Network' }
+    - { SwiftUI: '/blog/categories/#SwiftUI' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
