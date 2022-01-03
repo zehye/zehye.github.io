@@ -38,7 +38,7 @@ comments: true
 - 아직 UIKit을 전부 대체하지 못함
   -  Mapkit이나 Webkitview 등은 아직까지는UIKit을 사용해야 함
 - 낮은 버전에 대해 지원이 되지 않아 Deployment Target이 한정적
-- 나온지 얼마 되지 않아 아직 버그 및 문제가 많음
+- 나온지 얼마 되지 않아 아직 버그 및 문제가 많음di
 - 라이브러리들의 부실한 지원
 
 ### SwiftUI와 UIKit?
