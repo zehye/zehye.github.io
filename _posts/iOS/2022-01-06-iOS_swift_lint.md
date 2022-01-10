@@ -59,7 +59,7 @@ else 구문은 이전 괄호와 동일한 줄에 표시하는 것을 권장
 if {
 
 } else {
-  
+
 }
 ```
 
@@ -68,4 +68,14 @@ if {
 반환타입을 주는 화살표 `->`와 반환 타입 사이 공백이 한칸씩 필요
 ```swift
 func setA() -> Int { }
+```
+
+
+### Redundant Optional Initialization Violation: Initializing an optional variable with nil is redundant. (redundant_optional_initialization)
+
+옵셔널 변수라면 최초에 자동으로 nil로 초기화 되기 때문에 명시해주지 않아도 된다.
+
+```swift
+var frame: CGRect? = nil  // 적용 전
+var dimFrame: CGRect?  // 적용 후
 ```
