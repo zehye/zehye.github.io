@@ -68,5 +68,5 @@ pod 'Firebase/Crashlytics'
 ### 2. ld: framework not found Protobuf
 
 [참고한 Stackoverflow](https://stackoverflow.com/questions/59499381/framework-not-found-protobuf)
-
+
 이 또한 위에 FirebaseInstanceID를 삭제해주는 방식과 동일하게 처리해주면 끝!
