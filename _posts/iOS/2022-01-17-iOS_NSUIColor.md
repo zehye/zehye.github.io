@@ -25,3 +25,5 @@ let hexColor = [NSUIColor(cgColor: UIColor(hexString: color).cgColor)]
 ```
 
 이렇게 해주면 간단하게 완료우~!
+
+UIColor Extension 이 궁금하다면 > [요기 클릭](https://www.zehye.kr/ios/2022/01/15/iOS_convert_uicolor_to_string/)
