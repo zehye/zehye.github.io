@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iOS seachBar 초성검색 기능 추가해보기
+title: iOS searchBar 초성검색 기능 추가해보기
 category: iOS
 tags: [iOS]
 comments: true
