@@ -18,3 +18,13 @@ comments: true
 
 Hide Bottom Bar on Push 를 체크해주면 된다.<br>
 push로 왔을 시 bottom영역을 hide 할것인지를 묻는 체크박스!
+
+## 코드로 수정을 원한다면?
+
+푸시로 화면이동을 하는경우
+
+```swift 
+let vc = mainVC.instance()
+vc.hideBottomBarWhenPushed = true
+self.navigationController?.pushViewController(vc, animated: true)
+```
