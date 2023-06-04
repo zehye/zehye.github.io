@@ -23,6 +23,7 @@ func chosungCheck(word: String) -> String {
     var result = ""
     
     for char in word {
+        // unicodeScalars: 유니코드 스칼라 값의 모음으로 표현되는 문자열 값
         let octal = char.unicodeScalars[char.unicodeScalars.startIndex].value
         if 44032...55203 ~= octal {
             let index = (octal - 0xac00) / 28 / 21

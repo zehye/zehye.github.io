@@ -36,6 +36,7 @@ class HomeTableViewCell: UITableViewCell{
 
 extension HomeTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        // 현재까지 스크롤된 크기를 구함
         let page = Int(targetContentOffset.pointee.x / self.frame.width)
         self.pageControl.currentPage = page
       }
