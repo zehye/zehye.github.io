@@ -25,6 +25,7 @@ func chosungCheck(word: String) -> String {
     for char in word {
         // unicodeScalars: 유니코드 스칼라 값의 모음으로 표현되는 문자열 값
         let octal = char.unicodeScalars[char.unicodeScalars.startIndex].value
+        // ~=: 왼쪽에서 정의한 범위 값 안에 오른쪽의 값이 속하면 true, 아니면 false 반환
         if 44032...55203 ~= octal {
             let index = (octal - 0xac00) / 28 / 21
             result = result + hangeul[Int(index)]
