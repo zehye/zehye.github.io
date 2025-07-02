@@ -51,6 +51,7 @@ nav:
     - { RxSwift: '/blog/categories/#RxSwift' }
     - { Network: '/blog/categories/#Network' }
     - { SwiftUI: '/blog/categories/#SwiftUI' }
+    - { Flutter: '/blog/categories/#Flutter' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
