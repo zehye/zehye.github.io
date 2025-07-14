@@ -16,7 +16,7 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/DS/1.png" alt="" width="20%" height = "20%">
+<img src="/assets/post-img/DS/1.png" alt="" width="50%">
 </figure>
 </center>
 
@@ -36,13 +36,13 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/DS/2.png" alt="" width="20%" height = "20%">
+<img src="/assets/post-img/DS/2.png" alt="" width="50%">
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/post-img/DS/3.png" alt="" width="20%" height = "20%">
+<img src="/assets/post-img/DS/3.png" alt="" width="50%">
 </figure>
 </center>
 
