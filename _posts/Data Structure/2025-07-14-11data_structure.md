@@ -65,6 +65,19 @@ comments: true
 동일한 데이터 유형의 여러값을 저장하려는 경우 효율적으로 활용이 가능하다. 각 요소의 인덱스 접근이 용이!
 
 
+<center>
+<figure>
+<img src="/assets/post-img/DS/6.png" alt="" width="50%">
+</figure>
+</center>
+
+<center>
+<figure>
+<img src="/assets/post-img/DS/7.png" alt="" width="50%">
+</figure>
+</center>
+
+
 #### 연결 리스트(Linked List)
 
 각 요소가 인접한 메모리 위치에 저장되지 않는 선형 자료구조로 `포인터`로 연결되는 것이 특징. 
@@ -72,14 +85,35 @@ comments: true
 자료가 추가될 때마다 `메모리를 할당`받고, 자료는 `링크`로 연결된다. 자료의 물리적 위치와 논리적 위치가 다를 수 있다. 첫번쨰 노드는 `Head`, 마지막 노드의 다음 포인터는 항상 `null`이다. 
 
 
+<center>
+<figure>
+<img src="/assets/post-img/DS/10.png" alt="" width="50%">
+</figure>
+</center>
+
+
 #### 스택(Stack)
 
-작업이 수행되는 특정 순서를 따르는 선형자료구조 > LIFO(Last In First Out)으로 마지막에 쌓인 데이터가 먼저 나오는 후입선출 방식이다. 데이터 입력 및 검색은 한쪽 끝에서만 가능하고 데이터 입력은 push(), 삭제는 pop()으로 이루어진다.
+작업이 수행되는 특정 순서를 따르는 선형자료구조 > **LIFO(Last In First Out)**으로 마지막에 쌓인 데이터가 먼저 나오는 후입선출 방식이다. 데이터 입력 및 검색은 한쪽 끝에서만 가능하고 데이터 입력은 push(), 삭제는 pop()으로 이루어진다.
+
+
+<center>
+<figure>
+<img src="/assets/post-img/DS/8.png" alt="" width="50%">
+</figure>
+</center>
 
 
 #### 큐(Queue)
 
-스택과 마찬가지로 작업이 수행되는 특정 순서를 따르는 선형자료구조 > FIFO(First In First Out)으로 처음 들어온 데이터가 먼저 나오는 선입선출 방식이다. 큐의 마지막 요소를 제거하기 위해서는 큐 안의 모든 요소를 제거해야만 가능하다.
+스택과 마찬가지로 작업이 수행되는 특정 순서를 따르는 선형자료구조 > **FIFO(First In First Out)**으로 처음 들어온 데이터가 먼저 나오는 선입선출 방식이다. 큐의 마지막 요소를 제거하기 위해서는 큐 안의 모든 요소를 제거해야만 가능하다.
+
+
+<center>
+<figure>
+<img src="/assets/post-img/DS/9.png" alt="" width="50%">
+</figure>
+</center>
 
 
 #### 덱, 데크(Deque)
