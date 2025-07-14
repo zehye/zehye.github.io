@@ -14,12 +14,13 @@ comments: true
 
 자료구조는 개발자가 데이터를 효율적으로 사용할 수 있도록 정리하는 방법을 말한다. 각각의 자료구조에는 장단점이 있기에 어떤 자료구조가 최선일지는 해결하고자 하는 문제의 종류와 어떤 부분을 우선적으로 최적화할지에 따라 달라질 수 있다. 따라서 다양한 자료구조의 장단점을 살펴보며 어플리케이션의 특징에 따라 어떤 자료구조를 사용하는 것이 최선일지 판단하는 것이 중요하다. 
 
-
 <center>
 <figure>
-<img src="/assets/post-img/DS/1.png" alt="" width="30%" height="30%>
+<img src="/assets/post-img/DS/1.png" alt="" width="20%" height = "20%">
 </figure>
 </center>
+
+
 
 자료구조는 `선형`과 `비선형` 등의 여러 속성을 기반으로 분류 가능하다.
 
@@ -35,13 +36,13 @@ comments: true
 
 <center>
 <figure>
-<img src="/assets/post-img/DS/2.png" alt="" width="30%" height="30%>
+<img src="/assets/post-img/DS/2.png" alt="" width="20%" height = "20%">
 </figure>
 </center>
 
 <center>
 <figure>
-<img src="/assets/post-img/DS/3.png" alt="" width="30%" height="30%>
+<img src="/assets/post-img/DS/3.png" alt="" width="20%" height = "20%">
 </figure>
 </center>
 
