@@ -91,8 +91,8 @@ def linearTime(n):
 
 ```python
 def quadraticTime(n):
-    for i in n:
-        for j in n:
+    for i in n:  # > n
+        for j in n:  # > n
             print(i + j)
 ```
 
