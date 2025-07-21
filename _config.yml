@@ -54,6 +54,7 @@ nav:
     - { SwiftUI: '/blog/categories/#SwiftUI' }
     - { Flutter: '/blog/categories/#Flutter' }
     - { Python: '/blog/categories/#Python' }
+    - { SQL: '/blog/categories/#SQL' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
