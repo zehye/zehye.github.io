@@ -10,4 +10,4 @@ comments: true
 
 <hr>
 
-## Linked List
+## 그래프
