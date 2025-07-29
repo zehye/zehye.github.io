@@ -41,7 +41,7 @@ df = pd.DataFrame({
 ```
 
 
-### 공백제거
+### 공백제거 > strip
 
 name 안에는 ' Alice ', 'Alice '가 있어 해당 데이터의 공백을 제거해줘야 한다.
 
@@ -50,14 +50,14 @@ df['name'] = df['name'].str.strip()
 ```
 
 
-### 중복값 제거 
+### 중복값 제거 > drop_duplicates
 
 ```python
 df = df.drop_duplicates()
 ```
 
 
-### 결측치 제거 및 채우기
+### 결측치 제거 및 채우기 > replace, fillna
 
 **1. 이상치를 결측치로 변경**
 
@@ -104,7 +104,7 @@ df = pd.DataFrame({
 ```
 
 
-### 결측치 확인 
+### 결측치 확인 > isnull
 
 각 행에 결측치의 합을 확인 
 
@@ -113,11 +113,18 @@ df.isnull().sum()
 ```
 
 
-### 결측치 삭제
+### 결측치 삭제 > dropna
 
 ```python
 df = df.dropna()
 ```
+
+이때 특정 컬럼의 결측치행을 삭제하고 싶은 경우는 아래와 같이 처리한다.
+
+```python
+df.dropna(subset=['삭제할 컬럼명'], inplace=True)
+```
+
 
 
 ### 결측치 평균값으로 채우기
@@ -168,7 +175,7 @@ df['원산지'] = ['한국', '미국', '중국', '일본']
 ```
 
 
-### 파일 저장하고 불러와보기
+### 파일 저장하고 불러와보기 > to_csv, read_csv
 
 ```python
 # 파일저장
@@ -179,7 +186,7 @@ temp_df = pd.read_csv('파일경로')
 ```
 
 
-### 파일 내 데이터를 원하는 개수만큼 뽑아보기
+### 파일 내 데이터를 원하는 개수만큼 뽑아보기 > head, tail, sample 
 
 ```python 
 temp_df.head(3)  # 앞에서 3개
@@ -188,7 +195,7 @@ temp_df.sample(3)  # 샘플 3개
 ```
 
 
-### 데이터 정보 확인하기
+### 데이터 정보 확인하기 > info 
 
 ```python
 df.info()
@@ -207,14 +214,16 @@ df_car = pd.DataFrame({
 ```
 
 
-### 유니크한 데이터의 개수 확인
+### 유니크한 데이터의 개수 확인 > nunique
 
 ```python
 df_car.nunique()
 ```
 
 
-### 유니크한 항목의 종류
+### 유니크한 항목의 종류 > unique
+
+distinct와 비슷하게 사용 
 
 ```python
 df_car['car'].unique()
@@ -222,10 +231,11 @@ df_car['size'].unique()
 ```
 
 
-### 중복값 확인
+### 중복값 확인 > duplicated
 
 ```python
 df_car.duplicated()
+df_car.duplicated().sum()  # 중복값 개수 확인 
 ```
 
 or 특정컬럼을 대상으로 확인
@@ -238,7 +248,7 @@ df_car.duplicated(subset=['size'])
 ```
 
 
-### 자료형 변환 
+### 자료형 변환 > astype
 
 ```python 
 data = {
@@ -283,7 +293,7 @@ dtypes: int64(2), object(1)
 memory usage: 300.0+ bytes
 ```
 
-### 컬럼 추가와 삭제
+### 컬럼 추가와 삭제 > drop 
 
 ```python
 # 할인가 컬럼 추가
@@ -298,7 +308,7 @@ df.drop('할인가', axis=1, inplace=True)
 ```
 
 
-### 컬럼 생성 후 결측값 대입
+### 컬럼 생성 후 결측값 대입 > np.nan / pd.NA
 
 ```python 
 df['원산지'] = np.nan
@@ -314,23 +324,26 @@ df.loc[3, '원산지'] = '과테말라'
 ```
 
 
-### 인덱스 번호 리셋하기
+### 인덱스 번호 리셋하기 > reset_index
 
 ```python
 df.reset_index(drop=True)
 ```
 
 
-### 인덱스 정렬
+### 인덱스 정렬 > sort_index 
 
 ```python
 df.sort_index()
 
-# 역으로 정렬
+# 역으로 정렬 
 df.sort_index(ascending=False)
 ```
 
-### 특정 열 기준 정렬
+### 특정 열 기준 정렬 > sort_value
+
+- ascending=True > 오름차순
+- ascending=False > 내림차순
 
 ```python
 df.sort_value(by='메뉴', ascending=True)
@@ -379,6 +392,8 @@ filtered_df = df[df['메뉴'].str.contains('카', na=False)]
 ```
 
 ### startswith, endswith
+
+시작단어, 끝단어 확인 
 
 ```python
 df[df['메뉴'].str.startswith('녹')]
