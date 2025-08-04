@@ -183,7 +183,7 @@ plt.show()
 
 <center>
 <figure>
-<img src="/assets/post-img/DA/41.png" alt="" width="80%">
+<img src="/assets/post-img/DA/41.png" alt="" width="100%">
 </figure>
 </center>
 
@@ -253,7 +253,7 @@ plt.show()
 
 <center>
 <figure>
-<img src="/assets/post-img/DA/42.png" alt="" width="80%">
+<img src="/assets/post-img/DA/42.png" alt="" width="100%">
 </figure>
 </center>
 
