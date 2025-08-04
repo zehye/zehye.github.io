@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 통계, 평균과 중앙값, 최빈값 
+title: 통계 - 평균, 중앙값, 최빈값 
 category: DA
 tags: [DA]
 comments: true
