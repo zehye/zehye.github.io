@@ -101,7 +101,7 @@ white_wine
 
 ```python 
 # t-test 함수에 red_wine,white_wine 를 x값으로써 집어 넣는다 
-stats.ttest_ind(red_wine, white_wine, equal_var=False)
+stats.ttest_ind(red_wine, white_wine)
 ```
 ```
 TtestResult(statistic=np.float64(-10.149363059143164), 
@@ -120,3 +120,20 @@ pvalue=np.float64(8.168348870049682e-24), df=np.float64(2950.750452166697))
 ```
 
 > 결론: 두 와인 종류와 등급간에는 매우 유의미하다 => 대립가설 채택 
+
+---
+
+
+## equal_var=False 를 쓰는때는 언제인가?
+
+`stats.ttest_ind(red_wine, white_wine, equal_var=False)` 
+
+이 옵션을 넣기위해서는
+1. 정규성 검정 먼저 해보고 
+2. 등분산성 검정을 한 뒤
+
+`정규성 검정`은 성립하지만 등분산성 검정을 만족하지 못할때 `Welch's t-test`를 한다. ((모수))
+
+> `Welch's t-test`: equal_var = False
+
+만약, 반대로 정규성 검정을 만족하지 못하고, 등반산성 검정만 성립한다면 `Mann-Whitrney U 검정`을 시행한다. (비모수)
