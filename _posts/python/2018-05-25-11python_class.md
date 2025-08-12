@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python class
-category: python
+category: Python
 tags: [python, class]
 comments: true
 ---

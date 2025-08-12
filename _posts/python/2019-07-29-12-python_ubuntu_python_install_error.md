@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu에서 pyenv 통해 python 설치시 발생하는 에러 (zipimport.ZipImportError)
-category: python
+category: Python
 tags: [ubuntu, pyenv, python]
 comments: true
 ---

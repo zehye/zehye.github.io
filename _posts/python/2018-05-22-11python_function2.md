@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 함수 - scope, lambda, closure, decorator, generator
-category: python
+category: Python
 tags: [python, scope, lambda, closure, decorator, generator ]
 comments: true
 ---

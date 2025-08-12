@@ -1,7 +1,7 @@
 ---
 layout: post
 title: staticmethod와 classmethod 한번 더 정리해보기
-category: python
+category: Python
 tags: [python, staticmethod, classmethod]
 comments: true
 ---

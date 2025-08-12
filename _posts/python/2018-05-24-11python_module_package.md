@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python module과 package
-category: python
+category: Python
 tags: [python, module, package]
 comments: true
 ---

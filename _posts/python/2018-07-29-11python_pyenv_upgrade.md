@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pyenv를 통해 파이썬 최신 버전 설치하기
-category: python
+category: Python
 tags: [pyenv]
 comments: true
 ---

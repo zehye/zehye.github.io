@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 함수 - args, kwargs, docstring
-category: python
+category: Python
 tags: [python, parameter, argument, docstring]
 comments: true
 ---

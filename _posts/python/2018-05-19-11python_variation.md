@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 변수
-category: python
+category: Python
 tags: [python, type]
 comments: true
 ---

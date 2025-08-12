@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python을 활용한 웹툰 크롤링 완성 - crawl.py
-category: python
+category: Python
 tags: [python, 크롤링]
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pyenv, virtualenv, iPython 설치 및 설정하기
-category: python
+category: Python
 tags: [python, pyenv, virtualenv, iPython]
 comments: true
 ---

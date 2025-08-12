@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python class 연습문제 풀이2
-category: python
+category: Python
 tags: [python, class]
 comments: true
 ---

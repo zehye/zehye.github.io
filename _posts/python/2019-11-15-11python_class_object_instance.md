@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 클래스와 객체, 그리고 인스턴스는 무엇일까?
-category: python
+category: Python
 tags: [class, object, instance]
 comments: true
 ---

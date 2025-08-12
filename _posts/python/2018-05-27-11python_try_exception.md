@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python try-exception(예외처리)
-category: python
+category: Python
 tags: [python, try, exception, finally, raise]
 comments: true
 ---

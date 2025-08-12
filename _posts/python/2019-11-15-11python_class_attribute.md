@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 클래스 속성과 인스턴스 속성 알아보기
-category: python
+category: Python
 tags: [python, class]
 comments: true
 ---

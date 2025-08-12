@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python regular expression(정규표현식)
-category: python
+category: Python
 tags: [python, regular-expression]
 comments: true
 ---

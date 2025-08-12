@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python class - 다형성 동적 바인딩
-category: python
+category: Python
 tags: [python, class]
 comments: true
 ---

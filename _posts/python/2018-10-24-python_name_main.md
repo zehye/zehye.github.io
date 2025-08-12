@@ -1,7 +1,7 @@
 ---
 layout: post
 title: __name__ , __main__
-category: python
+category: Python
 tags: [python, 크롤링]
 comments: true
 ---

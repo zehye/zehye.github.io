@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 3.7부터 도입된 dataclass에 대해 알아보기
-category: python
+category: Python
 tags: [python, iterable, iterator]
 comments: true
 ---

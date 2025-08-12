@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python dictionary, set
-category: python
+category: Python
 tags: [python, dictionary, set]
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python을 활용한 웹툰 크롤링 - 강사님 코드 복습
-category: python
+category: Python
 tags: [python, 크롤링]
 comments: true
 ---

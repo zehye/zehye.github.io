@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 모르는 부분 따로 정리
-category: python
+category: Python
 tags: [python, enumerate, index, arguments]
 comments: true
 ---

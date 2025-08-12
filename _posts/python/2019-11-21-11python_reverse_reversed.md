@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python reverse, reversed 함수의 차이
-category: python
+category: Python
 tags: [python, reversed, reverse]
 comments: true
 ---

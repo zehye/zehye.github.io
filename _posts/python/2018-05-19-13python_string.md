@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 문자열
-category: python
+category: Python
 tags: [python, string]
 comments: true
 ---

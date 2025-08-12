@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 숫자
-category: python
+category: Python
 tags: [python]
 comments: true
 ---

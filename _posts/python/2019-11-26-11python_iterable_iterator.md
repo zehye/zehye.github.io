@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python iterable과 iterator
-category: python
+category: Python
 tags: [python, iterable, iterator]
 comments: true
 ---

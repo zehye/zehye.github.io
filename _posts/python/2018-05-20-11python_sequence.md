@@ -1,7 +1,7 @@
 ---
 layout: post
 title: python 시퀀스(list, tuple)
-category: python
+category: Python
 tags: [python, list, tuple]
 comments: true
 ---

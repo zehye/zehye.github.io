@@ -40,16 +40,16 @@ nav:
     - '/'
     - { Categories All: '/blog/categories/' }
     - { iOS: '/blog/categories/#iOS' }
-    - { DATABASE: '/blog/categories/#DATABASE' }
+    # - { DATABASE: '/blog/categories/#DATABASE' }
     - { DA: '/blog/categories/#DA' }
-    - { Algorithm: '/blog/categories/#Algorithm' }
-    - { CS : '/blog/categories/#CS' }
+    # - { Algorithm: '/blog/categories/#Algorithm' }
+    # - { CS : '/blog/categories/#CS' }
     - { OS: '/blog/categories/#OS' }
     - { git: '/blog/categories/#Git' }
     - { etc: '/blog/categories/#Etc' }
     - { swift: '/blog/categories/#swift' }
     - { Data Structure: '/blog/categories/#Data Structure' }
-    - { RxSwift: '/blog/categories/#RxSwift' }
+    # - { RxSwift: '/blog/categories/#RxSwift' }
     - { Network: '/blog/categories/#Network' }
     - { SwiftUI: '/blog/categories/#SwiftUI' }
     - { Flutter: '/blog/categories/#Flutter' }
