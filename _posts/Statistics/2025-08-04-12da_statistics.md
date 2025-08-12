@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 통계 - 분포, 정규분포, 왜도, 첨도 
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: t검정(t-test)란?
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

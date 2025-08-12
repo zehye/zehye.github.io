@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 아노바(ANOVA)검정이란?
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

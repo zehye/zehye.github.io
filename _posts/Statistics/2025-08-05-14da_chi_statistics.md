@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 카이제곱검정(Chi-square test)이란?
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

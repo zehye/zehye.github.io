@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 통계 - 범위, 분산, 표준편차, 사분위수
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

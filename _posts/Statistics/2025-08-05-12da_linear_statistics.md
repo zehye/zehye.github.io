@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 회귀모델(Linear Regression)이란?
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 

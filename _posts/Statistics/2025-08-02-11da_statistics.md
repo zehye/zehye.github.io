@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 통계 - 평균, 중앙값, 최빈값 
-category: DA
-tags: [DA]
+category: Statistics
+tags: [Statistics]
 comments: true
 ---
 
