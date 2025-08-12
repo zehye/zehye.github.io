@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matplotlib 사용해보기(bar, barh)
+title: Matplotlib 사용해보기(막대차트 bar, barh)
 category: Visualization
 tags: [Visualization]
 comments: true

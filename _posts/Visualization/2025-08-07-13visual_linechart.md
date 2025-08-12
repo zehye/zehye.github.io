@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Matplotlib 사용해보기(line, plot, subplots)
+title: Matplotlib 사용해보기(선 그래프 plot, subplots)
 category: Visualization
 tags: [Visualization]
 comments: true
