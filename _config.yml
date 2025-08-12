@@ -55,6 +55,7 @@ nav:
     - { Flutter: '/blog/categories/#Flutter' }
     - { Python: '/blog/categories/#Python' }
     - { SQL: '/blog/categories/#SQL' }
+    - { Visualization: '/blog/categories/#Visualization' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
