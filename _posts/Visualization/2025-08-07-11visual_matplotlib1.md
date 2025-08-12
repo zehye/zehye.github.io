@@ -31,7 +31,7 @@ df = pd.DataFrame({
 ```
 
 
-### Bar Chart 특징(bar)
+### Bar (bar)
 
 - 일반적으로 가로축> `범주`, 세로축> `값`
 - 데이터간의 크기를 비교하는데에 주로 사용됨
@@ -40,7 +40,6 @@ df = pd.DataFrame({
 - 격자 나누기 기능을 사용해서 여러 컬럼 다룰수 있기는 함 (추가적인 정보를 표현하고 싶을때)
 
 
-### 구현
 
 ```python 
 # plt는 matplotlib의 약어, 형태의 사이즈(가로, 세로)를 지정 
@@ -67,15 +66,13 @@ plt.show()
 
 
 
-### 가로축 Bar Chart 특징(barh)
+### 가로축 Bar (barh)
 
 - 바차트에서 가로축 정보는 정상형태일때 정보
 - 세로축: `범주`, 가로축: `수치`
 - 카테고리명이 길때 혹은 카테고리가 많을때
 - 순위를 강조하고 싶을때 사용
 
-
-### 구현
 
 ```python 
 plt.figure(figsize=(8,2)) 
@@ -89,7 +86,7 @@ plt.show()
 
 <left>
 <figure>
-<img src="/assets/post-img/Visualization/1.png" alt="" width="30%" height = "30%">
+<img src="/assets/post-img/Visualization/2.png" alt="" width="40%" height = "30%">
 </figure>
 </left>
 
