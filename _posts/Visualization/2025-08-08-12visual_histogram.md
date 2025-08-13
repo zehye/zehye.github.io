@@ -132,7 +132,7 @@ plt.show()
 
 <left>
 <figure>
-<img src="/assets/post-img/Visualization/18.png" alt="" width="30%" height = "30%">
+<img src="/assets/post-img/Visualization/17.png" alt="" width="30%" height = "30%">
 </figure>
 </left>
 
