@@ -51,6 +51,8 @@ nav:
     - { Data Structure: '/blog/categories/#Data Structure' }
     # - { RxSwift: '/blog/categories/#RxSwift' }
     - { Network: '/blog/categories/#Network' }
+    - { Project: '/blog/categories/#Project' }
+    - { Machine Learning: '/blog/categories/#Machine Learning' }
     - { SwiftUI: '/blog/categories/#SwiftUI' }
     - { Flutter: '/blog/categories/#Flutter' }
     - { Python: '/blog/categories/#Python' }
