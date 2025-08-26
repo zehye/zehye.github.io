@@ -59,12 +59,12 @@ plt.show()
 
 <center>
 <figure>
-<img src="/assets/post-img/ML/3.png" alt="" width="50%">
+<img src="/assets/post-img/ML/3.png" alt="" width="70%">
 </figure>
 </center>
 
 
-### ### 문제2(다중 선형회귀): GrLivArea와 LotArea를 사용해 SalePrice를 예측
+### 문제2(다중 선형회귀): GrLivArea와 LotArea를 사용해 SalePrice를 예측
 
 ```python
 # 데이터 불러오기
@@ -103,7 +103,7 @@ MSE
 
 <center>
 <figure>
-<img src="/assets/post-img/ML/4.png" alt="" width="50%">
+<img src="/assets/post-img/ML/4.png" alt="" width="70%">
 </figure>
 </center>
 
@@ -130,7 +130,7 @@ Expected MSE = Irreducible Error + Bias² + Variance
 
 <center>
 <figure>
-<img src="/assets/post-img/ML/5.png" alt="" width="50%">
+<img src="/assets/post-img/ML/5.png" alt="" width="70%">
 </figure>
 </center>
 
@@ -145,7 +145,7 @@ Expected MSE = Irreducible Error + Bias² + Variance
 
 <center>
 <figure>
-<img src="/assets/post-img/ML/6.png" alt="" width="50%">
+<img src="/assets/post-img/ML/6.png" alt="" width="70%">
 </figure>
 </center>
 
