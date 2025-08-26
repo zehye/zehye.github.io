@@ -57,6 +57,8 @@ fm.fontManager.addfont('/usr/share/fonts/truetype/nanum/NanumGothic.ttf')
 plt.rcParams['font.family'] = 'NanumGothic'
 ```
 
+---
+
 혹은 맥에서는
 
 ```python 
