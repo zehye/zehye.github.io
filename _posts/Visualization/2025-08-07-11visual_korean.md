@@ -56,3 +56,12 @@ import matplotlib.font_manager as fm
 fm.fontManager.addfont('/usr/share/fonts/truetype/nanum/NanumGothic.ttf')
 plt.rcParams['font.family'] = 'NanumGothic'
 ```
+
+혹은 맥에서는
+
+```python 
+import matplotlib.pyplot as plt
+
+plt.rc('font', family='AppleGothic')
+plt.rcParams['axes.unicode_minus'] = False
+```
