@@ -31,3 +31,28 @@ import matplotlib.font_manager as fm
 fm.fontManager.addfont('/usr/share/fonts/truetype/nanum/NanumGothic.ttf')
 plt.rcParams['font.family'] = 'NanumGothic'
 ```
+
+
+이때 만약 
+
+```
+UsageError: Line magic function `%%capture` not found.
+``` 
+
+이러한 에러가 떴다면 아래와 같이 해결해보자!
+> %%capture 가 맨 윗단에 위치해서 실행되어야 하기 때문에 발생하는 것 
+
+```python 
+%%capture
+# 시각화도구
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+# 한글 글씨 폰트 설치 
+!sudo apt-get install -y fonts-nanum
+!sudo fc-cache -fv
+!rm ~/.cache/matplotlib -rf
+
+fm.fontManager.addfont('/usr/share/fonts/truetype/nanum/NanumGothic.ttf')
+plt.rcParams['font.family'] = 'NanumGothic'
+```
