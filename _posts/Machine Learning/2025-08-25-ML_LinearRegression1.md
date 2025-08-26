@@ -196,18 +196,26 @@ MSE
 
 ## MSE, MAE, RMSE란?
 
+모델의 평가 지표
+
 - MSE:잔차 제곱의 합
 - MAE: 잔차 평균의 합
 - RMSE: 평균 제곱근 오차 > MSE에 루트씌운 값
 
 **MSE, MAE 모두 작을수록 좋음!**
 
-R^ = 1 - {(실제값 - 예측값)^의 합 /(실제값 - 전체 예측값의 평균)^ 의 합}
+$$
+M A E=\frac{1}{n} \sum_{i=1}^n\left|y_i-\hat{y}_i\right|
+$$
 
+$$
+M S E=\frac{1}{n} \sum_{i=1}^n\left(y_i-\hat{y}_i\right)^2
+$$
 
+$$
+R M S E=\sqrt{M S E}
+$$
 
-<center>
-<figure>
-<img src="/assets/post-img/ML/2.png" alt="" width="70%">
-</figure>
-</center>
+$$
+R^2=1-\frac{\sum\left(y_i-\hat{y}_i\right)^2}{\sum\left(y_i-\bar{y}\right)^2}
+$$
