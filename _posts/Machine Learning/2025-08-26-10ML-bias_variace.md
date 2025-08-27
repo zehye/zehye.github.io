@@ -46,7 +46,7 @@ comments: true
 </center>
 
 
-위 그림은 train, test 데이터에 대한 결과를 bias, variance 관점에서 해석한 그림이다.
+위 그림은 train, test 데이터에 대한 결과를 bias, variance 관점에서 해석한 그림이다. 이는 MSE 수식을 통해 바라볼 수 있다. 
 
 - 가운데 주황색 동그라미 영역은 target으로, 정답&참값을 의미함
 - 초록색 점들은 모델이 예측한 값을 의미함 
