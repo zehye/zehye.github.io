@@ -33,7 +33,7 @@ comments: true
 실제와 맞게 예측한 확률 
 
 $$
-Accuracy={TP+TN}{TP+TN+FP+FN}
+{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}
 $$
 
 
@@ -43,7 +43,7 @@ $$
 - 해석: “양성이라 예측한 것 중 실제로 맞춘 비율”
 
 $$
-Precision={TP}{TP+FP}
+{Precision}=\frac{TP}{TP+FP}
 $$
 
 - 🕐 **사용 시기:** **False Positive(오탐)** 를 특히 줄여야 할 때  
@@ -56,7 +56,7 @@ $$
 - 해석: “실제 양성 중에서 얼마나 잘 찾아냈는가”
 
 $$
-Recall={TP}{TP+FN}
+{Recall}=\frac{TP}{TP+FN}
 $$
 
 - 🕐 **사용 시기:** **False Negative(미탐)** 를 특히 줄여야 할 때  
@@ -69,7 +69,7 @@ $$
 - 해석: “실제 음성을 얼마나 잘 골라내는가”
 
 $$
-Specificity={TN}{TN+FP}
+{Specificity}=\frac{TN}{TN+FP}
 $$
     
 
