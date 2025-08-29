@@ -12,11 +12,17 @@ comments: true
 
 [참고한 블로그](https://on-ai.tistory.com/5)
 
+<center>
+<figure>
+<img src="/assets/post-img/ML/28.png" alt="" width="50%">
+</figure>
+</center>
+
 
 ## 지도학습(Supervised Learning)
 
-지도학습 알고리즘은 정답이 있는 데이터(label)들을 학습한다. 그리고 이런 정답들은 사람들이 직접 데이터 하나하나에 표기(annotate)한다.
-대표적인 기술로 분류(classification), 회귀(regression)이 있다.
+지도학습 알고리즘은 `정답이 있는 데이터(label)들을 학습`한다. 그리고 이런 정답들은 사람들이 직접 데이터 하나하나에 표기(annotate)한다.
+대표적인 기술로 `분류(classification), 회귀(regression)`이 있다.
 
 예를 들어, 사진 분류의 문제 중 하나인 '개, 고양이 사진분류'를 지도학습을 통해 해결하고자 한다고 상상해보자.
 
@@ -24,22 +30,34 @@ comments: true
 2. 각 사진들이 개인지 고양인지 라벨(label)을 해줘야 함
 3. 이렇게 label 된 데이터 묶음을 training set, test set으로 나눔
 4. 기계는 training set을 통해 사진을 통과시켜 개인지 고양이인지를 예측
-5. 지도학습 훈련을 통해 예측값(predict)와 만들어둔 정답(label)이 같아지도록 함 
+5. 지도학습 `훈련을 통해 예측값(predict)와 만들어둔 정답(label)이 같아지도록 함`
 
 > 즉, 기계의 예측(prediction)이 우리가 의도하는 정답(label)과 같아지도록 지도(supervised) 하는 것!
 
-위 지도학습은 분류모델을 사용한 것이었다면 또다른 지도학습으로는 회귀모델이 있다.
-이 회귀 알고리즘은 주어진 데이터(X)를 기반으로 정답(Y)를 잘 맞추는 fit함수를 찾는 문제이다. 
-회귀 알고리즘은 예측값과 정답(Y)사이의 차이(거리)를 작게해 알고리즘을 학습하도록 한다.
+<center>
+<figure>
+<img src="/assets/post-img/ML/29.png" alt="" width="50%">
+</figure>
+</center>
 
-- 분류 종류: 선형분류기(linear classifier), 의사결정트리(decision tree), 랜덤포레스트(random forest), svm(suppor vector machine)
+위 지도학습은 분류모델을 사용한 것이었다면 또다른 지도학습으로는 회귀모델이 있다.
+이 회귀 알고리즘은 `주어진 데이터(X)를 기반으로 정답(Y)를 잘 맞추는 fit함수를 찾는 문제`이다. 
+회귀 알고리즘은 `예측값과 정답(Y)사이의 차이(거리)를 작게해 알고리즘을 학습하도록 한다.`
+
+<center>
+<figure>
+<img src="/assets/post-img/ML/30.png" alt="" width="50%">
+</figure>
+</center>
+
+- 분류 종류: 선형분류기(linear classifier), 의사결정트리(decision tree), 랜덤포레스트(random forest), svm(suppor vector machine), KNN(k-nearest neighbor), 나이브베이즈(Naive Bayes)
 - 회귀 종류: 선형회귀(linear regression), 로지스틱회귀(logistic regression), 다항식회귀(polynomial regression)
 
 ## 비지도학습(Unsupervised Learning)
 
-비지도학습 알고리즘은 정답(label) 없이 데이터를 학습한다. 목적은 인간의 개입이 없는 데이터를 스스로 학습하여 그 속의 패던(pattern) 또는 각 데이터 간 유사도(similarity)를 학습하는 것이다.
+비지도학습 알고리즘은 `정답(label) 없이 데이터를 학습`한다. 목적은 인간의 개입이 없는 데이터를 스스로 학습하여 그 속의 패턴(pattern) 또는 각 데이터 간 유사도(similarity)를 학습하는 것이다.
 
-대표적인 기술로 군집화(clustering), 연관(association), 차원축소(dimensionality reduction)이 있다. 
+대표적인 기술로 `군집화(clustering), 연관(association), 차원축소(dimensionality reduction)`이 있다. 
 
 - clustering: 정해진 분류 없이 기계가 스스로 데이터들을 보고 학습하여 비슷한 특징의 데이터를 군집화시키는 기술
     - K-means..
@@ -52,16 +70,16 @@ comments: true
 
 ### 지도학습과 비지도 학습의 가장 큰 차이점 
 
-데이터 셋에 label이 지정되어 있는지 아닌지이다. 즉, 지도학습은 label이 있고 비지도 학습은 label이 없다.
+데이터 셋에 `label이 지정되어 있는지 아닌지`이다. 즉, **지도학습은 label이 있고 비지도 학습은 label이 없다.**
 
-- 지도학습 > 목표: 새로운 데이터의 결과를 예측하는 것 
-    - label된 데이터 셋을 이용해 반복적으로 데이터를 예측하고 정답(label)과의 오차를 줄여나가며 학습함
+- 지도학습 > 목표: `새로운 데이터의 결과를 예측`하는 것 
+    - label된 데이터 셋을 이용해 반복적으로 데이터를 예측하고 `정답(label)과의 오차를 줄여나가며 학습함`
     - 비지도 학습모델보다 더 정확한 경향이 있지만 데이터에 적절하게 레이블을 지정하려면 사람의 개입이 필요함 
     - 활용 목표: 스팸탐지, 감정분석, 일기예보 및 가격 예측에 이상적
     - 단점: 훈련하는 데 시간이 많이 걸릴 수 있으며, 입력 및 출력 변수에 대한 label에는 전문지식이 필요함
 
 
-- 비지도학습 > 목표: 많은 양의 새로운 데이터에 대한 통찰력을 얻는 것 
+- 비지도학습 > 목표: 많은 양의 `새로운 데이터에 대한 통찰력`을 얻는 것 
     - label이 지정되지 않은 데이터의 고유한 구조를 발견하기 위해 자체적으로 작동
     - 출력변수의 유효성을 검사하려면 여전히 사람의 개입은 필요함 
     - 활용 목표: 이상감지, 추천엔진, 의료영상에 적합 
